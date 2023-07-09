@@ -1,0 +1,14 @@
+---
+layout: card
+tags: card
+title: "1981 Topps Magic Johnson #81"
+sport: Basketball
+year: "1981"
+brand: Topps
+player: Magic Johnson
+lastName: Johnson
+number: "21"
+isRookie: false
+condition: PSA 7
+value: 45
+---
