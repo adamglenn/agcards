@@ -9,4 +9,6 @@ player: Hank Aaron
 lastName: Aaron
 number: "380"
 isRookie: false
+condition: EX-EXMINT
+value: 135
 ---
