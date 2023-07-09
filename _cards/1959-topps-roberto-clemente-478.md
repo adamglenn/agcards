@@ -2,7 +2,7 @@
 layout: card
 tags: card
 title: "1959 Topps Roberto Clemente #478"
-image: /images/uploads/img20230709_18410371.jpg
+image: /images/uploads/1959-topps-roberto-clemente.webp
 sport: Baseball
 year: "1959"
 brand: Topps
