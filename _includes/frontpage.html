@@ -7,9 +7,21 @@ heroData:
     lede: "From simple repairs to complete rewiring projects, Rotruck Electric has the skills and expertise to solve all your electrical needs with safety and efficiency."
 ---
 
-<h1>Cards</h1>
-{%- for card in collections.card -%}
-  <h2>f{{ card.player }}</h2>
-{%- endfor -%}
-
-{% include footer-001 %}
+<main class="py-5">
+  <div class="container">
+    <h1>Cards</h1>
+    <div class="row">
+      {% assign sports = "baseball,basketball,football" | split: "," %}
+      {%- for sport in sports -%}
+        {%- for card in collections.card -%}
+          {% assign cardSport = card.data.sport | downcase %}
+          {% if cardSport == sport %}
+            <div class="col-3 {{ card.data.sport }}">
+              <h2 class="h5"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }} {% if card.data.number != null %}#{{ card.data.number }}{% endif %}</h2>
+            </div>
+          {% endif %}
+        {%- endfor -%}
+      {%- endfor -%}
+    </div> 
+  </div>
+</main>

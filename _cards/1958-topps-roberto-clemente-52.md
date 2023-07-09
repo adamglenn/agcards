@@ -1,5 +1,6 @@
 ---
 layout: card
+tags: card
 title: "1958 Topps Roberto Clemente #52"
 sport: Baseball
 year: "1958"
