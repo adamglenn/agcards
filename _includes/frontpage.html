@@ -9,15 +9,70 @@ heroData:
 
 <main class="py-5">
   <div class="container">
+    <div id="options" class="clearfix combo-filters checkboxes mb-4">
+      <div class="clearfix">
+
+        <div class="option-combo sport">
+          <fieldset>
+            <legend class="h6 small text-uppercase mb-1 helvetica-neue-bold">Filter by Sport:</legend>
+            <div class="filter option-set js-radio-button-group" data-filter-group="sport">
+              <div class="form-check">
+                <input class="form-check-input active selected" type="checkbox" name="sport" id="radioAny" value=".any" checked>
+                <label class="form-check-label" for="radioAny">Any</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sport" id="radioBaseball" value=".baseball">
+                <label class="form-check-label" for="radioBaseball">Baseball</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sport" id="radioBasketball" value=".basketball">
+                <label class="form-check-label" for="radioBasketball">Basketball</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sport" id="radioFootball" value=".football">
+                <label class="form-check-label" for="radioFootball">Football</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="option-combo era">
+          <fieldset>
+            <legend class="h6 small text-uppercase mb-1 helvetica-neue-bold">Filter by Era:</legend>
+            <div class="filter option-set js-radio-button-group" data-filter-group="era">
+              <div class="form-check">
+                <input class="form-check-input active selected" type="checkbox" name="era" id="radioAny" value=".any" checked>
+                <label class="form-check-label" for="radioAny">Any</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="era" id="radioVintage" value=".vintage">
+                <label class="form-check-label" for="radioVintage">Vintage</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="era" id="radioModern" value=".modern">
+                <label class="form-check-label" for="radioModern">Modern</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+      </div>
+    </div>
     <h1>Cards</h1>
-    <div class="row">
+    <div class="row grid">
       {% assign sports = "baseball,basketball,football" | split: "," %}
       {%- for sport in sports -%}
         {%- for card in collections.card -%}
           {% assign cardSport = card.data.sport | downcase %}
+          {% if card.data.year <= 1979 %}
+            {% assign era = 'vintage' %}
+          {% else %}
+            {% assign era = 'modern' %}
+          {% endif %}
           {% if cardSport == sport %}
-            <div class="col-3 {{ card.data.sport }}">
+            <div class="col-3 {{ sport }} element-item any {{ era }}">
               <h2 class="h5"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }} {% if card.data.number != null %}#{{ card.data.number }}{% endif %}</h2>
+              <p class="small"><span class="d-inline-block p-1 border border-dark rounded">{{ card.data.condition }}</span></p>
             </div>
           {% endif %}
         {%- endfor -%}

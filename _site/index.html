@@ -38,28 +38,107 @@
     
 <main class="py-5">
   <div class="container">
+    <div id="options" class="clearfix combo-filters checkboxes mb-4">
+      <div class="clearfix">
+
+        <div class="option-combo sport">
+          <fieldset>
+            <legend class="h6 small text-uppercase mb-1 helvetica-neue-bold">Filter by Sport:</legend>
+            <div class="filter option-set js-radio-button-group" data-filter-group="sport">
+              <div class="form-check">
+                <input class="form-check-input active selected" type="checkbox" name="sport" id="radioAny" value=".any" checked>
+                <label class="form-check-label" for="radioAny">Any</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sport" id="radioBaseball" value=".baseball">
+                <label class="form-check-label" for="radioBaseball">Baseball</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sport" id="radioBasketball" value=".basketball">
+                <label class="form-check-label" for="radioBasketball">Basketball</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sport" id="radioFootball" value=".football">
+                <label class="form-check-label" for="radioFootball">Football</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="option-combo era">
+          <fieldset>
+            <legend class="h6 small text-uppercase mb-1 helvetica-neue-bold">Filter by Era:</legend>
+            <div class="filter option-set js-radio-button-group" data-filter-group="era">
+              <div class="form-check">
+                <input class="form-check-input active selected" type="checkbox" name="era" id="radioAny" value=".any" checked>
+                <label class="form-check-label" for="radioAny">Any</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="era" id="radioVintage" value=".vintage">
+                <label class="form-check-label" for="radioVintage">Vintage</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="era" id="radioModern" value=".modern">
+                <label class="form-check-label" for="radioModern">Modern</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+      </div>
+    </div>
     <h1>Cards</h1>
-    <div class="row">
+    <div class="row grid">
       
           
-            <div class="col-3 Baseball">
+            
+          
+          
+            <div class="col-3 baseball element-item any vintage">
               <h2 class="h5"><span class="h6"><span class="fa-solid fa-baseball"></span> 1958 Topps</span><br>Roberto Clemente #52</h2>
+              <p class="small"><span class="d-inline-block p-1 border border-dark rounded">VG-VGEX</span></p>
             </div>
           
           
-            <div class="col-3 Baseball">
+            
+          
+          
+            <div class="col-3 baseball element-item any vintage">
               <h2 class="h5"><span class="h6"><span class="fa-solid fa-baseball"></span> 1959 Topps</span><br>Roberto Clemente #478</h2>
+              <p class="small"><span class="d-inline-block p-1 border border-dark rounded">VG-VGEX</span></p>
             </div>
           
           
+            
           
           
           
-            <div class="col-3 Basketball">
+            
+          
+          
+          
+            
+          
+          
+          
+            
+          
+          
+            <div class="col-3 basketball element-item any vintage">
               <h2 class="h5"><span class="h6"><span class="fa-solid fa-basketball"></span> 1971 Topps</span><br>Jerry West #50</h2>
+              <p class="small"><span class="d-inline-block p-1 border border-dark rounded">VG-VGEX</span></p>
             </div>
           
           
+            
+          
+          
+          
+            
+          
+          
+          
+            
           
           </div> 
   </div>
@@ -68,6 +147,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src='/cms.js'></script>
+    <script type="text/javascript" src='/javascripts/vendor/isotope/jquery-1.7.1.min.js'></script>
+    <script type="text/javascript" src='/javascripts/vendor/isotope/jquery.ba-bbq.min.js'></script>
+    <script type="text/javascript" src='/javascripts/vendor/isotope/jquery.isotope.min.js'></script>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
@@ -97,6 +179,53 @@
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
       });
+  
+      // templating
+      var sports = [ 'baseball', 'basketball', 'football' ];
+
+      // createItems();
+
+      // init Isotope
+      var $container = $('.grid').isotope({
+        itemSelector: '.element-item'
+      });
+
+      // filter with selects and checkboxes
+      var $checkboxes = $('.checkboxes input');
+
+      $checkboxes.change( function() {
+        // map input values to an array
+        var inclusives = [];
+        // inclusive filters from checkboxes
+        $checkboxes.each( function( i, elem ) {
+          // if checkbox, use value if checked
+          if ( elem.checked ) {
+            inclusives.push( elem.value );
+          }
+        });
+
+        // combine inclusive filters
+        var filterValue = inclusives.length ? inclusives.join(', ') : '*';
+
+        $container.isotope({ filter: filterValue })
+      });
+
+      // function createItems() {
+      //   var $items;
+      //   // loop over colors, sizes, prices
+      //   // create one item for each
+      //   for (  var i=0; i < sports.length; i++ ) {
+      //     var sport = sports[i];
+      //     var $item = $('<div />', {
+      //       'class': 'element-item ' + sport
+      //     });
+      //     // $item.append( '<p>' + size + '</p><p>$' + price + '</p>');
+      //     // add to items
+      //     $items = $items ? $items.add( $item ) : $item;
+      //   }
+
+      //   $items.appendTo( $('.grid') );
+      // }
     </script>
   </body>
 </html>

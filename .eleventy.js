@@ -7,6 +7,7 @@ const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("stylesheets/styles.css");
   eleventyConfig.addPassthroughCopy("admin/config.yml");
+  eleventyConfig.addPassthroughCopy("javascripts");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
