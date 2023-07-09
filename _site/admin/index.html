@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+        var PostPreview = createClass({
+        render: function() {
+            var entry = this.props.entry;
+            var image = entry.getIn(['data', 'image']);
+            var bg = this.props.getAsset(image);
+            return h('div', {"className": "container"},
+            h('h1', {"className": "display-2"}, entry.getIn(['data', 'title'])),
+            h('img', {src: bg.toString()}),
+            h('div', {"className": "text text-primary"}, this.props.widgetFor('body'))
+            );
+        }
+        });
+            
+        CMS.registerPreviewTemplate("posts", PostPreview);
+        CMS.registerPreviewStyle("/stylesheets/styles.css");
+    </script>
+</body>
+</html>

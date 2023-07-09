@@ -1,0 +1,33 @@
+<section id="page-collection-1" aria-labelledby="page-collection-1-label" class=" py-5 ">  
+  <div class="wvu-z-index-content">
+    <div class="container wvu-z-index-content">        
+      <h2 id="page-collection-1-label" class="display-3 wvu-shout text-wvu-blue">Page Collection Headline</h2>
+      <p class="h3 helvetica-neue-light text-wvu-blue mb-4">Subhead goes here.</p>      
+      <div class="row justify-content-start">
+        {%- for post in collections.post -%}
+            <div class="col-sm-6 col-lg-3 mb-4">              
+                <div class="mb-2 position-relative">                
+                    <a aria-hidden="true" tabindex="-1" title="Read More: Lorem Ipsum Dolor Sit Amet Consectetur" href="https://designsystem.wvu.edu/people/lorem-ipsum-dolor-sit-amet-consectetur">
+                      <img class="card-img-top" src="/files/18b26708-f116-4461-a7f8-4ab4fb42dd6a/960x640.webp?cb=15cadd299a3d5903e84cc54fc90da3a7" alt="">
+                    </a>
+                </div>            
+                <div>
+                    <h3 class="card-title" id="lorem-ipsum-dolor-sit-amet-consectetur-page-collection-1-139968">
+                    <a title="Read More: Lorem Ipsum Dolor Sit Amet Consectetur" class="h2 d-block wvu-shout wvu-bar mb-2 text-decoration-none text-wvu-blue" href="https://designsystem.wvu.edu/people/lorem-ipsum-dolor-sit-amet-consectetur">{{ post.data.title }}</a>
+                    </h3>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                
+                    <a class="btn btn-primary btn-sm" href="https://designsystem.wvu.edu/people/lorem-ipsum-dolor-sit-amet-consectetur">
+                      Read More<span class="visually-hidden">: Lorem Ipsum Dolor Sit Amet Consectetur</span>
+                    </a>            
+                </div>
+            </div>
+        {%- endfor -%}
+      </div>        
+      <div class="mt-2">          
+        <p class="mb-0">Put additional info or 
+          <a href="#">links</a> here.
+        </p>
+      </div>    
+    </div>
+  </div>
+</section>

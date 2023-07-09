@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+site_url: https://ag-11ty-example.netlify.app
+display_url: https://ag-11ty-example.netlify.app
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "_data/home.yaml"
+        fields:
+          - {label: Headline, name: headline, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: Primary Call To Action, name: primaryCallToAction, widget: string}
+          - {label: Secondary Call To Action, name: secondaryCallToAction, widget: string}
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Feature, name: feature, widget: string}
+              - {label: Description, name: description, widget: string}
+  - name: "posts" # Used in routes, e.g., /admin/collections/posts
+    label: "Articles" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "products"
+    label: "Products"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+  - name: "settings"
+    label: "Settings"
+    files:
+      - file: "_data/settings.yaml"
+        label: "Global Settings"
+        name: "globalSettings"
+        fields:
+          - {label: "Logo", name: "logo", widget: "image", required: false}
+          - {label: "Description", name: "description", widget: "text", required: false}
+          - {label: "Google Tag Manager ID", name: "gtm_id", widget: "string", required: false}
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Email", name: "mailto", widget: "string", required: false}
