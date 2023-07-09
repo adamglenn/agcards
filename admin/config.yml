@@ -3,8 +3,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
-site_url: https://ag-11ty-example.netlify.app
-display_url: https://ag-11ty-example.netlify.app
+site_url: https://agcards.netlify.app
+display_url: https://agcards.netlify.app
 collections:
   - name: "pages"
     label: "Pages"
