@@ -19,15 +19,22 @@ heroData:
       {%- for sport in sports -%}
         {%- for card in collections.card -%}
           {% assign cardSport = card.data.sport | downcase %}
+          {%- capture url -%}
+            {{ site.url }}/_cards/{{ card.data.title | replace: ' ', '-' | replace: '#', '' | downcase }}
+          {%- endcapture -%}
           {% if card.data.year <= 1979 %}
             {% assign era = 'vintage' %}
           {% else %}
             {% assign era = 'modern' %}
           {% endif %}
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 element-item">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 element-item position-relative">
+              <div>
+                <img class="mb-2" src="{{ card.data.image }}" alt="{{ card.data.title }}">
+              </div>
               <h2 class="h5"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }} {% if card.data.number != null %}#{{ card.data.number }}{% endif %}</h2>
               <p class="small"><span class="d-inline-block p-1 border border-dark rounded">{{ card.data.condition }}</span></p>
+              <a class="stretched-link" href="{{ url }}"></a>
             </div>
           {% endif %}
         {%- endfor -%}

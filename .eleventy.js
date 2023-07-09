@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("stylesheets/styles.css");
   eleventyConfig.addPassthroughCopy("admin/config.yml");
   eleventyConfig.addPassthroughCopy("javascripts");
+  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
