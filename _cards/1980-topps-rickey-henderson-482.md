@@ -2,7 +2,7 @@
 layout: card
 tags: card
 title: "1980 Topps Rickey Henderson #482"
-image: /images/uploads/img20230709_16443301.jpg
+image: /images/uploads/1980-topps-rickey-henderson-8.webp
 sport: Baseball
 year: "1980"
 brand: Topps
