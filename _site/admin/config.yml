@@ -51,6 +51,7 @@ collections:
       - {label: "Player", name: "player", widget: "string"}
       - {label: "Last Name", name: "lastName", widget: "string"}
       - {label: "Number", name: "number", widget: "string", required: false}
+      - {label: "Rookie Card", name: "isRookie", widget: "boolean", default: false}
       - {label: "Condition", name: "condition", widget: "select", options: ["Raw", "VG-VGEX", "PSA 7", "PSA 8", "PSA 9"], required: false}
       - {label: "Value", name: "value", widget: "number", required: false}
   - name: "settings"
