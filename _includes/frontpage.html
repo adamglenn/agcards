@@ -29,13 +29,14 @@ heroData:
           {% endif %}
           {% if cardSport == sport %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-              <div class="h-100 position-relative d-flex flex-column justify-content-end">
-                <div style="overflow:hidden">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end p-3 p-sm-0">
+                <div class="position-relative d-flex justify-content-end">
+                  <span class="badge bg-danger position-absolute fs-4 shadow float-right mt-n2 me-1 align-self-end">${{ card.data.value }}</span>
                   <img loading="lazy" decoding="async" class="mb-2 rounded" src="{{ card.data.image }}" alt="{{ card.data.title }}">
                 </div>
                 <div class="">
                   <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }} {% if card.data.number != null %}#{{ card.data.number }}{% endif %}</h2>
-                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span></p>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span>{% endif %}</p>
                   <a class="stretched-link" href="{{ url }}"></a>
                 </div>
               </div>
