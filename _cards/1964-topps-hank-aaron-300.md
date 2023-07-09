@@ -10,5 +10,6 @@ player: Hank Aaron
 lastName: Aaron
 number: "300"
 isRookie: false
+condition: PSA 5
 value: 185
 ---
