@@ -236,6 +236,21 @@ $spacers: (
   6: ($spacer * 6)
 );
 
+$aspect-ratios: (
+  "1x1": 100%,
+  "3x2": calc(2 / 3 * 100%),
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%)
+);
+
+.ratio-3x2 {
+  --bs-aspect-ratio: 66.66667%; // 2x1
+}
+
+.ratio-slab {
+  --bs-aspect-ratio: 71.11111111%; // 2x1
+}
+
 $blue: #006FE6;
 $link-color: $blue;
 $blockquote-margin-y: 0;

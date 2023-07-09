@@ -28,13 +28,17 @@ heroData:
             {% assign era = 'modern' %}
           {% endif %}
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 element-item position-relative">
-              <div>
-                <img class="mb-2" src="{{ card.data.image }}" alt="{{ card.data.title }}">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+              <div class="h-100 position-relative d-flex flex-column justify-content-center bg-light p-3">
+                <div style="overflow:hidden">
+                  <img class="mb-2 rounded{% if card.data.grade contains 'PSA' %} mt-n1{% endif %}" src="{{ card.data.image }}" alt="{{ card.data.title }}">
+                </div>
+                <div class="">
+                  <h2 class="h5"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }} {% if card.data.number != null %}#{{ card.data.number }}{% endif %}</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span></p>
+                  <a class="stretched-link" href="{{ url }}"></a>
+                </div>
               </div>
-              <h2 class="h5"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }} {% if card.data.number != null %}#{{ card.data.number }}{% endif %}</h2>
-              <p class="small"><span class="d-inline-block p-1 border border-dark rounded">{{ card.data.condition }}</span></p>
-              <a class="stretched-link" href="{{ url }}"></a>
             </div>
           {% endif %}
         {%- endfor -%}
