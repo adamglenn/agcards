@@ -3,4 +3,14 @@ layout: default.html
 title: Card
 ---
 
-<h2>{{ year }} {{ brand }} {{ player }}</h2>
+<main class="py-5">
+  <div class="container">
+    <h1><span class="h6">{{ year }} {{ brand }}</span><br>{{ player }} {% if number != null %}#{{ number }}{% endif %}</h1>
+    <p>
+      <span class="badge bg-secondary">{{ condition }}</span>
+    </p>
+    <p>
+      <strong>Value:</strong> ${{ value }}
+    </p>
+  </div>
+</main>
