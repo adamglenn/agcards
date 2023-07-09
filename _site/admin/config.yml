@@ -1,10 +1,10 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
-site_url: https://ag-11ty-example.netlify.app
-display_url: https://ag-11ty-example.netlify.app
+site_url: https://agcards.netlify.app
+display_url: https://agcards.netlify.app
 collections:
   - name: "pages"
     label: "Pages"
@@ -35,15 +35,24 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "products"
-    label: "Products"
-    folder: "_products"
+  - name: "cards"
+    label: "Cards"
+    folder: "_cards"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "card"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Sport", name: "sport", widget: "select", options: ["Baseball", "Basketball", "Football"]}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Brand", name: "brand", widget: "string"}
+      - {label: "Subset", name: "subset", widget: "string", required: false}
+      - {label: "Player", name: "player", widget: "string"}
+      - {label: "Last Name", name: "lastName", widget: "string"}
+      - {label: "Number", name: "number", widget: "string", required: false}
+      - {label: "Condition", name: "condition", widget: "select", options: ["Raw", "VG-VGEX", "PSA 7", "PSA 8", "PSA 9"], required: false}
+      - {label: "Value", name: "value", widget: "number", required: false}
   - name: "settings"
     label: "Settings"
     files:
