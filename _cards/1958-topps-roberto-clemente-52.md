@@ -8,7 +8,7 @@ brand: Topps
 player: Roberto Clemente
 lastName: Clemente
 number: "52"
-isRookie: true
+isRookie: false
 condition: VG-VGEX
 value: 100
 ---
