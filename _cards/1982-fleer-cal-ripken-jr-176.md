@@ -2,7 +2,7 @@
 layout: card
 tags: card
 title: "1982 Fleer Cal Ripken Jr. #176"
-image: /images/uploads/img20230709_16443308.jpg
+image: /images/uploads/1982-fleer-cal-ripken-8.webp
 sport: Baseball
 year: "1982"
 brand: Fleer
