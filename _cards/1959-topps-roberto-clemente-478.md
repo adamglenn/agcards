@@ -12,4 +12,5 @@ number: "478"
 isRookie: false
 condition: VG-VGEX
 value: 60
+order: 30
 ---
