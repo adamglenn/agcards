@@ -11,4 +11,5 @@ number: "50"
 isRookie: false
 condition: VG-VGEX
 value: 30
+order: 1030
 ---
