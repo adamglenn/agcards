@@ -10,7 +10,7 @@ player: Tony Gwynn
 lastName: Gwynn
 number: "482"
 isRookie: true
-condition: PSA 7
+condition: PSA 8
 value: 20
 order: 10
 ---
