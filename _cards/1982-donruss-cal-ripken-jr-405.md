@@ -2,7 +2,7 @@
 layout: card
 tags: card
 title: "1982 Donruss Cal Ripken Jr. #405"
-image: /images/uploads/img20230709_16443304.jpg
+image: /images/uploads/1982-donruss-cal-ripken-8.webp
 sport: Baseball
 year: "1982"
 brand: Donruss
