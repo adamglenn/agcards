@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1960 Topps Hank Aaron #300"
+image: /images/uploads/1960-topps-hank-aaron.webp
 sport: Baseball
 year: "1960"
 brand: Topps
