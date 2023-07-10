@@ -12,4 +12,5 @@ number: "380"
 isRookie: false
 condition: EX-EXMINT
 value: 135
+order: 20
 ---
