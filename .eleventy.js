@@ -54,29 +54,35 @@ module.exports = function(eleventyConfig) {
 		return `style="background-image:url('${data.url}');`;
 	});
 
+  // eleventyConfig.addCollection('orderedCards', function(collectionApi) {
+  //   return collectionApi
+  //     .getFilteredByGlob('_cards/**/*.md')
+  //     // .sort((a, b) => a.data.lastName - b.data.lastName)
+  //     .sort((a, b) => {
+  //       if (a.data.year === b.data.year) {
+  //         return a.data.brand < b.data.brand ? -1 : 1
+  //       } else {
+  //         return a.data.year < b.data.year ? -1 : 1
+  //       }
+  //     })
+  // })
+
   eleventyConfig.addCollection('orderedCards', function(collectionApi) {
     return collectionApi
       .getFilteredByGlob('_cards/**/*.md')
-      .sort((a, b) => a.data.year - b.data.year)
-      .sort((a, b) => a.data.brand - b.data.brand)
-      .sort((a, b) => a.data.lastName - b.data.lastName)
+      // .sort((a, b) => a.data.lastName - b.data.lastName)
+      .sort((a, b) => {
+        if (a.data.year === b.data.year) {
+          if (a.data.brand === b.data.brand) {
+            return a.data.lastName < b.data.lastName ? -1 : 1
+          } else {
+            return a.data.brand < b.data.brand ? -1 : 1
+          }
+        } else {
+          return a.data.year < b.data.year ? -1 : 1
+        }
+      })
   })
-
-  // function sortByYear(values) {
-  //   return values.slice().sort((a, b) => a.data.year.localeCompare(b.data.year))
-  // }
-
-  // function sortByBrand(values) {
-  //   return values.slice().sort((a, b) => a.data.brand.localeCompare(b.data.brand))
-  // }
-
-  // function sortByName(values) {
-  //   return values.slice().sort((a, b) => a.data.brand.localeCompare(b.data.lastName))
-  // }
-
-  // eleventyConfig.addFilter('sortByYear', sortByYear)
-  // eleventyConfig.addFilter('sortByBrand', sortByBrand)
-  // eleventyConfig.addFilter('sortByBrand', sortByName)
 
   return {
     htmlTemplateEngine: "liquid"
