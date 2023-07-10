@@ -12,4 +12,5 @@ number: "482"
 isRookie: true
 condition: PSA 8
 value: 275
+order: 100
 ---
