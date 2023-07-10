@@ -55,6 +55,7 @@ collections:
       - {label: "Rookie Card", name: "isRookie", widget: "boolean", default: false}
       - {label: "Condition", name: "condition", widget: "select", options: ["Raw", "LOW GRADE", "LOW GRADE (CREASE)", "VG-VGEX", "EX-EXMINT", "PSA 5", "PSA 5.5", "PSA 6", "PSA 7", "PSA 8", "PSA 9"], required: false}
       - {label: "Value", name: "value", widget: "number", required: false}
+      - {label: "Order", name: "order", widget: "number", default: 10}
   - name: "settings"
     label: "Settings"
     files:

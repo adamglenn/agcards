@@ -17,7 +17,7 @@ heroData:
     <div class="row">
       {% assign sports = "baseball,basketball,football" | split: "," %}
       {%- for sport in sports -%}
-        {%- for card in collections.card -%}
+        {%- for card in collections.orderedCards -%}
           {% assign cardSport = card.data.sport | downcase %}
           {%- capture url -%}
             {{ site.url }}/_cards/{{ card.data.title | replace: ' ', '-' | replace: '#', '' | downcase }}

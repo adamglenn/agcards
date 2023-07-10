@@ -9,6 +9,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin/config.yml");
   eleventyConfig.addPassthroughCopy("javascripts");
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
@@ -52,8 +54,11 @@ module.exports = function(eleventyConfig) {
 		return `style="background-image:url('${data.url}');`;
 	});
 
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addCollection("orderedCards", function(collectionApi) {
+    return collectionApi.getAll().sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
 
   return {
     htmlTemplateEngine: "liquid"
