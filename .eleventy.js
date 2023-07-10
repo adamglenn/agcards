@@ -54,11 +54,29 @@ module.exports = function(eleventyConfig) {
 		return `style="background-image:url('${data.url}');`;
 	});
 
-  eleventyConfig.addCollection("orderedCards", function(collectionApi) {
-    return collectionApi.getAll().sort(function(a, b) {
-      return a.data.order - b.data.order;
-    });
-  });
+  eleventyConfig.addCollection('orderedCards', function(collectionApi) {
+    return collectionApi
+      .getFilteredByGlob('_cards/**/*.md')
+      .sort((a, b) => a.data.year - b.data.year)
+      .sort((a, b) => a.data.brand - b.data.brand)
+      .sort((a, b) => a.data.lastName - b.data.lastName)
+  })
+
+  // function sortByYear(values) {
+  //   return values.slice().sort((a, b) => a.data.year.localeCompare(b.data.year))
+  // }
+
+  // function sortByBrand(values) {
+  //   return values.slice().sort((a, b) => a.data.brand.localeCompare(b.data.brand))
+  // }
+
+  // function sortByName(values) {
+  //   return values.slice().sort((a, b) => a.data.brand.localeCompare(b.data.lastName))
+  // }
+
+  // eleventyConfig.addFilter('sortByYear', sortByYear)
+  // eleventyConfig.addFilter('sortByBrand', sortByBrand)
+  // eleventyConfig.addFilter('sortByBrand', sortByName)
 
   return {
     htmlTemplateEngine: "liquid"
