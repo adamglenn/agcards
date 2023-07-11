@@ -11,9 +11,9 @@
     <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <style>
-      .btn2:hover {
-          background-color: #ffffff !important;
-          /*Hover effect is added to btn2 class*/
+      .btn-outline-dark:hover {
+        background-color: #ffffff !important;
+        color: #000000 !important;
       }
     </style>
   </head>
@@ -176,20 +176,6 @@
       myModal.addEventListener('shown.bs.modal', function () {
         myInput.focus()
       })
-
-      function hover() {
-        function is_touch_enabled() {      
-          // Check if touch is enabled
-          return "ontouchstart"
-            in window || navigator.maxTouchPoints > 0
-            || navigator.msMaxTouchPoints > 0;
-        }
-        if (!is_touch_enabled()) {      
-          // If touch is not enabled, add "btn2" class
-          var b = document.getElementsByClassName("btn");
-          b.classList.add("btn2");
-      }
-      }
     </script>
   </body>
 </html>
