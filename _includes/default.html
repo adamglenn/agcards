@@ -15,8 +15,6 @@ title: My Rad Blog
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-
-    {% include nav-001 %}
     
     {{ content | safe }}
 
@@ -148,6 +146,13 @@ title: My Rad Blog
         var comboFilter = combo.join(', ');
         return comboFilter;
       }
+
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
     </script>
   </body>
 </html>

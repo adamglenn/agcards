@@ -11,28 +11,45 @@ heroData:
 
 {% endfor %}
 
+<nav class="sticky-top">
+  <a type="button" class="d-block text-center text-decoration-none sticky-top bg-white text-dark py-2 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filter Cards</a>
+</nav>
+
 <main class="py-5 bg-light">
   <div class="container">
-    <h1>Cards</h1>
 
-    <div id="options">
-      <div class="option-set d-inline" data-group="sport">
-        <button class="btn btn-outline-primary mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</button>
+    <h1 class="text-center">AG’s Cards</h1>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="options">
+              <div class="option-set d-inline" data-group="sport">
+                <button class="btn btn-outline-primary mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</button>
+              </div>
+              <div class="option-set d-inline" data-group="era">
+                <button class="btn btn-outline-primary mb-1" data-filter=".modern">Modern</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".vintage">Vintage</button>
+              </div>
+              <div class="option-set d-inline" data-group="player">
+                <button class="btn btn-outline-primary mb-1" data-filter=".jordan">Michael Jordan</button>
+              </div>
+              <div class="option-set d-inline" data-group="holder">
+                <button class="btn btn-outline-primary mb-1" data-filter=".raw">Raw</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".slabbed">Slabbed</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="option-set d-inline" data-group="era">
-        <button class="btn btn-outline-primary mb-1" data-filter=".modern">Modern</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".vintage">Vintage</button>
-      </div>
-      <div class="option-set d-inline" data-group="player">
-        <button class="btn btn-outline-primary mb-1" data-filter=".jordan">Michael Jordan</button>
-      </div>
-      <div class="option-set d-inline" data-group="holder">
-        <button class="btn btn-outline-primary mb-1" data-filter=".raw">Raw</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".slabbed">Slabbed</button>
-      </div>
-    </div>
+    </div>    
     
     <div class="row grid mt-4">
       {% assign sports = "baseball,basketball,football" | split: "," %}

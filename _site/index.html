@@ -12,125 +12,143 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
+    
+    
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-yellow">
-  <div class="container">
-    <a class="navbar-brand helvetica-neue-bold" href="#">AG’s Cards</a>
-    <button class="btn btn-outline-dark"><span class="fa-solid fa-sliders"></span> Filter Cards</button>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="sticky-top">
+  <a type="button" class="d-block text-center text-decoration-none sticky-top bg-white text-dark py-2 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filter Cards</a>
 </nav>
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <main class="py-5 bg-light">
   <div class="container">
-    <h1>Cards</h1>
 
-    <div id="options">
-      <div class="option-set d-inline" data-group="sport">
-        <button class="btn btn-outline-primary mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</button>
+    <h1 class="text-center">AG’s Cards</h1>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="options">
+              <div class="option-set d-inline" data-group="sport">
+                <button class="btn btn-outline-primary mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</button>
+              </div>
+              <div class="option-set d-inline" data-group="era">
+                <button class="btn btn-outline-primary mb-1" data-filter=".modern">Modern</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".vintage">Vintage</button>
+              </div>
+              <div class="option-set d-inline" data-group="player">
+                <button class="btn btn-outline-primary mb-1" data-filter=".jordan">Michael Jordan</button>
+              </div>
+              <div class="option-set d-inline" data-group="holder">
+                <button class="btn btn-outline-primary mb-1" data-filter=".raw">Raw</button>
+                <button class="btn btn-outline-primary mb-1" data-filter=".slabbed">Slabbed</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="option-set d-inline" data-group="era">
-        <button class="btn btn-outline-primary mb-1" data-filter=".modern">Modern</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".vintage">Vintage</button>
-      </div>
-      <div class="option-set d-inline" data-group="player">
-        <button class="btn btn-outline-primary mb-1" data-filter=".jordan">Michael Jordan</button>
-      </div>
-      <div class="option-set d-inline" data-group="holder">
-        <button class="btn btn-outline-primary mb-1" data-filter=".raw">Raw</button>
-        <button class="btn btn-outline-primary mb-1" data-filter=".slabbed">Slabbed</button>
-      </div>
-    </div>
+    </div>    
     
     <div class="row grid mt-4">
       
@@ -984,12 +1002,92 @@
             football clearfix">
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                 <div class="position-relative d-flex justify-content-end">
-                  <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$150</span>
+                  <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$170</span>
                   <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1960-topps-jim-brown-5.webp" alt="1960 Topps Jim Brown #23">
                 </div>
                 <div class="">
                   <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-football"></span> 1960 Topps</span><br>Jim Brown</h2>
                   <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 5</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              slabbed
+            
+            
+              vintage
+            
+            football clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex justify-content-end">
+                  <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$322</span>
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1962-topps-jim-brown-5.webp" alt="1962 Topps Jim Brown #28">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-football"></span> 1962 Topps</span><br>Jim Brown</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 5</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              slabbed
+            
+            
+              vintage
+            
+            football clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex justify-content-end">
+                  <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$105</span>
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1967-topps-joe-namath-5.webp" alt="1967 Topps Joe Namath #98">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-football"></span> 1967 Topps</span><br>Joe Namath</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 5</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              slabbed
+            
+            
+              modern
+            
+            football clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex justify-content-end">
+                  <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$175</span>
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1981-topps-joe-montana-7.webp" alt="1981 Topps Joe Montana #216 PSA 7">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-football"></span> 1981 Topps</span><br>Joe Montana</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 7</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              slabbed
+            
+            
+              modern
+            
+            football clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex justify-content-end">
+                  <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$35</span>
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1982-topps-joe-montana-8.webp" alt="1982 Topps Joe Montana #488">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-football"></span> 1982 Topps</span><br>Joe Montana</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 8</span></p>
                 </div>
               </div>
             </div>
@@ -1125,6 +1223,13 @@
         var comboFilter = combo.join(', ');
         return comboFilter;
       }
+
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
     </script>
   </body>
 </html>

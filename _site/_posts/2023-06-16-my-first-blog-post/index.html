@@ -12,13 +12,6 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-yellow">
-  <div class="container">
-    <a class="navbar-brand helvetica-neue-bold" href="#">AG’s Cards</a>
-    <button class="btn btn-outline-dark"><span class="fa-solid fa-sliders"></span> Filter Cards</button>
-  </div>
-</nav>
     
     <p>Test blog post.</p>
 
@@ -151,6 +144,13 @@
         var comboFilter = combo.join(', ');
         return comboFilter;
       }
+
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
     </script>
   </body>
 </html>
