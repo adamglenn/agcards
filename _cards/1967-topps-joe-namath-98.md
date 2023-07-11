@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1967 Topps Joe Namath #98"
+title: "1967 Topps Joe Namath #98 PSA 5"
 image: /images/uploads/1967-topps-joe-namath-5.webp
 sport: Football
 year: "1967"
