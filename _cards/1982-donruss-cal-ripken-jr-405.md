@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1982 Donruss Cal Ripken Jr. #405"
+title: "1982 Donruss Cal Ripken Jr. #405 PSA 8"
 image: /images/uploads/1982-donruss-cal-ripken-8.webp
 sport: Baseball
 year: "1982"
