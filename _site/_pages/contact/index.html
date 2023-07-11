@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      .btn2:hover {
+          background-color: #ffffff !important;
+          /*Hover effect is added to btn2 class*/
+      }
+    </style>
   </head>
   <body>
     
@@ -180,7 +186,7 @@
         }
         if (!is_touch_enabled()) {      
           // If touch is not enabled, add "btn2" class
-          var b = document.getElementById("btn");
+          var b = document.getElementsByClassName("btn");
           b.classList.add("btn2");
       }
       }
