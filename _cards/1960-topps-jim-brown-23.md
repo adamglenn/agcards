@@ -11,6 +11,6 @@ lastName: Brown
 number: "23"
 isRookie: false
 condition: PSA 5
-value: 150
+value: 170
 order: 10
 ---
