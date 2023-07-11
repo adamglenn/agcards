@@ -126,18 +126,23 @@
 
 
 
+
+
+
+
+<header class="py-3 border border-bottom border-light">
+  <div class="text-center">
+    <img src="/assets/img/logo.svg" alt="AG’s Cards logo" style="max-width: 250px;">
+  </div>
+  <h1 class="text-center sr-only">AG’s Cards</h1>
+</header>
+
 <nav class="sticky-top">
-  <a type="button" class="d-block text-center text-decoration-none sticky-top bg-white text-dark py-2 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filter Cards</a>
+  <a type="button" class="d-block text-center text-decoration-none sticky-top bg-white text-dark py-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filter Cards</a>
 </nav>
 
-<main class="pt-4 pb-5 bg-light">
+<main class="bg-light">
   <div class="container">
-
-    <div class="text-center">
-      <img src="/assets/img/logo.svg" alt="AG’s Cards logo" style="max-width: 250px;">
-    </div>
-    <h1 class="text-center sr-only">AG’s Cards</h1>
-    
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -148,20 +153,20 @@
           <div class="modal-body">
             <div id="options">
               <div class="option-set d-inline" data-group="sport">
-                <button class="btn btn-outline-dark mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</button>
-                <button class="btn btn-outline-dark mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</button>
-                <button class="btn btn-outline-dark mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</button>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</a>
+                <button class="btn btn-outline-dark mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</a>
               </div>
               <div class="option-set d-inline" data-group="era">
-                <button class="btn btn-outline-dark mb-1" data-filter=".modern">Modern</button>
-                <button class="btn btn-outline-dark mb-1" data-filter=".vintage">Vintage</button>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern">Modern</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".vintage">Vintage</a>
               </div>
               <div class="option-set d-inline" data-group="player">
-                <button class="btn btn-outline-dark mb-1" data-filter=".jordan">Michael Jordan</button>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".jordan">Michael Jordan</a>
               </div>
               <div class="option-set d-inline" data-group="holder">
-                <button class="btn btn-outline-dark mb-1" data-filter=".raw">Raw</button>
-                <button class="btn btn-outline-dark mb-1" data-filter=".slabbed">Slabbed</button>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".raw">Raw</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed">Slabbed</a>
               </div>
             </div>
           </div>
@@ -169,7 +174,7 @@
       </div>
     </div>
     
-    <div class="row grid mt-4" id="card-container">
+    <div class="row grid py-5" id="card-container">
       
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1001,6 +1006,46 @@
             basketball clearfix">
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                 <div class="position-relative d-flex justify-content-end">
+                  <!-- <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$64</span> -->
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1972-topps-jerry-west-65.webp" alt="1972 Topps Jerry West #75 PSA 6.5">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1972 Topps</span><br>Jerry West</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 6.5</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              slabbed
+            
+            
+              vintage
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex justify-content-end">
+                  <!-- <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$38</span> -->
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1974-topps-kareem-abdul-jabbar-6.webp" alt="1974 Topps Kareem Abdul-Jabbar #1 PSA 6">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1974 Topps</span><br>Kareem Abdul-Jabbar</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">PSA 6</span></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              slabbed
+            
+            
+              vintage
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex justify-content-end">
                   <!-- <span class="badge bg-danger position-absolute fs-5 shadow float-right mt-n2 me-1 align-self-end">$27</span> -->
                   <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1978-topps-kareem-abdul-jabbar-7.webp" alt="1978 Topps Kareem Abdul-Jabbar #110 PSA 7">
                 </div>
@@ -1289,7 +1334,7 @@
         transitionDuration: 0
       });
 
-      $('#options').on( 'click', 'button', function( event ) {
+      $('#options').on( 'click', '.btn', function( event ) {
         // var checkbox = event.target;
         var $target = $( event.currentTarget );
         $target.toggleClass('is-checked btn-outline-dark btn-primary');
