@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1980 Topps Rickey Henderson #482"
+title: "1980 Topps Rickey Henderson #482 PSA 8"
 image: /images/uploads/1980-topps-rickey-henderson-8.webp
 sport: Baseball
 year: "1980"
