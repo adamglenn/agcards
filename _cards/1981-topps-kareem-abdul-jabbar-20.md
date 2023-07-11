@@ -1,0 +1,16 @@
+---
+layout: card
+tags: card
+title: "1981 Topps Kareem Abdul-Jabbar #20"
+image: /images/uploads/1981-topps-kareem-abdul-jabbar-7.webp
+sport: Basketball
+year: "1981"
+brand: Topps
+player: Kareem Abdul-Jabbar
+lastName: Adbul-Jabbar
+number: "20"
+isRookie: false
+condition: PSA 7
+value: 13
+order: 10
+---
