@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1964 Topps Hank Aaron #300"
+title: "1964 Topps Hank Aaron #300 PSA 5"
 image: /images/uploads/1964-topps-hank-aaron-8.webp
 sport: Baseball
 year: "1964"
