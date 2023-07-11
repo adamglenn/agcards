@@ -1,0 +1,16 @@
+---
+layout: card
+tags: card
+title: "1960 Topps Jim Brown #23"
+image: /images/uploads/1960-topps-jim-brown-5.webp
+sport: Football
+year: "1960"
+brand: Topps
+player: Jim Brown
+lastName: Brown
+number: "23"
+isRookie: false
+condition: PSA 5
+value: 150
+order: 10
+---
