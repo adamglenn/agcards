@@ -9,7 +9,7 @@ brand: Topps
 player: Jim Brown
 lastName: Brown
 number: "28"
-isRookie: true
+isRookie: false
 condition: PSA 5
 value: 322
 order: 10
