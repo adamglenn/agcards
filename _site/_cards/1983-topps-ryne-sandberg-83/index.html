@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- <style>
+      .btn.is-checked:hover {
+        background-color: inherit !important;
+        color: inherit !important;
+      }
+    </style> -->
   </head>
   <body>
     
@@ -103,7 +109,7 @@
       $('#options').on( 'click', 'button', function( event ) {
         // var checkbox = event.target;
         var $target = $( event.currentTarget );
-        $target.toggleClass('is-checked btn-outline-primary btn-primary');
+        $target.toggleClass('is-checked btn-outline-dark btn-primary');
         var isChecked = $target.hasClass('is-checked');
 
         var group = $target.parents('.option-set').attr('data-group');
