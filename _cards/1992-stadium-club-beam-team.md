@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: 1992 Stadium Club Beam Team
+title: "1992 Stadium Club Beam Team Shaquille O’Neal #21 PSA 7"
 image: /images/uploads/1992-stadium-club-beam-team-shaquille-o-neal-7.webp
 sport: Basketball
 year: "1992"
