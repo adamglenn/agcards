@@ -10,6 +10,7 @@ player: Michael Jordan
 lastName: Jordan
 number: "57"
 isRookie: true
+condition: PSA 3
 value: 2900
 order: 10
 ---
