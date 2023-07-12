@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1989 Upper Deck Ken Griffey Jr. #1"
+title: "1989 Upper Deck Ken Griffey Jr. #1 PSA 8"
 image: /images/uploads/1989-upper-deck-ken-griffey-jr.webp
 sport: Baseball
 year: "1989"
