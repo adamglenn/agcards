@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1981 Topps Larry Bird #4"
+title: "1981 Topps Larry Bird #4 PSA 7"
 image: /images/uploads/1981-topps-larry-bird-7.webp
 sport: Basketball
 year: "1981"
