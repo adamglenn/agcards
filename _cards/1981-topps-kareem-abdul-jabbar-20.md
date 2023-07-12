@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1981 Topps Kareem Abdul-Jabbar #20"
+title: "1981 Topps Kareem Abdul-Jabbar #20 PSA 7"
 image: /images/uploads/1981-topps-kareem-abdul-jabbar-7.webp
 sport: Basketball
 year: "1981"
