@@ -39,8 +39,8 @@ heroData:
                 <button class="btn btn-outline-dark mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</a>
               </div>
               <div class="option-set d-inline" data-group="era">
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern">Modern</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".vintage">Vintage</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern"><span class="fa-solid fa-forward-fast"></span> Modern</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".vintage"><span class="fa-solid fa-backward-fast"></span> Vintage</a>
               </div>
               <div class="option-set d-inline" data-group="player">
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".jordan">Michael Jordan</a>
@@ -90,7 +90,7 @@ heroData:
                 </div>
                 <div class="">
                   <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}</span><br>{{ card.data.player }}</h2>
-                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span>{% endif %}</p>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span>{% endif %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> ${{ card.data.value }}</span></p>
                 </div>
               </div>
             </div>
