@@ -10,7 +10,7 @@ player: Roberto Clemente
 lastName: Clemente
 number: "150"
 isRookie: false
-condition: LOW GRADE
+condition: VG-VGEX
 value: 55
 order: 10
 ---
