@@ -1,0 +1,16 @@
+---
+layout: card
+tags: card
+title: "1963 Topps Roberto Clemente #540"
+image: /images/uploads/1963-topps-roberto-clemente.webp
+sport: Baseball
+year: "1963"
+brand: Topps
+player: Roberto Clemente
+lastName: Clemente
+number: "540"
+isRookie: false
+condition: VG-VGEX
+value: 175
+order: 10
+---
