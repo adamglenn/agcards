@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1963 Topps Hank Aaron #390"
+image: /images/uploads/1963-topps-hank-aaron.webp
 sport: Baseball
 year: "1963"
 brand: Topps
