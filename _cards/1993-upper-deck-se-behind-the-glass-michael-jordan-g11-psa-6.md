@@ -10,6 +10,7 @@ player: Michael Jordan
 lastName: Jordan
 number: G11
 isRookie: false
+condition: PSA 6
 value: 17
 order: 10
 ---
