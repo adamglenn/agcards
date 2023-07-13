@@ -10,7 +10,7 @@ player: Roberto Clemete
 lastName: Clemente
 number: "160"
 isRookie: false
-condition: VG-VGEX
+condition: LOW GRADE
 value: 39
 order: 10
 ---
