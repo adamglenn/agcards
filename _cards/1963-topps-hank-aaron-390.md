@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1963 Topps Hank Aaron #390"
 sport: Baseball
-year: "1953"
+year: "1963"
 brand: Topps
 player: Hank Aaron
 lastName: Aaron
