@@ -10,7 +10,7 @@ player: Willie Mays
 lastName: Mays
 number: "250"
 isRookie: false
-condition: LOW GRADE
+condition: VG-VGEX
 value: 134
 order: 10
 ---
