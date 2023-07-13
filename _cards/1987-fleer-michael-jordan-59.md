@@ -10,6 +10,7 @@ player: Michael Jordan
 lastName: Jordan
 number: "59"
 isRookie: false
+condition: PSA 9 (OC)
 value: 355
 order: 10
 ---
