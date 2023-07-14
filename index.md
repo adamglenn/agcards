@@ -1,7 +1,7 @@
 ---
 layout: frontpage.html
 tags: post
-title: My Rad Markdown Blog
+title: AG’s Cards
 ---
 
 ## {{ title }}
