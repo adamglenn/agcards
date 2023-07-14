@@ -11,6 +11,6 @@ lastName: Munson
 number: "5"
 isRookie: false
 condition: VG-VGEX
-value: 25
+value: 24
 order: 10
 ---
