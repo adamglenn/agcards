@@ -10,7 +10,7 @@ player: Reggie Jackson
 lastName: Jackson
 number: "140"
 isRookie: false
-condition: VG-VGEX
-value: 25
+condition: LOW GRADE
+value: 15
 order: 10
 ---
