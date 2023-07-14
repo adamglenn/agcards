@@ -10,7 +10,7 @@ player: Nolan Ryan
 lastName: Ryan
 number: "220"
 isRookie: false
-condition: VG-VGEX
+condition: EX-EXMINT
 value: 17
 order: 10
 ---
