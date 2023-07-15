@@ -10,7 +10,7 @@ player: Johnny Unitas
 lastName: Unitas
 number: "25"
 isRookie: false
-condition: EX-EXMINT
+condition: NR-MINT
 value: 32
 order: 10
 ---
