@@ -10,6 +10,7 @@ player: Gale Sayers
 lastName: Sayers
 number: "51"
 isRookie: false
+condition: NR-MINT
 value: 83
 order: 10
 ---
