@@ -10,7 +10,7 @@ player: Joe Namath
 lastName: Namath
 number: "250"
 isRookie: false
-condition: VG-VGEX
-value: 13
+condition: EX-EXMINT
+value: 20
 order: 10
 ---
