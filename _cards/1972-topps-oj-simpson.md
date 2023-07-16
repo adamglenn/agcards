@@ -10,7 +10,7 @@ player: OJ Simpson
 lastName: Simpson
 number: "160"
 isRookie: false
-condition: VG-VGEX
-value: 8
+condition: EX-EXMINT
+value: 14
 order: 10
 ---
