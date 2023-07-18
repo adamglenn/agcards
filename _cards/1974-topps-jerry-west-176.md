@@ -10,7 +10,7 @@ player: Jerry West
 lastName: West
 number: "176"
 isRookie: false
-condition: EX-EXMINT
+condition: NR-MINT
 value: 11
 order: 10
 ---
