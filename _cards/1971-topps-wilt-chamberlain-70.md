@@ -1,0 +1,15 @@
+---
+layout: card
+tags: card
+title: "1971 Topps Wilt Chamberlain #70"
+image: /images/uploads/1971-topps-wilt-chamberlain.webp
+sport: Basketball
+year: "1971"
+brand: Topps
+player: Wilt Chamberlain
+lastName: Chamberlain
+number: "70"
+isRookie: false
+value: 36
+order: 10
+---
