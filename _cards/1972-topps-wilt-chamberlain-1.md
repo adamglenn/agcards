@@ -10,7 +10,7 @@ player: Wilt Chamberlain
 lastName: Chamberlain
 number: "1"
 isRookie: false
-condition: LOW GRADE
+condition: VG-VGEX
 value: 27
 order: 10
 ---
