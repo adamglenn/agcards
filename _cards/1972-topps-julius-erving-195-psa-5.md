@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-julius-erving-5.webp
 sport: Basketball
 year: "1972"
 brand: Topps
+subset: ""
 player: Julius Erving
 lastName: Erving
 number: "195"

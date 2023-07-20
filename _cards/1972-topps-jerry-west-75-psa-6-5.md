@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-jerry-west-65.webp
 sport: Basketball
 year: "1972"
 brand: Topps
+subset: ""
 player: Jerry West
 lastName: West
 number: "75"

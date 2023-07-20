@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-kareem-abdul-jabbar-6.webp
 sport: Basketball
 year: "1972"
 brand: Topps
+subset: ""
 player: Kareem Abdul-Jabbar
 lastName: Abdul-Jabbar
 number: "100"

@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-wilt-chamberlain.webp
 sport: Basketball
 year: "1972"
 brand: Topps
+subset: ""
 player: Wilt Chamberlain
 lastName: Chamberlain
 number: "1"

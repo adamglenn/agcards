@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-pete-maravich.webp
 sport: Basketball
 year: "1972"
 brand: Topps
+subset: ""
 player: Pete Maravich
 lastName: Maravich
 number: "5"
