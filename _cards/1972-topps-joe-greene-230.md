@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-joe-greene.webp
 sport: Football
 year: "1972"
 brand: Topps
+subset: ""
 player: Joe Greene
 lastName: Greene
 number: "230"

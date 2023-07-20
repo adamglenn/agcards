@@ -6,6 +6,7 @@ image: /images/uploads/1968-topps-johnny-unitas.webp
 sport: Football
 year: "1968"
 brand: Topps
+subset: ""
 player: Johnny Unitas
 lastName: Unitas
 number: "100"

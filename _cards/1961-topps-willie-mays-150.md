@@ -6,6 +6,7 @@ image: /images/uploads/1961-topps-willie-mays.webp
 sport: Baseball
 year: "1961"
 brand: Topps
+subset: ""
 player: Willie Mays
 lastName: Mays
 number: "150"

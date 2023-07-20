@@ -6,6 +6,7 @@ image: /images/uploads/1971-topps-wilt-chamberlain.webp
 sport: Basketball
 year: "1971"
 brand: Topps
+subset: ""
 player: Wilt Chamberlain
 lastName: Chamberlain
 number: "70"

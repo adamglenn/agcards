@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-roger-staubach.webp
 sport: Football
 year: "1972"
 brand: Topps
+subset: ""
 player: Roger Staubach
 lastName: Staubach
 number: "200"

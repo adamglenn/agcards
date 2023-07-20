@@ -6,6 +6,7 @@ image: /images/uploads/1969-topps-joe-namath.webp
 sport: Football
 year: "1969"
 brand: Topps
+subset: ""
 player: Joe Namath
 lastName: Namath
 number: "100"

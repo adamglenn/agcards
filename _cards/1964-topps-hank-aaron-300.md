@@ -6,6 +6,7 @@ image: /images/uploads/1964-topps-hank-aaron-8.webp
 sport: Baseball
 year: "1964"
 brand: Topps
+subset: ""
 player: Hank Aaron
 lastName: Aaron
 number: "300"

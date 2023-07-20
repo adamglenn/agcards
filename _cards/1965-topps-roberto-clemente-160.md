@@ -6,6 +6,7 @@ image: /images/uploads/1965-topps-roberto-clemente.webp
 sport: Baseball
 year: "1965"
 brand: Topps
+subset: ""
 player: Roberto Clemete
 lastName: Clemente
 number: "160"

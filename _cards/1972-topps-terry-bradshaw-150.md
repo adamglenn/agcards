@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-terry-bradshaw.webp
 sport: Football
 year: "1972"
 brand: Topps
+subset: ""
 player: Terry Bradshaw
 lastName: Bradshaw
 number: "150"

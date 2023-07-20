@@ -6,6 +6,7 @@ image: /images/uploads/1959-topps-roberto-clemente.webp
 sport: Baseball
 year: "1959"
 brand: Topps
+subset: ""
 player: Roberto Clemente
 lastName: Clemente
 number: "478"

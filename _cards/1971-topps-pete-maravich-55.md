@@ -6,6 +6,7 @@ image: /images/uploads/1971-topps-pete-maravich.webp
 sport: Basketball
 year: "1971"
 brand: Topps
+subset: ""
 player: Pete Maravich
 lastName: Maravich
 number: "55"

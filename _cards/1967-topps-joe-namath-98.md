@@ -6,6 +6,7 @@ image: /images/uploads/1967-topps-joe-namath-5.webp
 sport: Football
 year: "1967"
 brand: Topps
+subset: ""
 player: Joe Namath
 lastName: Namath
 number: "98"

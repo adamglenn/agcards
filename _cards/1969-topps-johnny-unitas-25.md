@@ -6,6 +6,7 @@ image: /images/uploads/1969-topps-johnny-unitas.webp
 sport: Football
 year: "1969"
 brand: Topps
+subset: ""
 player: Johnny Unitas
 lastName: Unitas
 number: "25"

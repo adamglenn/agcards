@@ -6,6 +6,7 @@ image: /images/uploads/1971-topps-oj-simpson.webp
 sport: Football
 year: "1971"
 brand: Topps
+subset: ""
 player: OJ Simpson
 lastName: Simpson
 number: "260"

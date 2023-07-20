@@ -6,6 +6,7 @@ image: /images/uploads/1971-topps-thurman-munson.webp
 sport: Baseball
 year: "1971"
 brand: Topps
+subset: ""
 player: Thurman Munson
 lastName: Munson
 number: "5"

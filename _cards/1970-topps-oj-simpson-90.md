@@ -6,6 +6,7 @@ image: /images/uploads/1970-topps-oj-simpson.webp
 sport: Football
 year: "1970"
 brand: Topps
+subset: ""
 player: OJ Simpson
 lastName: Simpson
 number: "90"

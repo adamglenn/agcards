@@ -6,6 +6,7 @@ image: /images/uploads/1961-topps-hank-aaron.webp
 sport: Baseball
 year: "1961"
 brand: Topps
+subset: ""
 player: Hank Aaron
 lastName: Aaron
 number: "415"

@@ -6,6 +6,7 @@ image: /images/uploads/1970-topps-johnny-unitas.webp
 sport: Football
 year: "1970"
 brand: Topps
+subset: ""
 player: Johnny Unitas
 lastName: Unitas
 number: "180"

@@ -6,6 +6,7 @@ image: /images/uploads/1968-topps-roberto-clemente.webp
 sport: Baseball
 year: "1968"
 brand: Topps
+subset: ""
 player: Roberto Clemente
 lastName: Clemente
 number: "150"

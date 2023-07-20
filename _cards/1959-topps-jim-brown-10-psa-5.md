@@ -6,6 +6,7 @@ image: /images/uploads/1959-topps-jim-brown-5.webp
 sport: Football
 year: "1959"
 brand: Topps
+subset: ""
 player: Jim Brown
 lastName: Brown
 number: "10"

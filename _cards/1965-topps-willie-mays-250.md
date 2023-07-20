@@ -6,6 +6,7 @@ image: /images/uploads/1965-topps-willie-mays.webp
 sport: Baseball
 year: "1965"
 brand: Topps
+subset: ""
 player: Willie Mays
 lastName: Mays
 number: "250"

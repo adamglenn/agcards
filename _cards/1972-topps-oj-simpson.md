@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-oj-simpson.webp
 sport: Football
 year: "1972"
 brand: Topps
+subset: ""
 player: OJ Simpson
 lastName: Simpson
 number: "160"

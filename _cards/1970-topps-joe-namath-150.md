@@ -6,6 +6,7 @@ image: /images/uploads/1970-topps-joe-namath.webp
 sport: Football
 year: "1970"
 brand: Topps
+subset: ""
 player: Joe Namath
 lastName: Namath
 number: "150"

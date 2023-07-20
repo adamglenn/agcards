@@ -6,6 +6,7 @@ image: /images/uploads/1962-topps-jim-brown-5.webp
 sport: Football
 year: "1962"
 brand: Topps
+subset: ""
 player: Jim Brown
 lastName: Brown
 number: "28"

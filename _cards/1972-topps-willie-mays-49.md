@@ -6,6 +6,7 @@ image: /images/uploads/1972-topps-willie-mays.webp
 sport: Baseball
 year: "1972"
 brand: Topps
+subset: ""
 player: Willie Mays
 lastName: Mays
 number: "49"

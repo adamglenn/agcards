@@ -6,6 +6,7 @@ image: /images/uploads/1969-topps-gale-sayers.webp
 sport: Football
 year: "1969"
 brand: Topps
+subset: ""
 player: Gale Sayers
 lastName: Sayers
 number: "51"
