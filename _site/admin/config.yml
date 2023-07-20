@@ -48,7 +48,7 @@ collections:
       - {label: "Sport", name: "sport", widget: "select", options: ["Baseball", "Basketball", "Football"]}
       - {label: "Year", name: "year", widget: "string"}
       - {label: "Brand", name: "brand", widget: "string"}
-      - {label: "Subset", name: "subset", widget: "string", required: false}
+      - {label: "Subset", name: "subset", widget: "string", default: "", required: false}
       - {label: "Player", name: "player", widget: "string"}
       - {label: "Last Name", name: "lastName", widget: "string"}
       - {label: "Number", name: "number", widget: "string", required: false}
