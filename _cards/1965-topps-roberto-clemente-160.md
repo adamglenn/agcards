@@ -7,7 +7,7 @@ sport: Baseball
 year: "1965"
 brand: Topps
 subset: ""
-player: Roberto Clemete
+player: Roberto Clemente
 lastName: Clemente
 number: "160"
 isRookie: false
