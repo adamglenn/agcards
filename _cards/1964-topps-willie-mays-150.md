@@ -12,5 +12,6 @@ lastName: Mays
 number: "150"
 isRookie: false
 condition: VG-VGEX
+value: 70
 order: 10
 ---
