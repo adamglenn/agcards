@@ -113,13 +113,20 @@ heroData:
                   {%- for card in collections.orderedWatchlist -%}
 
                     {% assign maxPrice = card.data.value | times: 1.15 %}
+                    {%- capture cardTitle -%}
+                      {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" %} {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != "" %} #{{ card.data.number }}{% endif %}
+                    {%- endcapture -%}
 
                     {%- capture searchLink -%}
-                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ card.data.title | replace: ' ', '+' | replace: '#', '%23' }}{% if card.data.condition contains 'PSA' %}+{{ card.data.condition | replace: ' ', '%26' }}{% else %}+-PSA{% endif %}+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' }}{% if card.data.condition contains 'PSA' %}+{{ card.data.condition | replace: ' ', '%26' }}{% else %}+-PSA{% endif %}+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
                     {%- endcapture -%}
                       
                     {%- capture gmLink -%}
-                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ card.data.title | replace: ' ', '+' | replace: '#', '%23' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                    {%- endcapture -%}
+
+                    {%- capture compsLink -%}
+                      {{ searchLink }}&rt=nc&LH_Sold=1&LH_Complete=1
                     {%- endcapture -%}
 
                     {% assign cardSport = card.data.sport | downcase %}
@@ -146,7 +153,7 @@ heroData:
                       <tr>
                         <td><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</td>
                         <td class="text-center">{{ card.data.condition }}</td>
-                        <td class="text-center">${{ card.data.value }}</td>
+                        <td class="text-center"><a href="{{ compsLink }}" class="text-decoration-none" target="_blank">${{ card.data.value }}</a></td>
                         <td class="text-center">
                           <div class="d-flex w-100 justify-content-center">
                             <a class="text-decoration-none me-1" target="_blank" href="{{ searchLink | strip }}"><span class="fa-brands fa-ebay"></span></a> <span class="text-light">|</span> <a class="text-decoration-none d-flex align-items-center py-0 ms-1" href="{{ gmLink | strip }}" target="_blank">GM</a>
