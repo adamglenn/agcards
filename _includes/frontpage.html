@@ -99,7 +99,7 @@ heroData:
           <div class="modal-body">
             {% assign sports = "baseball,basketball,football" | split: "," %}
 
-            <table class="table table-sm caption-top">
+            <table class="table table-sm caption-top small">
               <thead>
                 <tr>
                   <th scope="col">Card</th>
@@ -151,7 +151,7 @@ heroData:
                     {% if cardSport == sport %}
                       
                       <tr>
-                        <td><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</td>
+                        <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ sport }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</div></td>
                         <td class="text-center">{{ card.data.condition }}</td>
                         <td class="text-center"><a href="{{ compsLink }}" class="text-decoration-none" target="_blank">${{ card.data.value }}</a></td>
                         <td class="text-center">
