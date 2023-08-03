@@ -25,401 +25,218 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="py-3 border border-bottom border-light">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <header class="py-3 border border-bottom border-light">
   <div class="text-center">
     <img src="/assets/img/logo.svg" alt="AG’s Cards logo" style="max-width: 250px;">
   </div>
@@ -428,8 +245,11 @@
 
 <div id="card-container"></div>
 
-<nav class="sticky-top">
-  <a type="button" class="d-block text-center text-decoration-none sticky-top bg-white text-dark py-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filter Cards</a>
+<nav class="sticky-top d-flex justify-content-center shadow-sm bg-white">
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filters</a>
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#statsModal"><span class="fa-solid fa-chart-line"></span> Stats</a>
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#watchlistModal"><span class="fa-regular fa-eye"></span> Watchlist</a>
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" href="#"><span class="fa-solid fa-arrow-up"></span> Top</a>
 </nav>
 
 <main class="bg-light">
@@ -465,6 +285,34 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statsModalLabel">Stats</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Number of Cards:</strong> 212</p>
+            <p><strong>Estimated Value:</strong> $19369</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="watchlistModalLabel">Watchlist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
     
     <div class="row grid pt-4 pb-5">
       
@@ -486,6 +334,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -505,6 +354,27 @@
                 </div>
               </div>
             </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              raw
+            
+            
+              vintage
+            
+            baseball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1958-topps-willie-mays.webp" alt="1958 Topps Willie Mays #5">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-baseball"></span> 1958 Topps</span><br>Willie Mays #5</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">VG-VGEX</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $204</span></p>
+                </div>
+              </div>
+            </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -524,6 +394,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -543,6 +414,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -554,7 +426,7 @@
             baseball clearfix">
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                 <div class="position-relative d-flex">
-                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1958-topps-willie-mays.webp" alt="1959 Topps Willie Mays #50">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1959-topps-willie-mays.webp" alt="1959 Topps Willie Mays #50">
                 </div>
                 <div class="">
                   <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-baseball"></span> 1959 Topps</span><br>Willie Mays #50</h2>
@@ -562,6 +434,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -581,6 +454,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -600,6 +474,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -619,6 +494,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -638,6 +514,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -657,6 +534,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -676,6 +554,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -695,6 +574,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -714,6 +594,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -733,6 +614,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -752,6 +634,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -771,6 +654,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -790,6 +674,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -809,6 +694,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -828,6 +714,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -847,6 +734,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -866,6 +754,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -885,6 +774,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -904,6 +794,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -923,6 +814,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -942,6 +834,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -961,6 +854,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -980,6 +874,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -999,6 +894,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1018,6 +914,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1037,6 +934,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1056,6 +954,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1075,6 +974,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1094,6 +994,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1113,6 +1014,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1132,6 +1034,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1151,6 +1054,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1170,6 +1074,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1189,6 +1094,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1208,6 +1114,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1227,6 +1134,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1246,6 +1154,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1265,6 +1174,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1284,6 +1194,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1303,6 +1214,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1322,6 +1234,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1341,6 +1254,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1360,6 +1274,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1379,6 +1294,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1398,6 +1314,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1417,6 +1334,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1436,6 +1354,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1455,6 +1374,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1474,6 +1394,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1493,6 +1414,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1512,6 +1434,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1531,6 +1454,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1550,6 +1474,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1569,6 +1494,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1588,6 +1514,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1607,6 +1534,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1626,6 +1554,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1645,6 +1574,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1664,6 +1594,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1683,6 +1614,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1702,6 +1634,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1721,6 +1654,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1740,6 +1674,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1759,6 +1694,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1778,6 +1714,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1797,6 +1734,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1816,6 +1754,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1835,6 +1774,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1854,6 +1794,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1873,6 +1814,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1892,6 +1834,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1911,6 +1854,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1930,6 +1874,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1949,6 +1894,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1968,6 +1914,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -1987,6 +1934,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2006,6 +1954,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2025,6 +1974,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2044,6 +1994,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2063,6 +2014,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2082,6 +2034,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2101,6 +2054,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2120,6 +2074,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2139,6 +2094,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2158,6 +2114,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2177,6 +2134,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2196,6 +2154,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2215,6 +2174,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2234,6 +2194,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2253,6 +2214,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2272,6 +2234,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2291,6 +2254,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2310,6 +2274,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2329,6 +2294,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2348,6 +2314,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2367,6 +2334,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2386,6 +2354,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2405,6 +2374,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2424,6 +2394,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2443,6 +2414,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2462,6 +2434,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2481,6 +2454,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2500,6 +2474,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2519,6 +2494,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2538,6 +2514,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2557,6 +2534,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2576,6 +2554,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2595,6 +2574,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2614,6 +2594,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2633,6 +2614,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2652,6 +2634,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2671,6 +2654,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2690,6 +2674,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2709,6 +2694,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2728,6 +2714,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2747,6 +2734,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -2768,6 +2756,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2787,6 +2776,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2806,6 +2796,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2825,6 +2816,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2844,6 +2836,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2863,6 +2856,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2882,6 +2876,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2901,6 +2896,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2920,6 +2916,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -2941,6 +2938,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2960,6 +2958,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2979,6 +2978,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -2998,6 +2998,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3017,6 +3018,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3038,6 +3040,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3059,6 +3062,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3080,6 +3084,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3101,6 +3106,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3122,6 +3128,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3143,6 +3150,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3164,6 +3172,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3185,6 +3194,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3204,6 +3214,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3225,6 +3236,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3246,6 +3258,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3267,6 +3280,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3288,6 +3302,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3309,6 +3324,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3330,6 +3346,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3351,6 +3368,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3372,6 +3390,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
               jordan
@@ -3393,6 +3412,313 @@
                 </div>
               </div>
             </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-metal-michael-jordan.webp" alt="1996 Metal Michael Jordan #11">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 Metal</span><br>Michael Jordan #11</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NR-MINT</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $11</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-sp-kobe-bryant.webp" alt="1996 SP Kobe Bryant #134">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 SP</span><br>Kobe Bryant #134</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NR-MINT</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $21</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-sp-michael-jordan.webp" alt="1996 SP Michael Jordan #16">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 SP</span><br>Michael Jordan #16</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NR-MINT</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $6</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-skybox-premium-michael-jordan.webp" alt="1996 Skybox Premium Michael Jordan #16">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 Skybox Premium</span><br>Michael Jordan #16</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $7</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-stadium-club-michael-jordan.webp" alt="1996 Stadium Club Michael Jordan #101">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 Stadium Club</span><br>Michael Jordan #101</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $4</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-ultra-michael-jordan.webp" alt="1996 Ultra Michael Jordan #16">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 Ultra</span><br>Michael Jordan #16</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NR-MINT</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $5</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1996-upper-deck-michael-jordan.webp" alt="1996 Upper Deck Michael Jordan #16">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1996 Upper Deck</span><br>Michael Jordan #16</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $5</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-bowman-s-best-michael-jordan.webp" alt="1997 Bowman’s Best Michael Jordan #60">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 Bowman’s Best</span><br>Michael Jordan #60</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $5</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-finest-michael-jordan.webp" alt="1997 Finest Michael Jordan #39">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 Finest</span><br>Michael Jordan #39</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $18</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-metal-championship-universe-michael-jordan.webp" alt="1997 Metal Universe Championship Michael Jordan #23">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 Metal Universe Championship</span><br>Michael Jordan #23</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NR-MINT</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $19</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-sp-authentic-michael-jordan.webp" alt="1997 SP Authentic Michael Jordan #23">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 SP Authentic</span><br>Michael Jordan #23</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $7</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-skybox-premium-michael-jordan.webp" alt="1997 Skybox Premium Michael Jordan #29">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 Skybox Premium</span><br>Michael Jordan #29</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">EX-EXMINT</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $4</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-stadium-club-michael-jordan.webp" alt="1997 Stadium Club Michael Jordan #118">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 Stadium Club</span><br>Michael Jordan #118</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $9</span></p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
+              jordan
+            
+            
+              raw
+            
+            
+              modern
+            
+            basketball clearfix">
+              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                <div class="position-relative d-flex">
+                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="/images/uploads/1997-ultra-michael-jordan.webp" alt="1997 Ultra Michael Jordan #23">
+                </div>
+                <div class="">
+                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-basketball"></span> 1997 Ultra</span><br>Michael Jordan #23</h2>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">NM-MT +</span> <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $4</span></p>
+                </div>
+              </div>
+            </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3412,6 +3738,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3431,6 +3758,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3450,6 +3778,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3469,6 +3798,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3488,6 +3818,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3507,6 +3838,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3526,6 +3858,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3545,6 +3878,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3564,6 +3898,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3583,6 +3918,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3602,6 +3938,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3621,6 +3958,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3640,6 +3978,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3659,6 +3998,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3678,6 +4018,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3697,6 +4038,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3716,6 +4058,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3735,6 +4078,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3754,6 +4098,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3773,6 +4118,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3792,6 +4138,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3811,6 +4158,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3830,6 +4178,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3849,6 +4198,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3868,6 +4218,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3887,6 +4238,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3906,6 +4258,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3925,6 +4278,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3944,6 +4298,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3963,6 +4318,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -3982,6 +4338,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4001,6 +4358,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4020,6 +4378,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4039,6 +4398,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4058,6 +4418,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4077,6 +4438,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4096,6 +4458,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4115,6 +4478,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4134,6 +4498,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4153,6 +4518,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4172,6 +4538,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4191,6 +4558,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4210,6 +4578,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4229,6 +4598,7 @@
                 </div>
               </div>
             </div>
+
           
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item 
             
@@ -4248,6 +4618,7 @@
                 </div>
               </div>
             </div>
+
           </div> 
   </div>
 </main>

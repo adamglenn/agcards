@@ -7,9 +7,12 @@ heroData:
     lede: "From simple repairs to complete rewiring projects, Rotruck Electric has the skills and expertise to solve all your electrical needs with safety and efficiency."
 ---
 
-{% for card in collections.card %}
-
-{% endfor %}
+{% assign cardCount = 0 %}
+{% assign valueTotal = 0 %}
+{%- for card in collections.orderedCards -%}
+  {% assign cardCount = cardCount | plus: 1 %}
+  {% assign valueTotal = valueTotal | plus: card.data.value %}
+{%- endfor -%}
 
 <header class="py-3 border border-bottom border-light">
   <div class="text-center">
@@ -20,8 +23,11 @@ heroData:
 
 <div id="card-container"></div>
 
-<nav class="sticky-top">
-  <a type="button" class="d-block text-center text-decoration-none sticky-top bg-white text-dark py-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filter Cards</a>
+<nav class="sticky-top d-flex justify-content-center shadow-sm bg-white">
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filters</a>
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#statsModal"><span class="fa-solid fa-chart-line"></span> Stats</a>
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#watchlistModal"><span class="fa-regular fa-eye"></span> Watchlist</a>
+  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" href="#"><span class="fa-solid fa-arrow-up"></span> Top</a>
 </nav>
 
 <main class="bg-light">
@@ -53,6 +59,34 @@ heroData:
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="statsModalLabel">Stats</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Number of Cards:</strong> {{ cardCount }}</p>
+            <p><strong>Estimated Value:</strong> ${{ valueTotal }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="watchlistModalLabel">Watchlist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
           </div>
         </div>
       </div>
@@ -96,6 +130,7 @@ heroData:
                 </div>
               </div>
             </div>
+
           {% endif %}
         {%- endfor -%}
       {%- endfor -%}
