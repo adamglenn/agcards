@@ -11,7 +11,7 @@ player: Michael Jordan
 lastName: Jordan
 number: "11"
 isRookie: false
-condition: NM-MT +
+condition: NR-MINT
 value: 11
 order: 10
 ---
