@@ -36,7 +36,7 @@ heroData:
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
+            <h2 class="modal-title" id="exampleModalLabel">Filters</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -68,7 +68,7 @@ heroData:
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="statsModalLabel">Stats</h5>
+            <h2 class="modal-title" id="statsModalLabel">Stats</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">            
@@ -93,7 +93,7 @@ heroData:
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="watchlistModalLabel">Watchlist</h5>
+            <h2 class="modal-title" id="watchlistModalLabel">Watchlist</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -110,7 +110,7 @@ heroData:
               </thead>
               <tbody>
                 {%- for sport in sports -%}
-                  {%- for card in collections.orderedWatchList -%}
+                  {%- for card in collections.orderedWatchlist -%}
                     {% assign cardSport = card.data.sport | downcase %}
                     
                     {%- capture classes -%}
@@ -134,8 +134,8 @@ heroData:
                       
                       <tr>
                         <td><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{ card.data.condition }}</td>
+                        <td>${{ card.data.value }}</td>
                         <td></td>
                       </tr>
                         
