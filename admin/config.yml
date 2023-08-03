@@ -56,6 +56,26 @@ collections:
       - {label: "Condition", name: "condition", widget: "select", options: ["Raw", "LOW GRADE", "LOW GRADE (CREASE)", "VG-VGEX", "EX-EXMINT", "NR-MINT", "NM-MT +", "PSA 3", "PSA 5", "PSA 5.5", "PSA 6", "PSA 6.5", "PSA 7", "PSA 8", "PSA 9", "PSA 9 (OC)"], required: false}
       - {label: "Value", name: "value", widget: "number", required: false}
       - {label: "Order", name: "order", widget: "number", default: 10}
+  - name: "watchlist"
+    label: "Watchlist"
+    folder: "_watchlist"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "card"}
+      - {label: "Tags", name: "tags", widget: "hidden", default: "card"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Sport", name: "sport", widget: "select", options: ["Baseball", "Basketball", "Football"]}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Brand", name: "brand", widget: "string"}
+      - {label: "Subset", name: "subset", widget: "string", default: "", required: false}
+      - {label: "Player", name: "player", widget: "string"}
+      - {label: "Last Name", name: "lastName", widget: "string"}
+      - {label: "Number", name: "number", widget: "string", required: false}
+      - {label: "Rookie Card", name: "isRookie", widget: "boolean", default: false}
+      - {label: "Condition", name: "condition", widget: "select", options: ["Raw", "LOW GRADE", "LOW GRADE (CREASE)", "VG-VGEX", "EX-EXMINT", "NR-MINT", "NM-MT +", "PSA 3", "PSA 5", "PSA 5.5", "PSA 6", "PSA 6.5", "PSA 7", "PSA 8", "PSA 9", "PSA 9 (OC)"], required: false}
+      - {label: "Value", name: "value", widget: "number", required: false}
   - name: "settings"
     label: "Settings"
     files:

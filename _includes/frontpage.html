@@ -71,22 +71,92 @@ heroData:
             <h5 class="modal-title" id="statsModalLabel">Stats</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body">            
             <p><strong>Number of Cards:</strong> {{ cardCount }}</p>
-            <p><strong>Estimated Value:</strong> ${{ valueTotal }}</p>
+            <p class="mb-0"><strong>Estimated Value:</strong> $
+              {%- assign digits = valueTotal | split:'' -%}
+              {%- for digit in digits -%}
+                {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
+                {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                  {{ digit | prepend: ',' }}
+                {%- else -%}
+                  {{ digit }}
+                {%- endif -%}
+              {%- endfor -%}
+            </p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="modal fade" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="watchlistModalLabel">Watchlist</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            {% assign sports = "baseball,basketball,football" | split: "," %}
+
+            <table class="table table-sm caption-top">
+              <thead>
+                <tr>
+                  <th scope="col">Card</th>
+                  <th scope="col">Condition</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Buy</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for sport in sports -%}
+                  {%- for card in collections.orderedWatchList -%}
+                    {% assign cardSport = card.data.sport | downcase %}
+                    
+                    {%- capture classes -%}
+                      {% if card.data.lastName == 'Jordan' %}
+                        jordan
+                      {% endif %}
+                      {% if card.data.condition contains 'PSA' %}
+                        slabbed
+                      {% else %}
+                        raw
+                      {% endif %}
+                      {% if card.data.year < 1980 %}
+                        vintage
+                      {% else %}
+                        modern
+                      {% endif %}
+                      {{ card.data.sport | downcase }}
+                    {%- endcapture -%}
+
+                    {% if cardSport == sport %}
+                      
+                      <tr>
+                        <td><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                        
+                      {% comment %}
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} clearfix">
+                        <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+                          <div class="position-relative d-flex">
+                            <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
+                          </div>
+                          <div class="">
+                            <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
+                            <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span>{% endif %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> ${{ card.data.value }}</span></p>
+                          </div>
+                        </div>
+                      </div>
+                      {% endcomment %}
+                    {% endif %}
+                  {%- endfor -%}
+                {%- endfor -%}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

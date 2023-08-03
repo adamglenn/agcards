@@ -75,6 +75,27 @@ module.exports = function(eleventyConfig) {
     })
   })
 
+  eleventyConfig.addCollection('orderedWatchlist', function(collectionApi) {
+    return collectionApi
+    .getFilteredByGlob('_watchlist/**/*.md')
+    // .sort((a, b) => a.data.lastName - b.data.lastName)
+    .sort((a, b) => {
+      if (a.data.year === b.data.year) {
+        if (a.data.brand === b.data.brand) {
+          if (a.data.subset === b.data.subset) {
+            return a.data.lastName < b.data.lastName ? -1 : 1
+          } else {
+            return a.data.subset < b.data.subset ? -1 : 1
+          }
+        } else {
+          return a.data.brand < b.data.brand ? -1 : 1
+        }
+      } else {
+        return a.data.year < b.data.year ? -1 : 1
+      }
+    })
+  })
+
   return {
     htmlTemplateEngine: "liquid"
   }
