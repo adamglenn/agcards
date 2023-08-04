@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1961 Topps Mickey Mantle #300 PSA 4"
 sport: Baseball
-year: "1960"
+year: "1961"
 brand: Topps
 subset: ""
 player: Mickey Mantle
