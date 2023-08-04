@@ -84,6 +84,29 @@ heroData:
                 {%- endif -%}
               {%- endfor -%}
             </p>
+            <h3 class="mt-3">Most Valuable Cards</h3>
+            <table class="table table-sm caption-top small">
+              <thead>
+                <tr>
+                  <th scope="col">Card</th>
+                  <th scope="col" class="text-center">Condition</th>
+                  <th scope="col" class="text-center">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% assign cardCount = 0 %}
+                {% for card in collections.mostValuableCards | limit: 20 %}
+                  {% assign cardCount = cardCount | plus: 1 %}
+                  {% if cardCount <= 20 %}
+                    <tr>
+                      <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</div></td>
+                      <td class="text-center">{{ card.data.condition }}</td>
+                      <td class="text-center">${{ card.data.value }}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
