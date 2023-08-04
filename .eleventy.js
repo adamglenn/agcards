@@ -11,6 +11,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("*.ico");
+  eleventyConfig.addPassthroughCopy("*.png");
+  eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
