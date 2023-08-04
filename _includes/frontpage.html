@@ -65,7 +65,7 @@ heroData:
     </div>
 
     <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title" id="statsModalLabel"><span class="fa-solid fa-chart-line"></span> Stats</h2>
@@ -82,7 +82,7 @@ heroData:
               <div class="col">
                 <h3 class="h6 text-uppercase small">Est. Value</h3>
                 <p class="h1 text-success">$
-                  {%- assign digits = valueTotal | split:'' -%}
+                  {%- assign digits = valueTotal | split: '' -%}
                   {%- for digit in digits -%}
                     {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
                     {%- if threeFromEnd == 2 and forloop.index != 1 -%}
@@ -105,13 +105,23 @@ heroData:
               </thead>
               <tbody>
                 {% assign cardCount = 0 %}
-                {% for card in collections.mostValuableCards | limit: 20 %}
+                {% for card in collections.mostValuableCards %}
                   {% assign cardCount = cardCount | plus: 1 %}
-                  {% if cardCount <= 20 %}
+                  {% if cardCount <= 10 %}
+                    {%- assign valueString = card.data.value | split: '' -%}
                     <tr>
-                      <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="badge bg-dark">R</span>{% endif %}</div></td>
+                      <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded" style="font-size: .6rem"><span class="fa-solid fa-star"></span> R</span>{% endif %}</div></td>
                       <td class="text-center">{{ card.data.condition }}</td>
-                      <td class="text-center">${{ card.data.value }}</td>
+                      <td class="text-center">$
+                        {%- for digit in valueString -%}
+                          {%- assign threeFromEnd = valueString.size | minus: forloop.index | modulo: 3 -%}
+                          {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                            {{ digit | prepend: ',' }}
+                          {%- else -%}
+                            {{ digit }}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </td>
                     </tr>
                   {% endif %}
                 {% endfor %}
@@ -251,7 +261,19 @@ heroData:
                 </div>
                 <div class="">
                   <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
-                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> RC</span>{% endif %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> ${{ card.data.value }}</span></p>
+                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
+                    <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $
+                      {%- assign digits = card.data.value | split: '' -%}
+                      {%- for digit in digits -%}
+                        {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
+                        {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                          {{ digit | prepend: ',' }}
+                        {%- else -%}
+                          {{ digit }}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
