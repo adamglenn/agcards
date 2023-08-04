@@ -162,11 +162,11 @@ heroData:
                     {%- endcapture -%}
 
                     {%- capture searchLink -%}
-                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' }}{% if card.data.condition contains 'PSA' %}+{{ card.data.condition | replace: ' ', '%26' }}{% else %}+-PSA{% endif %}+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}{% if card.data.condition contains 'PSA' %}+{{ card.data.condition | replace: ' ', '%26' }}{% else %}+-PSA{% endif %}+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
                     {%- endcapture -%}
                       
                     {%- capture gmLink -%}
-                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
                     {%- endcapture -%}
 
                     {%- capture compsLink -%}
@@ -237,7 +237,7 @@ heroData:
         {%- for card in collections.orderedCards -%}
           {% assign cardSport = card.data.sport | downcase %}
           {%- capture url -%}
-            {{ site.url }}/_cards/{{ card.data.title | replace: ' ', '-' | replace: '#', '' | downcase }}
+            {{ site.url }}/_cards/{{ card.data.title | replace: ' ', '-' | replace: '#', '' | replace: '’', '%27' | downcase }}
           {%- endcapture -%}
           
           {%- capture classes -%}
