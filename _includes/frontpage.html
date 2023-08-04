@@ -71,21 +71,31 @@ heroData:
             <h2 class="modal-title" id="statsModalLabel"><span class="fa-solid fa-chart-line"></span> Stats</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">            
-            <p><strong>Number of Cards:</strong> {{ cardCount }}</p>
-            <p class="mb-0"><strong>Estimated Value:</strong> $
-              {%- assign digits = valueTotal | split:'' -%}
-              {%- for digit in digits -%}
-                {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
-                {%- if threeFromEnd == 2 and forloop.index != 1 -%}
-                  {{ digit | prepend: ',' }}
-                {%- else -%}
-                  {{ digit }}
-                {%- endif -%}
-              {%- endfor -%}
-            </p>
-            <h3 class="mt-3">Most Valuable Cards</h3>
-            <table class="table table-sm caption-top small">
+          <div class="modal-body">
+            <div class="row text-center">
+              <div class="col">
+                <h3 class="h6 text-uppercase small">No. of Cards</h3>
+                <p class="h1 text-success">
+                  {{ cardCount }}
+                </p>
+              </div>
+              <div class="col">
+                <h3 class="h6 text-uppercase small">Est. Value</h3>
+                <p class="h1 text-success">$
+                  {%- assign digits = valueTotal | split:'' -%}
+                  {%- for digit in digits -%}
+                    {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
+                    {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                      {{ digit | prepend: ',' }}
+                    {%- else -%}
+                      {{ digit }}
+                    {%- endif -%}
+                  {%- endfor -%}
+                </p>
+              </div>
+            </div> 
+            <h3 class="mt-3 h6 text-uppercase small">Most Valuable Cards</h3>
+            <table class="table table-sm caption-top small mb-0">
               <thead>
                 <tr>
                   <th scope="col">Card</th>
@@ -99,7 +109,7 @@ heroData:
                   {% assign cardCount = cardCount | plus: 1 %}
                   {% if cardCount <= 20 %}
                     <tr>
-                      <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</div></td>
+                      <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="badge bg-dark">R</span>{% endif %}</div></td>
                       <td class="text-center">{{ card.data.condition }}</td>
                       <td class="text-center">${{ card.data.value }}</td>
                     </tr>
@@ -122,7 +132,7 @@ heroData:
           <div class="modal-body">
             {% assign sports = "baseball,basketball,football" | split: "," %}
 
-            <table class="table table-sm caption-top small">
+            <table class="table table-sm caption-top small mb-0">
               <thead>
                 <tr>
                   <th scope="col">Card</th>
