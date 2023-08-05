@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1970 Topps Nolan Ryan #712 PSA (4,5)"
+title: "1970 Topps Nolan Ryan #712 PSA 4"
 sport: Baseball
 year: "1970"
 brand: Topps
