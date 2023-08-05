@@ -11,5 +11,5 @@ lastName: Ryan
 number: "712"
 isRookie: false
 condition: PSA 4
-value: 275
+value: 220
 ---
