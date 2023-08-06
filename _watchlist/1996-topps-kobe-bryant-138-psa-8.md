@@ -11,5 +11,5 @@ lastName: Bryant
 number: "138"
 isRookie: true
 condition: NM-MT +
-value: 56
+value: 50
 ---
