@@ -11,5 +11,5 @@ lastName: Jordan
 number: "123"
 isRookie: false
 condition: NM-MT +
-value: 100
+value: 86
 ---
