@@ -6,7 +6,7 @@ sport: Basketball
 year: "1996"
 brand: Upper Deck
 subset: ""
-player: Kobe Braynt
+player: Kobe Bryant
 lastName: Bryant
 number: "58"
 isRookie: true
