@@ -1,10 +1,10 @@
 ---
 layout: card
 tags: card
-title: "1996 EX-2000 Michael Jordan #9 PSA 8"
+title: "1996 E-X2000 Michael Jordan #9 PSA 8"
 sport: Basketball
 year: "1996"
-brand: EX-2000
+brand: E-X2000
 subset: ""
 player: Michael Jordan
 lastName: Jordan
