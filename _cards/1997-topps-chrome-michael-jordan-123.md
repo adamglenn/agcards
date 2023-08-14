@@ -7,7 +7,7 @@ sport: Basketball
 year: "1997"
 brand: Topps Chrome
 subset: ""
-player: Michael
+player: Michael Jordan
 lastName: Jordan
 number: "123"
 isRookie: false
