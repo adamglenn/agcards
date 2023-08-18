@@ -236,6 +236,7 @@ heroData:
       {%- for sport in sports -%}
         {%- for card in collections.orderedCards -%}
           {% assign cardSport = card.data.sport | downcase %}
+          {% assign playerClass = card.data.player | replace: ' ', '-' | downcase %}
           {%- capture url -%}
             {{ site.url }}/_cards/{{ card.data.title | replace: ' ', '-' | replace: '#', '' | replace: '’', '%27' | downcase }}
           {%- endcapture -%}
@@ -258,7 +259,7 @@ heroData:
           {%- endcapture -%}
 
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} clearfix">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} {{ playerClass }} clearfix">
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                 <div class="position-relative d-flex">
                   <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
