@@ -59,28 +59,26 @@ heroData:
               </div>
               <div class="option-set" data-group="player">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Player</h2>
-                <div class="btn-group-vertical w-100">
-                  {%- capture players -%}
-                    {%- for item in collections.orderedCards -%}
-                      {%- assign playerLastNameFirst = item.data.player | split: ' ' -%}
-                      {{ playerLastNameFirst[1] }}
-                      {%- if playerLastNameFirst[2] -%}
-                        {{ playerLastNameFirst[2] }}
-                      {%- endif -%}
-                      , {{ playerLastNameFirst[0] }}&
-                    {%- endfor -%}
-                  {%- endcapture -%}
-                  {% assign playerArray = players | split: '&' %}
-                  {% assign playerArray = playerArray | uniq | sort %}
-                  {% for item in playerArray %}
-                    {% assign player = item | split: ', ' %}
-                    {% capture playerReversed %}{{ player[1] }} {{ player[0] }}{% endcapture %}
-                    {% assign playerClass = playerReversed | replace: '.', '' | replace: ' ', '-' | replace: "'", "" | replace: '.', '' | downcase %}
-                    <a href="#card-container" class="btn btn-outline-dark" data-filter=".{{ playerClass }}">
-                      {{ player[1] }} {{ player[0] }}
-                    </a>
-                  {% endfor %}
-                </div>
+                {%- capture players -%}
+                  {%- for item in collections.orderedCards -%}
+                    {%- assign playerLastNameFirst = item.data.player | split: ' ' -%}
+                    {{ playerLastNameFirst[1] }}
+                    {%- if playerLastNameFirst[2] -%}
+                      {{ playerLastNameFirst[2] }}
+                    {%- endif -%}
+                    , {{ playerLastNameFirst[0] }}&
+                  {%- endfor -%}
+                {%- endcapture -%}
+                {% assign playerArray = players | split: '&' %}
+                {% assign playerArray = playerArray | uniq | sort %}
+                {% for item in playerArray %}
+                  {% assign player = item | split: ', ' %}
+                  {% capture playerReversed %}{{ player[1] }} {{ player[0] }}{% endcapture %}
+                  {% assign playerClass = playerReversed | replace: '.', '' | replace: ' ', '-' | replace: "'", "" | replace: '.', '' | downcase %}
+                  <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".{{ playerClass }}">
+                    {{ player[1] }} {{ player[0] }}
+                  </a>
+                {% endfor %}
               </div>
             </div>
           </div>
