@@ -11,6 +11,6 @@ player: Kareem Abul-Jabbar
 lastName: Abdul-Jabbar
 number: "10"
 isRookie: false
-condition: NR-MINT
+condition: EX-EXMINT
 order: 10
 ---
