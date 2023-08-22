@@ -11,7 +11,12 @@ heroData:
 {% assign valueTotal = 0 %}
 {%- for card in collections.orderedCards -%}
   {% assign cardCount = cardCount | plus: 1 %}
-  {% assign valueTotal = valueTotal | plus: card.data.value %}
+  {% if card.data.value == '' or card.data.value == null %}
+    {% assign cardValue = 0 %}
+  {% else %}
+    {% assign cardValue = card.data.value %}
+  {% endif %}
+  {% assign valueTotal = valueTotal | plus: cardValue %}
 {%- endfor -%}
 
 <header class="py-3 border border-bottom border-light">
@@ -287,25 +292,27 @@ heroData:
           {%- endcapture -%}
 
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 card-item {{ classes }} {{ playerClass }} clearfix">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} {{ playerClass }} clearfix">
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                 <div class="position-relative d-flex">
                   <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
                 </div>
                 <div class="" style="font-size: .6rem">
-                  <h2 class="h6 mb-1"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
+                  <h2 class="h6 mb-1" style="font-size: .8rem"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
                   <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
-                    <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $
-                      {%- assign digits = card.data.value | split: '' -%}
-                      {%- for digit in digits -%}
-                        {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
-                        {%- if threeFromEnd == 2 and forloop.index != 1 -%}
-                          {{ digit | prepend: ',' }}
-                        {%- else -%}
-                          {{ digit }}
-                        {%- endif -%}
-                      {%- endfor -%}
-                    </span>
+                    {% if card.data.value != "" and card.data.value != null %}
+                      <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $
+                        {%- assign digits = card.data.value | split: '' -%}
+                        {%- for digit in digits -%}
+                          {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
+                          {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                            {{ digit | prepend: ',' }}
+                          {%- else -%}
+                            {{ digit }}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </span>
+                    {% endif %}
                   </p>
                 </div>
               </div>
