@@ -61,10 +61,13 @@ heroData:
                 <h2 class="h6 text-uppercase mb-1 mt-2">Player</h2>
                 {%- capture players -%}
                   {%- for item in collections.orderedCards -%}
-                    {%- assign playerLastNameFirst = item.data.player | split: ' ' -%}
+                    {%- assign playerLastNameFirst = item.data.player | replace: ',', '' | split: ' ' -%}
                     {{ playerLastNameFirst[1] }}
                     {%- if playerLastNameFirst[2] -%}
-                      {{ playerLastNameFirst[2] }}
+                      {{ playerLastNameFirst[2] | prepend: ' ' }}
+                    {%- endif -%}
+                    {%- if playerLastNameFirst[3] -%}
+                      {{ playerLastNameFirst[3] | prepend: ' ' }}
                     {%- endif -%}
                     , {{ playerLastNameFirst[0] }}&
                   {%- endfor -%}
@@ -73,11 +76,11 @@ heroData:
                 {% assign playerArray = playerArray | uniq | sort %}
                 {% for item in playerArray %}
                   {% assign player = item | split: ', ' %}
-                  {% capture playerReversed %}{{ player[1] }} {{ player[0] }}{% endcapture %}
-                  {% assign playerClass = playerReversed | replace: '.', '' | replace: ' ', '-' | replace: "'", "" | replace: '.', '' | downcase %}
-                  <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".{{ playerClass }}">
-                    {{ player[1] }} {{ player[0] }}
-                  </a>
+                  {%- capture playerReversed -%}{{ player[1] }} {{ player[0] }}{{ player[2] }}{%- endcapture -%}
+                  {% assign playerClass = playerReversed | replace: ' ', '-' | replace: "'", "" | replace: '.', '' | downcase | prepend: '.' %}
+                  {% if playerClass != '.larry-bird-magic-johnson' %}
+                    <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter="{{ playerClass }}">{{ player[1] }} {{ player[0] }}</a>
+                  {% endif %}
                 {% endfor %}
               </div>
             </div>
@@ -258,7 +261,10 @@ heroData:
       {%- for sport in sports -%}
         {%- for card in collections.orderedCards -%}
           {% assign cardSport = card.data.sport | downcase %}
-          {% assign playerClass = card.data.player | replace: ' ', '-' | downcase %}
+          {% assign playerClass = card.data.player | replace: '.', '' | replace: ',', '' | replace: ' ', '-' | downcase %}
+          {% if playerClass == 'larry-bird-magic-johnson' %}
+            {% assign playerClass = 'larry-bird magic-johnson' %}
+          {% endif %}
           {%- capture url -%}
             {{ site.url }}/_cards/{{ card.data.title | replace: ' ', '-' | replace: '#', '' | replace: '’', '%27' | downcase }}
           {%- endcapture -%}
@@ -281,13 +287,13 @@ heroData:
           {%- endcapture -%}
 
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} {{ playerClass }} clearfix">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 card-item {{ classes }} {{ playerClass }} clearfix">
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                 <div class="position-relative d-flex">
                   <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
                 </div>
-                <div class="">
-                  <h2 class="h5 mb-1"><span class="h6"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
+                <div class="" style="font-size: .6rem">
+                  <h2 class="h6 mb-1"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
                   <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
                     <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $
                       {%- assign digits = card.data.value | split: '' -%}
