@@ -11,7 +11,7 @@ player: Kobe Bryant
 lastName: Bryant
 number: "134"
 isRookie: true
-condition: NR-MINT
-value: 21
+condition: NM-MT +
+value: 35
 order: 10
 ---
