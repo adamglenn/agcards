@@ -11,5 +11,5 @@ lastName: Bryant
 number: "74"
 isRookie: true
 condition: PSA 8
-value: 90
+value: 61
 ---
