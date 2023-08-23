@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1996 Finest Kobe Bryant #74"
+title: "1996 Finest Kobe Bryant #74 PSA 8"
 sport: Basketball
 year: "1996"
 brand: Finest
@@ -10,6 +10,6 @@ player: Kobe Bryant
 lastName: Bryant
 number: "74"
 isRookie: true
-condition: NM-MT +
+condition: PSA 8
 value: 90
 ---
