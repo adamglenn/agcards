@@ -62,6 +62,7 @@ heroData:
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".raw"><span class="fa-solid fa-check"></span> Raw</a>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
               </div>
+              {% comment %}
               <div class="option-set" data-group="owned">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Switch to Wishlist View</h2>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".owned"><span class="fa-solid fa-face-smile"></span> Owned</a>
@@ -71,6 +72,7 @@ heroData:
                   <label class="form-check-label" for="flexSwitchCheckDefault">Toggle Wishlist</label>
                 </div>
               </div>
+              {% endcomment %}
               <div class="option-set" data-group="player">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Player</h2>
                 {%- capture players -%}
