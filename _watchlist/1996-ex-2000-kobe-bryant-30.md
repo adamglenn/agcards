@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1996 E-X2000 Kobe Bryant #30 PSA 8"
 sport: Basketball
 year: "1996"

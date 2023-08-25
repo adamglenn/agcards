@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1963 Topps Willie Mays #300"
 sport: Baseball
 year: "1963"

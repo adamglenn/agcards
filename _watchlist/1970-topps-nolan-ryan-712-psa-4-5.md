@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1970 Topps Nolan Ryan #712 PSA 4"
 sport: Baseball
 year: "1970"

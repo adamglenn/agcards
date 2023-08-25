@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1996 Flair Showcase Kobe Bryant Row 2 #31 PSA 8"
 sport: Basketball
 year: "1996"

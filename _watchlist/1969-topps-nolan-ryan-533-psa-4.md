@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1969 Topps Nolan Ryan #533 PSA 4"
 sport: Baseball
 year: "1969"

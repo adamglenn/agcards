@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1993 Finest Ken Griffey Jr. #110 PSA 8"
 sport: Baseball
 year: "1993"

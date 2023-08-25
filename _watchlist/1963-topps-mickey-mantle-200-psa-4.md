@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1963 Topps Mickey Mantle #200 PSA 4"
 sport: Baseball
 year: "1963"

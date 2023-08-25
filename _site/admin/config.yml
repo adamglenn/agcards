@@ -64,6 +64,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "card"}
       - {label: "Tags", name: "tags", widget: "hidden", default: "card"}
+      - {label: "Is Watchlist", name: "isWatchlist", widget: "hidden", default: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Sport", name: "sport", widget: "select", options: ["Baseball", "Basketball", "Football"]}

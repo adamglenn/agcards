@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1996 Topps Chrome Michael Jordan #139 PSA 8"
 sport: Basketball
 year: "1996"

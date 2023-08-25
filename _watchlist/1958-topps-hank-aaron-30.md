@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1958 Topps Hank Aaron #30"
 sport: Baseball
 year: "1958"

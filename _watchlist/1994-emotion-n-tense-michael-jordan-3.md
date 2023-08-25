@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1994 Emotion N-Tense Michael Jordan #3"
 sport: Basketball
 year: "1994"

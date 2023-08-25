@@ -1,6 +1,7 @@
 ---
 layout: card
 tags: card
+isWatchlist: true
 title: "1965 Topps Mickey Mantle #350 PSA 4"
 sport: Baseball
 year: "1965"

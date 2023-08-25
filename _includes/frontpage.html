@@ -62,6 +62,15 @@ heroData:
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".raw"><span class="fa-solid fa-check"></span> Raw</a>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
               </div>
+              <div class="option-set" data-group="owned">
+                <h2 class="h6 text-uppercase mb-1 mt-2">Switch to Wishlist View</h2>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".owned"><span class="fa-solid fa-face-smile"></span> Owned</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".watchlist"><span class="fa-solid fa-face-frown"></span> To Buy</a>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Toggle Wishlist</label>
+                </div>
+              </div>
               <div class="option-set" data-group="player">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Player</h2>
                 {%- capture players -%}
@@ -278,6 +287,11 @@ heroData:
             {% if card.data.lastName == 'Jordan' %}
               jordan
             {% endif %}
+            {% if card.data.isWatchlist == true %}
+              watchlist
+            {% else %}
+              owned
+            {% endif %}
             {% if card.data.condition contains 'PSA' %}
               slabbed
             {% else %}
@@ -291,12 +305,28 @@ heroData:
             {{ card.data.sport | downcase }}
           {%- endcapture -%}
 
+          {%- capture cardTitle -%}
+            {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" %} {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != "" %} #{{ card.data.number }}{% endif %}
+          {%- endcapture -%}
+
+          {%- capture searchLink -%}
+            https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}{% if card.data.condition contains 'PSA' %}+{{ card.data.condition | replace: ' ', '%26' }}{% else %}+-PSA{% endif %}+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+          {%- endcapture -%}
+            
+          {%- capture gmLink -%}
+            https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+          {%- endcapture -%}
+
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} {{ playerClass }} clearfix">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} {{ playerClass }} clearfix" {% if card.data.isWatchlist %}{% endif %}>
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
-                <div class="position-relative d-flex">
-                  <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
-                </div>
+                  {% if card.data.image != "" and card.data.image != null %}
+                    <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
+                  {% else %}
+                    <div class="border rounded border-1 mb-2 border-dark w-100 h-100 d-flex align-items-center justify-content-center">
+                      <div class="btn-group"><a class="text-decoration-none btn btn-outline-dark" target="_blank" href="{{ searchLink | strip }}"><span class="fa-brands fa-ebay"></span></a><a class="btn btn-outline-dark text-decoration-none d-flex align-items-center py-0" style="font-size: .6rem" href="{{ gmLink | strip }}" target="_blank">Greg Morris Cards</a></div>
+                    </div>
+                  {% endif %}
                 <div class="" style="font-size: .6rem">
                   <h2 class="h6 mb-1" style="font-size: .8rem"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
                   <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
