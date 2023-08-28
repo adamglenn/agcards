@@ -12,5 +12,6 @@ lastName: Baines
 number: "346"
 isRookie: true
 condition: EX-EXMINT
+value: 1
 order: 10
 ---
