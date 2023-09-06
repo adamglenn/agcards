@@ -11,6 +11,6 @@ player: Mickey Mantle
 lastName: Mantle
 number: "10"
 isRookie: false
-condition: VG-VGEX
+condition: PSA 4
 value: 443
 ---
