@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1971 Topps Johnny Bench #250"
 sport: Baseball
-year: "1071"
+year: "1971"
 brand: Topps
 subset: ""
 player: Johnny Bench
