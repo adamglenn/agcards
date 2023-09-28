@@ -8,7 +8,7 @@ year: "1990"
 brand: Fleer Soaring Stars
 subset: ""
 player: Ken Griffey Jr.
-lastName: Griffey Jr.
+lastName: Griffey
 number: "6"
 isRookie: false
 condition: NM-MT +
