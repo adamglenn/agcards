@@ -332,6 +332,7 @@ heroData:
                 <div class="" style="font-size: .6rem">
                   <h2 class="h6 mb-1" style="font-size: .8rem"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br>{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
                   <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
+                    {% comment %}
                     {% if card.data.value != "" and card.data.value != null %}
                       <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $
                         {%- assign digits = card.data.value | split: '' -%}
@@ -345,6 +346,7 @@ heroData:
                         {%- endfor -%}
                       </span>
                     {% endif %}
+                    {% endcomment %}
                   </p>
                 </div>
               </div>
