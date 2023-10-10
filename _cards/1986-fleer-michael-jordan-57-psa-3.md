@@ -11,6 +11,6 @@ lastName: Jordan
 number: "57"
 isRookie: true
 condition: PSA 3
-value: 2900
+value: 2400
 order: 10
 ---
