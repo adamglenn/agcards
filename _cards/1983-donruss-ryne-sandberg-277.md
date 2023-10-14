@@ -10,7 +10,7 @@ subset: ""
 player: Ryne Sandberg
 lastName: Sandberg
 number: "277"
-isRookie: false
+isRookie: true
 condition: NR-MINT
 order: 10
 ---
