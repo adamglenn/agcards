@@ -12,5 +12,5 @@ lastName: Mantle
 number: "350"
 isRookie: false
 condition: PSA 4
-value: 434
+value: 215
 ---
