@@ -10,6 +10,6 @@ player: Mickey Mantle
 lastName: Mantle
 number: "350"
 isRookie: false
-condition: PSA 4
-value: 522
+condition: LOW GRADE (CREASE)
+value: 210
 ---
