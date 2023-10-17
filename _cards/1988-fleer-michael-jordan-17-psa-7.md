@@ -4,7 +4,7 @@ tags: card
 title: "1988 Fleer Michael Jordan #17 PSA 7"
 image: /images/uploads/1988-fleer-michael-jordan-7.webp
 sport: Basketball
-year: "1987"
+year: "1988"
 brand: Fleer
 player: Michael Jordan
 lastName: Jordan
