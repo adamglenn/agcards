@@ -8,8 +8,8 @@ year: "1958"
 brand: Topps
 subset: ""
 player: Hank Aaron
-lastName: "30"
-number: ""
+lastName: Aaron
+number: "30"
 isRookie: false
 condition: EX-EXMINT
 order: 10
