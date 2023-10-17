@@ -6,6 +6,7 @@ image: /images/uploads/1983-donruss-ryne-sandberg-8.webp
 sport: Baseball
 year: "1983"
 brand: Donruss
+subset: ""
 player: Ryne Sandberg
 lastName: Sandberg
 number: "83"

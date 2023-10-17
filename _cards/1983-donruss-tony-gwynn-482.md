@@ -6,6 +6,7 @@ image: /images/uploads/1983-donruss-tony-gwynn-8.webp
 sport: Baseball
 year: "1983"
 brand: Donruss
+subset: ""
 player: Tony Gwynn
 lastName: Gwynn
 number: "482"

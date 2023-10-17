@@ -6,6 +6,7 @@ image: /images/uploads/1988-fleer-michael-jordan-7.webp
 sport: Basketball
 year: "1988"
 brand: Fleer
+subset: ""
 player: Michael Jordan
 lastName: Jordan
 number: "17"
