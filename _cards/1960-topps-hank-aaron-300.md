@@ -11,7 +11,7 @@ player: Hank Aaron
 lastName: Aaron
 number: "300"
 isRookie: false
-condition: VG-VGEX
+condition: VG-VGEX (CREASE)
 value: 105
 order: 10
 ---
