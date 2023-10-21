@@ -11,7 +11,7 @@ player: Willie Mays
 lastName: Mays
 number: "150"
 isRookie: false
-condition: LOW GRADE
+condition: LOW GRADE (CREASE)
 value: 52
 order: 10
 ---
