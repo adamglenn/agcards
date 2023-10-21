@@ -11,7 +11,7 @@ player: Tim Raines
 lastName: Raines
 number: "816"
 isRookie: true
-condition: VG-VGEX
+condition: VG-VGEX (CREASE)
 value: 12
 order: 10
 ---
