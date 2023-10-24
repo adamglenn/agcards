@@ -1,0 +1,17 @@
+---
+layout: card
+tags: card
+title: "1963 Topps Mickey Mantle #200"
+image: /images/uploads/1963-topps-mickey-mantle.webp
+sport: Baseball
+year: "1963"
+brand: Topps
+subset: ""
+player: Mickey Mantle
+lastName: Mantle
+number: "200"
+isRookie: false
+condition: LOW GRADE (CREASE)
+value: 158
+order: 10
+---
