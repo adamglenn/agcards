@@ -2,7 +2,7 @@
 layout: card
 tags: card
 isWatchlist: true
-title: "1964 Topps Mickey Mantle #50 PSA 4"
+title: "1964 Topps Mickey Mantle #50"
 sport: Baseball
 year: "1964"
 brand: Topps
@@ -11,6 +11,6 @@ player: Mickey Mantle
 lastName: Mantle
 number: "50"
 isRookie: false
-condition: PSA 4
-value: 365
+condition: VG-VGEX
+value: 220
 ---
