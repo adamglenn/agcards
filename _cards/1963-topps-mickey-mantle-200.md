@@ -2,7 +2,7 @@
 layout: card
 tags: card
 title: "1963 Topps Mickey Mantle #200"
-image: /images/uploads/1963-topps-mickey-mantle.webp
+image: /images/uploads/1963-topps-mickey-mantle-2.webp
 sport: Baseball
 year: "1963"
 brand: Topps
