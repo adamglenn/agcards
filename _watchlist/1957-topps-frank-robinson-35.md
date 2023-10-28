@@ -12,4 +12,5 @@ lastName: Robinson
 number: "35"
 isRookie: true
 condition: LOW GRADE (CREASE)
+value: 249
 ---
