@@ -12,4 +12,5 @@ lastName: Robinson
 number: "285"
 isRookie: false
 condition: VG-VGEX
+value: 45
 ---
