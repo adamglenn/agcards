@@ -11,5 +11,6 @@ player: Shaquille O'Neal
 lastName: O'Neal
 number: A
 isRookie: true
-condition: PSA 7
+condition: PSA 8
+value: 45
 ---
