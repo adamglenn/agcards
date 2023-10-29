@@ -6,6 +6,7 @@ image: /images/uploads/1982-topps-joe-montana-8.webp
 sport: Football
 year: "1982"
 brand: Topps
+subset: ""
 player: Joe Montana
 lastName: Montana
 number: "488"
