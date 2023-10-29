@@ -6,6 +6,7 @@ image: /images/uploads/1984-topps-eric-dickerson-8.webp
 sport: Football
 year: "1984"
 brand: Topps
+subset: ""
 player: Eric Dickerson
 lastName: Dickerson
 number: "280"

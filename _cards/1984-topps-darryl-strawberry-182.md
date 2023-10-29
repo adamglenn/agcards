@@ -6,6 +6,7 @@ image: /images/uploads/1984-topps-darryl-strawberry-8.webp
 sport: Baseball
 year: "1984"
 brand: Topps
+subset: ""
 player: Darryl Strawberry
 lastName: Strawberry
 number: "182"

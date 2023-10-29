@@ -6,6 +6,7 @@ image: /images/uploads/1983-topps-tony-gwynn-7.webp
 sport: Baseball
 year: "1983"
 brand: Topps
+subset: ""
 player: Tony Gwynn
 lastName: Gwynn
 number: "482"

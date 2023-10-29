@@ -6,6 +6,7 @@ image: /images/uploads/1985-topps-kirby-puckett-8.webp
 sport: Baseball
 year: "1985"
 brand: Topps
+subset: ""
 player: Kirby Puckett
 lastName: Puckett
 number: "536"

@@ -6,6 +6,7 @@ image: /images/uploads/1983-topps-marcus-allen-8.webp
 sport: Football
 year: "1983"
 brand: Topps
+subset: ""
 player: Marcus Allen
 lastName: Allen
 number: "294"

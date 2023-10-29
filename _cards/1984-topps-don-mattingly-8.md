@@ -6,6 +6,7 @@ image: /images/uploads/1984-topps-don-mattingly-8.webp
 sport: Baseball
 year: "1984"
 brand: Topps
+subset: ""
 player: Don Mattingly
 lastName: Mattingly
 number: "8"

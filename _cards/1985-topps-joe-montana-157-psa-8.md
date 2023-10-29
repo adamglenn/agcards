@@ -6,6 +6,7 @@ image: /images/uploads/1985-topps-joe-montana-8.webp
 sport: Football
 year: "1985"
 brand: Topps
+subset: ""
 player: Joe Montana
 lastName: Montana
 number: "157"

@@ -6,6 +6,7 @@ image: /images/uploads/1983-topps-wade-boggs-8.webp
 sport: Baseball
 year: "1983"
 brand: Topps
+subset: ""
 player: Wade Boggs
 lastName: Boggs
 number: "586"

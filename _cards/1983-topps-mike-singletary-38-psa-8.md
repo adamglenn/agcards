@@ -6,6 +6,7 @@ image: /images/uploads/1983-topps-mike-singletary-8.webp
 sport: Football
 year: "1983"
 brand: Topps
+subset: ""
 player: Mike Singletary
 lastName: Singletary
 number: "38"

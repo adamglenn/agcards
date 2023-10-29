@@ -6,6 +6,7 @@ image: /images/uploads/1983-topps-traded-darryl-strawberry-8.webp
 sport: Baseball
 year: "1983"
 brand: Topps Traded
+subset: ""
 player: Darryl Strawberry
 lastName: Strawberry
 number: 108T

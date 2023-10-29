@@ -6,6 +6,7 @@ image: /images/uploads/1985-donruss-kirby-puckett-8.webp
 sport: Baseball
 year: "1985"
 brand: Donruss
+subset: ""
 player: Kirby Puckett
 lastName: Puckett
 number: "438"

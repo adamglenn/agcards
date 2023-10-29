@@ -6,6 +6,7 @@ image: /images/uploads/1986-donruss-jose-canseco-8.webp
 sport: Baseball
 year: "1986"
 brand: Donruss
+subset: ""
 player: Jose Canseco
 lastName: Canseco
 number: "39"

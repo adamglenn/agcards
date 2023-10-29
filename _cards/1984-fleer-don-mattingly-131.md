@@ -6,6 +6,7 @@ image: /images/uploads/1984-fleer-don-mattingly-8.webp
 sport: Baseball
 year: "1984"
 brand: Fleer
+subset: ""
 player: Don Mattingly
 lastName: Mattingly
 number: "131"

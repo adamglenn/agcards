@@ -6,6 +6,7 @@ image: /images/uploads/1983-topps-joe-montana-8.webp
 sport: Football
 year: "1983"
 brand: Topps
+subset: ""
 player: Joe Montana
 lastName: Montana
 number: "169"
