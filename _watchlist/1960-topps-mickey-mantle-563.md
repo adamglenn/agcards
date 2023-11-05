@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1960 Topps Mickey Mantle #563"
 sport: Baseball
-year: "1958"
+year: "1960"
 brand: Topps
 subset: All-Star
 player: Mickey Mantle
