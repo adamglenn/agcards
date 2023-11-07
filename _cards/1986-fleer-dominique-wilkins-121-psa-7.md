@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-dominique-wilkins-7.webp
 sport: Basketball
 year: "1986"
 brand: Fleer
+subset: ""
 player: Dominique Wilkins
 lastName: Wilkins
 number: "121"

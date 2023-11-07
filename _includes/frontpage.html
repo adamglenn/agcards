@@ -201,7 +201,7 @@ heroData:
 
                     {% assign maxPrice = card.data.value | times: 1.15 %}
                     {%- capture cardTitle -%}
-                      {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" %} {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != "" %} #{{ card.data.number }}{% endif %}
+                      {{ card.data.year }} {{ card.data.brand }} {{ card.data.player }}{% if card.data.number != "" %} #{{ card.data.number }}{% endif %}
                     {%- endcapture -%}
 
                     {%- capture searchLink -%}

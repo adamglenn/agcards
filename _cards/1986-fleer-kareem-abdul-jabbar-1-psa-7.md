@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-kareem-abdul-jabbar-7.webp
 sport: Basketball
 year: "1986"
 brand: Fleer
+subset: ""
 player: Kareem Abdul-Jabbar
 lastName: Abdul-Jabbar
 number: "1"

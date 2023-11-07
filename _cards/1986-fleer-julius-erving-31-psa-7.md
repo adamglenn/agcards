@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-julius-erving-7.webp
 sport: Basketball
 year: "1986"
 brand: Fleer
+subset: ""
 player: Julius Erving
 lastName: Erving
 number: "31"

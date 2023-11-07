@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-clyde-drexler-7.webp
 sport: Basketball
 year: "1986"
 brand: Fleer
+subset: ""
 player: Clyde Drexler
 lastName: Drexler
 number: "26"

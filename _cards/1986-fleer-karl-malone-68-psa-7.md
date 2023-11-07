@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-karl-malone-7.webp
 sport: Basketball
 year: "1986"
 brand: Fleer
+subset: ""
 player: Karl Malone
 lastName: Malone
 number: "68"

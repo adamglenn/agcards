@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-magic-johnson-7.webp
 sport: Basketball
 year: "1986"
 brand: Fleer
+subset: ""
 player: Magic Johnson
 lastName: Johnson
 number: "53"
