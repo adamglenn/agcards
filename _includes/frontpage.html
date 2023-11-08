@@ -55,7 +55,7 @@ heroData:
               <div class="option-set" data-group="era">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Era</h2>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".vintage"><span class="fa-solid fa-backward-fast"></span> Vintage</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern"><span class="fa-solid fa-forward-fast"></span> Modern</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern"><span class="fa-solid fa-forward-fast"></span> Junk Wax</a>
               </div>
               <div class="option-set" data-group="holder">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Holder</h2>
@@ -301,7 +301,7 @@ heroData:
             {% else %}
               raw
             {% endif %}
-            {% if card.data.year < 1980 %}
+            {% if card.data.year < 1984 %}
               vintage
             {% else %}
               modern
