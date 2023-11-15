@@ -11,6 +11,7 @@ lastName: Harris
 number: "89"
 isRookie: true
 condition: EX-EXMINT
+toGrade: true
 value: 72
 order: 10
 ---

@@ -12,6 +12,7 @@ lastName: Maravich
 number: "5"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 62
 order: 10
 ---

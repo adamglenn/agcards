@@ -12,6 +12,7 @@ lastName: Clemente
 number: "50"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 90
 order: 10
 ---

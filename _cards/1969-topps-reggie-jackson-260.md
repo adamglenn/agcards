@@ -12,5 +12,6 @@ lastName: Jackson
 number: "260"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 order: 10
 ---

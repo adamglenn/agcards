@@ -12,6 +12,7 @@ lastName: Winfield
 number: "456"
 isRookie: true
 condition: EX-EXMINT
+toGrade: true
 value: 23
 order: 10
 ---

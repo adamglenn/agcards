@@ -12,6 +12,7 @@ lastName: Chamberlain
 number: "1"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 27
 order: 10
 ---

@@ -12,6 +12,7 @@ lastName: Greene
 number: "230"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 7
 order: 10
 ---

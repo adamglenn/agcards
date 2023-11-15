@@ -12,6 +12,7 @@ lastName: Sayers
 number: "75"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 37
 order: 10
 ---

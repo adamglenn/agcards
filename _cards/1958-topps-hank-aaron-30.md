@@ -12,5 +12,6 @@ lastName: Aaron
 number: "30"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 order: 10
 ---

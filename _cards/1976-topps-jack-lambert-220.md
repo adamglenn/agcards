@@ -12,6 +12,7 @@ lastName: Lambert
 number: "220"
 isRookie: true
 condition: EX-EXMINT
+toGrade: true
 value: 45
 order: 10
 ---

@@ -12,6 +12,7 @@ lastName: Swann
 number: "282"
 isRookie: true
 condition: EX-EXMINT
+toGrade: true
 value: 21
 order: 10
 ---

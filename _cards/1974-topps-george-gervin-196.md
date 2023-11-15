@@ -11,6 +11,7 @@ lastName: Gervin
 number: "196"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 53
 order: 10
 ---

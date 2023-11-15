@@ -12,6 +12,7 @@ lastName: Gibson
 number: "200"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 28
 order: 10
 ---

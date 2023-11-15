@@ -12,6 +12,7 @@ lastName: Staubach
 number: "200"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 77
 order: 10
 ---

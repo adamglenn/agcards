@@ -12,6 +12,7 @@ lastName: Koufax
 number: "163"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 76
 order: 10
 ---

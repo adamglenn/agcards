@@ -12,6 +12,7 @@ lastName: Simpson
 number: "260"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 69
 order: 10
 ---

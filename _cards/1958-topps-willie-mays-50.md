@@ -12,6 +12,7 @@ lastName: Mays
 number: "50"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 230
 order: 10
 ---

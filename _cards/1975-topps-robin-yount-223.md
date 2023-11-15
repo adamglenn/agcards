@@ -12,6 +12,7 @@ lastName: Yount
 number: "223"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 78
 order: 10
 ---

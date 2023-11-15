@@ -12,6 +12,7 @@ lastName: Unitas
 number: "25"
 isRookie: false
 condition: NR-MINT
+toGrade: true
 value: 32
 order: 10
 ---

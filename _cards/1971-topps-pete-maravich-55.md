@@ -12,6 +12,7 @@ lastName: Maravich
 number: "55"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 75
 order: 10
 ---

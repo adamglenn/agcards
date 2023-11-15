@@ -12,6 +12,7 @@ lastName: Clemente
 number: "350"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 68
 order: 10
 ---

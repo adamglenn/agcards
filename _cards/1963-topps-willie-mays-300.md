@@ -12,6 +12,7 @@ lastName: Mays
 number: "300"
 isRookie: false
 condition: LOW GRADE (CREASE)
+toGrade: true
 value: 54
 order: 10
 ---

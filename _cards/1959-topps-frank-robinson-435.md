@@ -12,6 +12,7 @@ lastName: Robinson
 number: "435"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 51
 order: 10
 ---

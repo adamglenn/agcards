@@ -12,6 +12,7 @@ lastName: Greene
 number: "245"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 67
 order: 10
 ---

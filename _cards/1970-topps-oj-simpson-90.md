@@ -12,6 +12,7 @@ lastName: Simpson
 number: "90"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 57
 order: 10
 ---

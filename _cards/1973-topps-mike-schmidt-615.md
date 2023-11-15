@@ -11,6 +11,7 @@ lastName: Schmidt
 number: "615"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 155
 order: 10
 ---

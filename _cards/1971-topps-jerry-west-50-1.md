@@ -12,6 +12,7 @@ lastName: West
 number: "50"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 30
 order: 10
 ---

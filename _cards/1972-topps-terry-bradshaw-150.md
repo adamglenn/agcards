@@ -12,6 +12,7 @@ lastName: Bradshaw
 number: "150"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 15
 order: 10
 ---

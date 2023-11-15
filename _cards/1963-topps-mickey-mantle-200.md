@@ -12,6 +12,7 @@ lastName: Mantle
 number: "200"
 isRookie: false
 condition: LOW GRADE (CREASE)
+toGrade: true
 value: 158
 order: 10
 ---

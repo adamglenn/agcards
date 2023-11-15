@@ -11,6 +11,7 @@ lastName: Walton
 number: "39"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 23
 order: 10
 ---

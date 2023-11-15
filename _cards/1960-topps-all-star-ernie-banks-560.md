@@ -12,5 +12,6 @@ lastName: Banks
 number: "560"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 order: 10
 ---

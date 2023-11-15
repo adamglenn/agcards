@@ -12,6 +12,7 @@ lastName: Brett
 number: "228"
 isRookie: true
 condition: VG-VGEX
+toGrade: true
 value: 112
 order: 10
 ---

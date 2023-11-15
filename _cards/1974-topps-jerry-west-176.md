@@ -11,6 +11,7 @@ lastName: West
 number: "176"
 isRookie: false
 condition: NR-MINT
+toGrade: true
 value: 11
 order: 10
 ---

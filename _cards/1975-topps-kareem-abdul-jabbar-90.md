@@ -12,6 +12,7 @@ lastName: Abdul-Jabbar
 number: "90"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 32
 order: 10
 ---

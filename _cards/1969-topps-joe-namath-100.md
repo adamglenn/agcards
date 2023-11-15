@@ -12,6 +12,7 @@ lastName: Namath
 number: "100"
 isRookie: false
 condition: NR-MINT
+toGrade: true
 value: 150
 order: 10
 ---

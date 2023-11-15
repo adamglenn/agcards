@@ -12,6 +12,7 @@ lastName: Ryan
 number: "513"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 59
 order: 10
 ---

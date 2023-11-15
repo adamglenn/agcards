@@ -11,6 +11,7 @@ lastName: West
 number: "100"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 30
 order: 10
 ---

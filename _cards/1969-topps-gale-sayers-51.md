@@ -12,6 +12,7 @@ lastName: Sayers
 number: "51"
 isRookie: false
 condition: NR-MINT
+toGrade: true
 value: 83
 order: 10
 ---

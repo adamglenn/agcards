@@ -11,6 +11,7 @@ lastName: Ryan
 number: "220"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 17
 order: 10
 ---

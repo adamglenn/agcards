@@ -12,6 +12,7 @@ lastName: Unitas
 number: "100"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 21
 order: 10
 ---

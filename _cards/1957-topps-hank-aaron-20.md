@@ -12,6 +12,7 @@ lastName: Aaron
 number: "20"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 190
 order: 10
 ---

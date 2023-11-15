@@ -12,6 +12,7 @@ lastName: Namath
 number: "250"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 20
 order: 10
 ---

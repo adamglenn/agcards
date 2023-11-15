@@ -12,6 +12,7 @@ lastName: Aaron
 number: "380"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 135
 order: 20
 ---

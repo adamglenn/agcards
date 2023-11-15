@@ -11,6 +11,7 @@ lastName: Erving
 number: "200"
 isRookie: false
 condition: EX-EXMINT
+toGrade: true
 value: 68
 order: 10
 ---

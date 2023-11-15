@@ -61,6 +61,7 @@ heroData:
                 <h2 class="h6 text-uppercase mb-1 mt-2">Holder</h2>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".raw"><span class="fa-solid fa-check"></span> Raw</a>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".to-grade"><span class="fa-solid fa-envelope"></span> To Grade</a>
               </div>
               {% comment %}
               <div class="option-set" data-group="owned">
@@ -300,6 +301,9 @@ heroData:
               slabbed
             {% else %}
               raw
+            {% endif %}
+            {% if card.data.toGrade == true %}
+              to-grade
             {% endif %}
             {% if card.data.year < 1984 %}
               vintage

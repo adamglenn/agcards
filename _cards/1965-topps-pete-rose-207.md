@@ -12,6 +12,7 @@ lastName: Rose
 number: "207"
 isRookie: false
 condition: VG-VGEX
+toGrade: true
 value: 54
 order: 10
 ---
