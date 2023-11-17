@@ -12,5 +12,6 @@ number: G11
 isRookie: false
 condition: PSA 6
 value: 17
+displayCase: "5"
 order: 10
 ---

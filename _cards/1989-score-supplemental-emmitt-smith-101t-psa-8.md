@@ -12,5 +12,6 @@ number: 101T
 isRookie: true
 condition: PSA 8
 value: 38
+displayCase: "3"
 order: 10
 ---

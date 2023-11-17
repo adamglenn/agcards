@@ -12,5 +12,6 @@ number: SH1
 isRookie: false
 condition: PSA 7
 value: 65
+displayCase: "5"
 order: 10
 ---

@@ -12,5 +12,6 @@ number: D4
 isRookie: false
 condition: PSA 7
 value: 18
+displayCase: "5"
 order: 10
 ---

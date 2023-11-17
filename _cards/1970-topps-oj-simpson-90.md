@@ -14,5 +14,6 @@ isRookie: true
 condition: VG-VGEX
 toGrade: true
 value: 57
+displayCase: "3"
 order: 10
 ---

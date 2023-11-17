@@ -12,5 +12,6 @@ lastName: Jordan
 number: "7"
 isRookie: false
 condition: NR-MINT
+displayCase: "5"
 order: 10
 ---

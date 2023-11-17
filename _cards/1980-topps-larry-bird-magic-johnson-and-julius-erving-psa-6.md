@@ -12,6 +12,6 @@ lastName: Bird
 isRookie: true
 condition: PSA 6
 value: 775
-displayCase: "1"
+displayCase: "4"
 order: 10
 ---
