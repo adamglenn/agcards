@@ -13,5 +13,6 @@ isRookie: true
 condition: EX-EXMINT
 toGrade: true
 value: 72
+displayCase: "1"
 order: 10
 ---

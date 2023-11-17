@@ -13,5 +13,6 @@ number: "30"
 isRookie: false
 condition: EX-EXMINT
 toGrade: true
+displayCase: "1"
 order: 10
 ---

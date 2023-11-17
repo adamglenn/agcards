@@ -63,6 +63,15 @@ heroData:
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
                 <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".to-grade"><span class="fa-solid fa-envelope"></span> To Grade</a>
               </div>
+              <div class="option-set" data-group="case">
+                <h2 class="h6 text-uppercase mb-1 mt-2">Case</h2>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">1</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-2">2</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">3</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">4</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">5</a>
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">6</a>
+              </div>
               {% comment %}
               <div class="option-set" data-group="owned">
                 <h2 class="h6 text-uppercase mb-1 mt-2">Switch to Wishlist View</h2>
@@ -311,6 +320,7 @@ heroData:
               modern
             {% endif %}
             {{ card.data.sport | downcase }}
+            case-{{ card.data.displayCase }}
           {%- endcapture -%}
 
           {%- capture cardTitle -%}
@@ -326,7 +336,7 @@ heroData:
           {%- endcapture -%}
 
           {% if cardSport == sport %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 card-item {{ classes }} {{ playerClass }} clearfix" {% if card.data.isWatchlist %}{% endif %}>
+            <div class="col-8 col-sm-4 col-md-2 col-lg-1 mb-3 card-item {{ classes }} {{ playerClass }} clearfix" {% if card.data.isWatchlist %}{% endif %}>
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                   {% if card.data.image != "" and card.data.image != null %}
                     <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">

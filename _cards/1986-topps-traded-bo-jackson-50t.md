@@ -12,5 +12,6 @@ number: 50T
 isRookie: true
 condition: PSA 8
 value: 22
+displayCase: "2"
 order: 10
 ---
