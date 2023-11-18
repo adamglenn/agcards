@@ -340,10 +340,6 @@ heroData:
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                   {% if card.data.image != "" and card.data.image != null %}
                     <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
-                  {% else %}
-                    <div class="border rounded border-1 mb-2 border-dark w-100 h-100 d-flex align-items-center justify-content-center">
-                      <div class="btn-group"><a class="text-decoration-none btn btn-outline-dark" target="_blank" href="{{ searchLink | strip }}"><span class="fa-brands fa-ebay"></span></a><a class="btn btn-outline-dark text-decoration-none d-flex align-items-center py-0" style="font-size: .6rem" href="{{ gmLink | strip }}" target="_blank">Greg Morris Cards</a></div>
-                    </div>
                   {% endif %}
                 <div class="" style="font-size: .6rem">
                   <h2 class="h6 mb-1" style="font-size: .8rem"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br><span style="font-size: .6rem">{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</span></h2>
