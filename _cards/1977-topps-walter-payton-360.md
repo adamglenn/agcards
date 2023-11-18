@@ -13,5 +13,6 @@ number: "360"
 isRookie: false
 condition: EX-EXMINT
 value: 18
+displayCase: "3"
 order: 10
 ---

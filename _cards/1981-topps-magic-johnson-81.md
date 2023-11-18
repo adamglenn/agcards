@@ -12,5 +12,6 @@ number: "21"
 isRookie: false
 condition: PSA 7
 value: 45
+displayCase: "4"
 order: 1060
 ---

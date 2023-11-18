@@ -104,27 +104,7 @@ module.exports = function(eleventyConfig) {
     .getFilteredByGlob('_cards/**/*.md')
     // .sort((a, b) => a.data.lastName - b.data.lastName)
     .sort((a, b) => {
-      if (a.data.value === b.data.value) {
-        if (a.data.sport === b.data.sport) {
-          if (a.data.year === b.data.year) {
-            if (a.data.brand === b.data.brand) {
-              if (a.data.subset === b.data.subset) {
-                return a.data.lastName < b.data.lastName ? -1 : 1
-              } else {
-                return a.data.subset < b.data.subset ? -1 : 1
-              }
-            } else {
-              return a.data.brand < b.data.brand ? -1 : 1
-            }
-          } else {
-            return a.data.year < b.data.year ? -1 : 1
-          }
-        } else {
-          return a.data.sport < b.data.sport ? -1 : 1
-        }
-      } else {
-        return a.data.value > b.data.value ? -1 : 1
-      }
+      return a.data.value > b.data.value ? -1 : 1
     })
   })
 
