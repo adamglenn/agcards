@@ -10,7 +10,7 @@ player: Doug Flutie
 lastName: Flutie
 number: "80"
 isRookie: false
-condition: PSA 8
+condition: PSA 8.5
 toGrade: false
 displayCase: "3"
 order: 10
