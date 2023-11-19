@@ -12,5 +12,6 @@ lastName: Harris
 number: "300"
 isRookie: false
 condition: EX-EXMINT
+value: 7
 order: 10
 ---

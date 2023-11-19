@@ -12,5 +12,6 @@ lastName: Sandberg
 number: "277"
 isRookie: true
 condition: NR-MINT
+value: 10
 order: 10
 ---

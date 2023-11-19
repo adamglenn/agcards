@@ -12,5 +12,6 @@ lastName: Lambert
 number: "165"
 isRookie: false
 condition: EX-EXMINT
+value: 4
 order: 10
 ---

@@ -12,5 +12,6 @@ lastName: Montana
 number: "358"
 isRookie: false
 condition: NR-MINT
+value: 5
 order: 10
 ---

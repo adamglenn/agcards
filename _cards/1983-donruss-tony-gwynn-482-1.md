@@ -12,5 +12,6 @@ lastName: Gwynn
 number: "482"
 isRookie: true
 condition: NR-MINT
+value: 12
 order: 10
 ---

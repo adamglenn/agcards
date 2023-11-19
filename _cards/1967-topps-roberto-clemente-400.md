@@ -12,5 +12,6 @@ lastName: Clemente
 number: "400"
 isRookie: false
 condition: VG-VGEX
+value: 54
 order: 10
 ---

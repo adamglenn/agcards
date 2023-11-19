@@ -12,5 +12,6 @@ lastName: Lott
 number: "486"
 isRookie: true
 condition: EX-EXMINT
+value: 9
 order: 10
 ---

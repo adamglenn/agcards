@@ -12,5 +12,6 @@ lastName: Ripken
 number: "21"
 isRookie: true
 condition: EX-EXMINT
+value: 17
 order: 10
 ---

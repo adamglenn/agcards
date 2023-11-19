@@ -12,5 +12,6 @@ lastName: Marino
 number: "123"
 isRookie: true
 condition: NR-MINT
+value: 40
 order: 10
 ---

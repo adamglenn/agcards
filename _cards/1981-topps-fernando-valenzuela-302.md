@@ -12,5 +12,6 @@ lastName: Valenzuela
 number: "302"
 isRookie: true
 condition: EX-EXMINT
+value: 3
 order: 10
 ---

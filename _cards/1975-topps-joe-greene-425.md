@@ -12,5 +12,6 @@ lastName: Greene
 number: "425"
 isRookie: false
 condition: EX-EXMINT
+value: 6
 order: 10
 ---

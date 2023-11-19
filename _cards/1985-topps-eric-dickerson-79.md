@@ -12,5 +12,6 @@ lastName: Dickerson
 number: "79"
 isRookie: false
 condition: NR-MINT
+value: 5
 order: 10
 ---

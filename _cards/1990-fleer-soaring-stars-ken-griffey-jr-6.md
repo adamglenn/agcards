@@ -12,5 +12,6 @@ lastName: Griffey
 number: "6"
 isRookie: false
 condition: NM-MT +
+value: 15
 order: 10
 ---

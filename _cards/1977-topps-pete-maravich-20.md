@@ -12,5 +12,6 @@ lastName: Maravich
 number: "20"
 isRookie: false
 condition: EX-EXMINT
+value: 5
 order: 10
 ---

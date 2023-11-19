@@ -12,5 +12,6 @@ lastName: Erving
 number: "20"
 isRookie: false
 condition: EX-EXMINT
+value: 8
 order: 10
 ---

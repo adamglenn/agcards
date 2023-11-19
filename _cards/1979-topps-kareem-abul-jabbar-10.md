@@ -12,5 +12,6 @@ lastName: Abdul-Jabbar
 number: "10"
 isRookie: false
 condition: EX-EXMINT
+value: 12
 order: 10
 ---

@@ -12,5 +12,6 @@ lastName: Walton
 number: "1"
 isRookie: false
 condition: EX-EXMINT
+value: 4
 order: 10
 ---

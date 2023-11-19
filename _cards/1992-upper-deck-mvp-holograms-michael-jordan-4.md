@@ -12,6 +12,7 @@ number: "4"
 isRookie: false
 condition: PSA 8
 toGrade: false
+value: 25
 displayCase: "5"
 order: 10
 ---

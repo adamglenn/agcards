@@ -13,5 +13,6 @@ number: "320"
 isRookie: false
 condition: VG-VGEX
 toGrade: true
+value: 23
 order: 10
 ---

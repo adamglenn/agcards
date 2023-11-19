@@ -12,5 +12,6 @@ lastName: English
 number: "31"
 isRookie: true
 condition: NR-MINT
+value: 6
 order: 10
 ---

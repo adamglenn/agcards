@@ -12,5 +12,6 @@ lastName: Bradshaw
 number: "75"
 isRookie: false
 condition: VG-VGEX
+value: 8
 order: 10
 ---

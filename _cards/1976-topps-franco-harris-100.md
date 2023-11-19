@@ -12,5 +12,6 @@ lastName: Harris
 number: "100"
 isRookie: false
 condition: VG-VGEX
+value: 6
 order: 10
 ---

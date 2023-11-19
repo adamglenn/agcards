@@ -12,5 +12,6 @@ lastName: Payton
 number: "302"
 isRookie: false
 condition: NR-MINT
+value: 5
 order: 10
 ---

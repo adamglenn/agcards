@@ -12,5 +12,6 @@ lastName: Elway
 number: "63"
 isRookie: true
 condition: NR-MINT
+value: 45
 order: 10
 ---

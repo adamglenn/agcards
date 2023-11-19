@@ -12,5 +12,6 @@ lastName: Allen
 number: "294"
 isRookie: true
 condition: NR-MINT
+value: 17
 order: 10
 ---

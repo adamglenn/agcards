@@ -12,5 +12,6 @@ lastName: Staubach
 number: "45"
 isRookie: false
 condition: EX-EXMINT
+value: 5
 order: 10
 ---

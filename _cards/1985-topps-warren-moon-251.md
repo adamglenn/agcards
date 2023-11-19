@@ -12,5 +12,6 @@ lastName: Moon
 number: "251"
 isRookie: true
 condition: NR-MINT
+value: 14
 order: 10
 ---

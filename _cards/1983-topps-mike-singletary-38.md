@@ -12,5 +12,6 @@ lastName: Singletary
 number: "38"
 isRookie: true
 condition: NR-MINT
+value: 9
 order: 10
 ---

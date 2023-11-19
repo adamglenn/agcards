@@ -12,5 +12,6 @@ lastName: Robinson
 number: "138"
 isRookie: true
 condition: NR-MINT
+value: 3
 order: 10
 ---

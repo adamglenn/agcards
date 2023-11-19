@@ -12,5 +12,6 @@ lastName: Gibson
 number: "481"
 isRookie: true
 condition: EX-EXMINT
+value: 4
 order: 10
 ---

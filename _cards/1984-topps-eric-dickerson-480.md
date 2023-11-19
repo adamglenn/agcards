@@ -12,5 +12,6 @@ lastName: Dickerson
 number: "480"
 isRookie: true
 condition: NR-MINT
+value: 14
 order: 10
 ---
