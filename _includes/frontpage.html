@@ -1,6 +1,8 @@
 ---
 layout: default.html
 title: My Rad Blog
+elevantyImport:
+  collections: ["mostValuableCards"]
 heroData:
     headerClasses: "h1 wvu-bar"
     headline: "Power Up Your Home or Business with Rotruck Electric"
@@ -28,7 +30,7 @@ heroData:
 
 <div id="card-container"></div>
 
-<nav class="sticky-top d-flex justify-content-center shadow-sm bg-white">
+<nav class="sticky-top d-flex justify-content-center shadow-sm bg-white small">
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filters</a>
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#statsModal"><span class="fa-solid fa-chart-line"></span> Stats</a>
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#watchlistModal"><span class="fa-regular fa-eye"></span> Watchlist</a>
@@ -159,7 +161,7 @@ heroData:
                 {% assign cardCount = 0 %}
                 {% for card in collections.mostValuableCards %}
                   {% assign cardCount = cardCount | plus: 1 %}
-                  {% if cardCount <= 10 %}
+                  {% if cardCount <= 15 %}
                     {%- assign valueString = card.data.value | split: '' -%}
                     <tr>
                       <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded" style="font-size: .6rem"><span class="fa-solid fa-star"></span> R</span>{% endif %}</div></td>
