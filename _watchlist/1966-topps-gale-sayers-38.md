@@ -2,10 +2,10 @@
 layout: card
 tags: card
 isWatchlist: true
-title: "1966 Topps Gale Sayers #38"
+title: "1966 Philadelphia Gale Sayers #38"
 sport: Football
 year: "1966"
-brand: Topps
+brand: Philadelphia
 subset: ""
 player: Gale Sayers
 lastName: Sayers
