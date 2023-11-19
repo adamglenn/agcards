@@ -4,7 +4,7 @@ tags: card
 title: "1982 Topps Joe Montana #488 PSA 8"
 image: /images/uploads/1982-topps-joe-montana-8.webp
 sport: Football
-year: "1982"
+year: 1982
 brand: Topps
 subset: ""
 player: Joe Montana

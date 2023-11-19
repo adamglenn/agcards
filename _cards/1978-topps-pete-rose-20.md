@@ -4,7 +4,7 @@ tags: card
 title: "1978 Topps Pete Rose #20"
 image: /images/uploads/1978-topps-pete-rose.webp
 sport: Baseball
-year: "1978"
+year: 1978
 brand: Topps
 subset: ""
 player: Pete Rose

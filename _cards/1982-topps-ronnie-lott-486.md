@@ -4,7 +4,7 @@ tags: card
 title: "1982 Topps Ronnie Lott #486"
 image: /images/uploads/1982-topps-ronnie-lott.webp
 sport: Football
-year: "1982"
+year: 1982
 brand: Topps
 subset: ""
 player: Ronnie Lott

@@ -4,7 +4,7 @@ tags: card
 title: "1987 Fleer Bo Jackson #369"
 image: /images/uploads/1987-fleer-bo-jackson-9.webp
 sport: Baseball
-year: "1987"
+year: 1987
 brand: Fleer
 player: Bo Jackson
 lastName: Jackson

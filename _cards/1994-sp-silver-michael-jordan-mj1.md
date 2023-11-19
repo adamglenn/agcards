@@ -4,7 +4,7 @@ tags: card
 title: "1994 SP Silver Michael Jordan #MJ1"
 image: /images/uploads/1994-sp-silver-michael-jordan.webp
 sport: Basketball
-year: "1994"
+year: 1994
 brand: SP Silver
 subset: ""
 player: Michael Jordan

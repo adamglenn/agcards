@@ -4,7 +4,7 @@ tags: card
 title: "1981 Topps Traded Tim Raines #816"
 image: /images/uploads/1981-topps-traded-tim-raines.webp
 sport: Baseball
-year: "1981"
+year: 1981
 brand: Topps Traded
 subset: ""
 player: Tim Raines

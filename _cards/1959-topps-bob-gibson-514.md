@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1959 Topps Bob Gibson #514"
 sport: Baseball
-year: "1959"
+year: 1959
 brand: Topps
 subset: ""
 player: Bob Gibson

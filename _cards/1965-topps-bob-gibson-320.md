@@ -4,7 +4,7 @@ tags: card
 title: "1965 Topps Bob Gibson #320"
 image: /images/uploads/1965-topps-bob-gibson.webp
 sport: Baseball
-year: "1965"
+year: 1965
 brand: Topps
 subset: ""
 player: Bob Gibson

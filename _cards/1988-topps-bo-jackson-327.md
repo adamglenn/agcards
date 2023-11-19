@@ -4,7 +4,7 @@ tags: card
 title: "1988 Topps Bo Jackson #327"
 image: /images/uploads/1988-topps-bo-jackson-8.webp
 sport: Football
-year: "1988"
+year: 1988
 brand: Topps
 player: Bo Jackson
 lastName: Jackson

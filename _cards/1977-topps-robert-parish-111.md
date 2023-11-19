@@ -4,7 +4,7 @@ tags: card
 title: "1977 Topps Robert Parish #111"
 image: /images/uploads/1977-topps-robert-parish.webp
 sport: Basketball
-year: "1977"
+year: 1977
 brand: Topps
 player: Robert Parish
 lastName: Parish

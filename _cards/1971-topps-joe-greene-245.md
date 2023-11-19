@@ -4,7 +4,7 @@ tags: card
 title: "1971 Topps Joe Greene #245"
 image: /images/uploads/1971-topps-joe-greene.webp
 sport: Football
-year: "1971"
+year: 1971
 brand: Topps
 subset: ""
 player: Joe Greene

@@ -4,7 +4,7 @@ tags: card
 title: "1972 Topps Roberto Clemente #309"
 image: /images/uploads/1972-topps-roberto-clemente.webp
 sport: Baseball
-year: "1972"
+year: 1972
 brand: Topps
 subset: ""
 player: Roberto Clemente

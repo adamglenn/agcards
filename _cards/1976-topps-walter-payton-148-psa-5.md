@@ -4,7 +4,7 @@ tags: card
 title: "1976 Topps Walter Payton #148 PSA 5"
 image: /images/uploads/1976-topps-walter-payton-5.webp
 sport: Football
-year: "1976"
+year: 1976
 brand: Topps
 subset: ""
 player: Walter Payton

@@ -4,7 +4,7 @@ tags: card
 title: "1971 Topps Reggie Jackson #20"
 image: /images/uploads/1971-topps-reggie-jackson.webp
 sport: Baseball
-year: "1971"
+year: 1971
 brand: Topps
 subset: ""
 player: Reggie Jackson

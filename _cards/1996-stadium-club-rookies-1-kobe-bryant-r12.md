@@ -4,7 +4,7 @@ tags: card
 title: "1996 Stadium Club Rookies 1 Kobe Bryant #R12"
 image: /images/uploads/1996-stadium-club-kobe-bryant.webp
 sport: Basketball
-year: "1996"
+year: 1996
 brand: Stadium Club
 subset: Rookies 1
 player: Kobe Bryant

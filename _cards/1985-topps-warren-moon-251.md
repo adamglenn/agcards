@@ -4,7 +4,7 @@ tags: card
 title: "1985 Topps Warren Moon #251"
 image: /images/uploads/1985-topps-warren-moon.webp
 sport: Football
-year: "1985"
+year: 1985
 brand: Topps
 subset: ""
 player: Warren Moon

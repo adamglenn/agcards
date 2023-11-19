@@ -4,7 +4,7 @@ tags: card
 title: "1997 Metal Universe Michael Jordan #23 PSA 8"
 image: /images/uploads/1997-metal-universe-michael-jordan.webp
 sport: Basketball
-year: "1997"
+year: 1997
 brand: Metal Universe
 subset: ""
 player: Michael Jordan

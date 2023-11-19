@@ -4,7 +4,7 @@ tags: card
 title: "1983 Topps Walter Payton #36"
 image: /images/uploads/1983-topps-walter-payton.webp
 sport: Football
-year: "1983"
+year: 1983
 brand: Topps
 subset: ""
 player: Walter Payton

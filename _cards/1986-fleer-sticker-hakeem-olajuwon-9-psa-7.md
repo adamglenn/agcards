@@ -4,7 +4,7 @@ tags: card
 title: "1986 Fleer Sticker Hakeem Olajuwon #9 PSA 7"
 image: /images/uploads/1986-fleer-sticker-hakeem-olajuwon-7.webp
 sport: Basketball
-year: "1986"
+year: 1986
 brand: Fleer Sticker
 player: Hakeem Olajuwon
 lastName: Olajuwon

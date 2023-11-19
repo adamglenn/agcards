@@ -4,7 +4,7 @@ tags: card
 title: "1971 Topps Kareem Abdul-Jabbar #100 PSA 6"
 image: /images/uploads/1971-topps-kareem-abdul-jabbar-6.webp
 sport: Basketball
-year: "1971"
+year: 1971
 brand: Topps
 subset: ""
 player: Kareem Abdul-Jabbar

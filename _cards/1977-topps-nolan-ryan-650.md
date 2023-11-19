@@ -4,7 +4,7 @@ tags: card
 title: "1977 Topps Nolan Ryan #650"
 image: /images/uploads/1977-topps-nolan-ryan.webp
 sport: Baseball
-year: "1977"
+year: 1977
 brand: Topps
 subset: ""
 player: Nolan Ryan

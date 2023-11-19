@@ -4,7 +4,7 @@ tags: card
 title: "1958 Topps Hank Aaron #30"
 image: /images/uploads/1958-topps-hank-aaron.webp
 sport: Baseball
-year: "1958"
+year: 1958
 brand: Topps
 subset: ""
 player: Hank Aaron

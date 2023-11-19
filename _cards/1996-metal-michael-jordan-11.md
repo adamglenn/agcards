@@ -4,7 +4,7 @@ tags: card
 title: "1996 Metal Michael Jordan #11"
 image: /images/uploads/1996-metal-michael-jordan.webp
 sport: Basketball
-year: "1996"
+year: 1996
 brand: Metal
 subset: ""
 player: Michael Jordan

@@ -4,7 +4,7 @@ tags: card
 title: "1959 Topps Jim Brown #10 PSA 5"
 image: /images/uploads/1959-topps-jim-brown-5.webp
 sport: Football
-year: "1959"
+year: 1959
 brand: Topps
 subset: ""
 player: Jim Brown

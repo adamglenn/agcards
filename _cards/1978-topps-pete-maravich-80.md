@@ -4,7 +4,7 @@ tags: card
 title: "1978 Topps Pete Maravich #80"
 image: /images/uploads/1978-topps-pete-maravich.webp
 sport: Basketball
-year: "1978"
+year: 1978
 brand: Topps
 player: Pete Maravich
 lastName: Maravich

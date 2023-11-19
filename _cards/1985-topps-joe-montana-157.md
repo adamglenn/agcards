@@ -4,7 +4,7 @@ tags: card
 title: "1985 Topps Joe Montana #157"
 image: /images/uploads/1985-topps-joe-montana.webp
 sport: Football
-year: "1985"
+year: 1985
 brand: Topps
 subset: ""
 player: Joe Montana

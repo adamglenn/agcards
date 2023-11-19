@@ -4,7 +4,7 @@ tags: card
 title: "1984 Topps John Elway #63 PSA 8"
 image: /images/uploads/1984-topps-john-elway-8.webp
 sport: Football
-year: "1984"
+year: 1984
 brand: Topps
 subset: ""
 player: John Elway

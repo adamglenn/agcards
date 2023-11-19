@@ -4,7 +4,7 @@ tags: card
 title: "1971 Topps Pete Maravich #55"
 image: /images/uploads/1971-topps-pete-maravich.webp
 sport: Basketball
-year: "1971"
+year: 1971
 brand: Topps
 subset: ""
 player: Pete Maravich

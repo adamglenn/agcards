@@ -4,7 +4,7 @@ tags: card
 title: "1981 Topps Kirk Gibson #315"
 image: /images/uploads/1981-topps-kirk-gibson.webp
 sport: Baseball
-year: "1981"
+year: 1981
 brand: Topps
 subset: ""
 player: Kirk Gibson

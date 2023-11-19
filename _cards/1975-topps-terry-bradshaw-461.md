@@ -4,7 +4,7 @@ tags: card
 title: "1975 Topps Terry Bradshaw #461"
 image: /images/uploads/1975-topps-terry-bradshaw.webp
 sport: Football
-year: "1975"
+year: 1975
 brand: Topps
 subset: ""
 player: Terry Bradshaw

@@ -4,7 +4,7 @@ tags: card
 title: "1973 Topps Franco Harris #89"
 image: /images/uploads/1973-topps-franco-harris.webp
 sport: Football
-year: "1973"
+year: 1973
 brand: Topps
 player: Franco Harris
 lastName: Harris

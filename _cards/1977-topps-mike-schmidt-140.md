@@ -4,7 +4,7 @@ tags: card
 title: "1977 Topps Mike Schmidt #140"
 image: /images/uploads/1977-topps-mike-schmidt.webp
 sport: Baseball
-year: "1977"
+year: 1977
 brand: Topps
 subset: ""
 player: Mike Schmidt

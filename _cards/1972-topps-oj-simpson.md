@@ -4,7 +4,7 @@ tags: card
 title: 1972 Topps OJ Simpson
 image: /images/uploads/1972-topps-oj-simpson.webp
 sport: Football
-year: "1972"
+year: 1972
 brand: Topps
 subset: ""
 player: OJ Simpson

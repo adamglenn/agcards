@@ -4,7 +4,7 @@ tags: card
 title: "1989 Score Supplemental Emmitt Smith #101T PSA 8"
 image: /images/uploads/1990-score-supplemental-emmitt-smith-8.webp
 sport: Football
-year: "1990"
+year: 1990
 brand: Score Supplemental
 player: Emmitt Smith
 lastName: Smith

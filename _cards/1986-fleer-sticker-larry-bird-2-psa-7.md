@@ -4,7 +4,7 @@ tags: card
 title: "1986 Fleer Sticker Larry Bird #2 PSA 7"
 image: /images/uploads/1986-fleer-sticker-larry-bird-7.webp
 sport: Basketball
-year: "1986"
+year: 1986
 brand: Fleer Sticker
 player: Larry Bird
 lastName: Bird

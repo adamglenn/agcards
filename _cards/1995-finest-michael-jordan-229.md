@@ -4,7 +4,7 @@ tags: card
 title: "1995 Finest Michael Jordan #229"
 image: /images/uploads/1995-finest-michael-jordan.webp
 sport: Basketball
-year: "1995"
+year: 1995
 brand: Finest
 subset: ""
 player: Michael Jordan

@@ -4,7 +4,7 @@ tags: card
 title: "1984 Fleer Darryl Strawberry #599"
 image: /images/uploads/1984-fleer-darryl-strawberry-8.webp
 sport: Baseball
-year: "1984"
+year: 1984
 brand: Fleer
 subset: ""
 player: Darryl Strawberry

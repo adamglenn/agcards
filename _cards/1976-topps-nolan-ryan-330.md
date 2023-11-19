@@ -4,7 +4,7 @@ tags: card
 title: "1976 Topps Nolan Ryan #330"
 image: /images/uploads/1976-topps-nolan-ryan.webp
 sport: Baseball
-year: "1976"
+year: 1976
 brand: Topps
 subset: ""
 player: Nolan Ryan

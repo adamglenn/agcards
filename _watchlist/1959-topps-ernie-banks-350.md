@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1959 Topps Ernie Banks #350"
 sport: Baseball
-year: "1959"
+year: 1959
 brand: Topps
 subset: ""
 player: Ernie Banks

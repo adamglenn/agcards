@@ -4,7 +4,7 @@ tags: card
 title: "1974 Topps OJ Simpson #130"
 image: /images/uploads/1974-topps-oj-simpson.webp
 sport: Football
-year: "1974"
+year: 1974
 brand: Topps
 subset: ""
 player: OJ Simpson

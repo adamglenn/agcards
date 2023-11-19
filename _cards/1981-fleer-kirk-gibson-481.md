@@ -4,7 +4,7 @@ tags: card
 title: "1981 Fleer Kirk Gibson #481"
 image: /images/uploads/1981-fleer-kirk-gibson.webp
 sport: Baseball
-year: "1981"
+year: 1981
 brand: Fleer
 subset: ""
 player: Kirk Gibson

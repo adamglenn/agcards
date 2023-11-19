@@ -4,7 +4,7 @@ tags: card
 title: "1975 Topps Nolan Ryan #500"
 image: /images/uploads/1975-topps-nolan-ryan.webp
 sport: Baseball
-year: "1975"
+year: 1975
 brand: Topps
 subset: ""
 player: Nolan Ryan

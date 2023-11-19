@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1964 Topps Mickey Mantle #50"
 sport: Baseball
-year: "1964"
+year: 1964
 brand: Topps
 subset: ""
 player: Mickey Mantle

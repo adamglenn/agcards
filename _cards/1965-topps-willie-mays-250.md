@@ -4,7 +4,7 @@ tags: card
 title: "1965 Topps Willie Mays #250"
 image: /images/uploads/1965-topps-willie-mays.webp
 sport: Baseball
-year: "1965"
+year: 1965
 brand: Topps
 subset: ""
 player: Willie Mays

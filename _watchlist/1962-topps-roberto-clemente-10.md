@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1962 Topps Roberto Clemente #10"
 sport: Baseball
-year: "1962"
+year: 1962
 brand: Topps
 subset: ""
 player: Roberto Clemente

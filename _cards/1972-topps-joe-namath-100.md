@@ -4,7 +4,7 @@ tags: card
 title: "1972 Topps Joe Namath #100"
 image: /images/uploads/1972-topps-joe-namath.webp
 sport: Football
-year: "1972"
+year: 1972
 brand: Topps
 subset: ""
 player: Joe Namath

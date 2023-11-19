@@ -4,7 +4,7 @@ tags: card
 title: "1995 Flair Michael Jordan #15"
 image: /images/uploads/1995-flair-michael-jordan.webp
 sport: Basketball
-year: "1995"
+year: 1995
 brand: Flair
 subset: ""
 player: Michael Jordan

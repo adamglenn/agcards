@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1969 Topps Johnny Bench #95"
 sport: Baseball
-year: "1969"
+year: 1969
 brand: Topps
 subset: ""
 player: Johnny Bench

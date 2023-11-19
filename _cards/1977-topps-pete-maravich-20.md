@@ -4,7 +4,7 @@ tags: card
 title: "1977 Topps Pete Maravich #20"
 image: /images/uploads/1977-topps-pete-maravish.webp
 sport: Basketball
-year: "1977"
+year: 1977
 brand: Topps
 subset: ""
 player: Pete Maravich

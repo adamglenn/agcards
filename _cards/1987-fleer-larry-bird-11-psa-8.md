@@ -4,7 +4,7 @@ tags: card
 title: "1987 Fleer Larry Bird #11 PSA 8"
 image: /images/uploads/1987-fleer-larry-bird-8-copy.webp
 sport: Basketball
-year: "1987"
+year: 1987
 brand: Fleer
 player: Larry Bird
 lastName: Bird

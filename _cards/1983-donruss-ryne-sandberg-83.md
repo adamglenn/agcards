@@ -4,7 +4,7 @@ tags: card
 title: "1983 Donruss Ryne Sandberg #83"
 image: /images/uploads/1983-donruss-ryne-sandberg-8.webp
 sport: Baseball
-year: "1983"
+year: 1983
 brand: Donruss
 subset: ""
 player: Ryne Sandberg

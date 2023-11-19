@@ -4,7 +4,7 @@ tags: card
 title: "1958 Topps Roberto Clemente #52"
 image: /images/uploads/1958-topps-roberto-clemente.webp
 sport: Baseball
-year: "1958"
+year: 1958
 brand: Topps
 subset: ""
 player: Roberto Clemente

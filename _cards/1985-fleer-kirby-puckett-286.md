@@ -4,7 +4,7 @@ tags: card
 title: "1985 Fleer Kirby Puckett #286"
 image: /images/uploads/1985-fleer-kirby-puckett-8.webp
 sport: Baseball
-year: "1985"
+year: 1985
 brand: Fleer
 subset: ""
 player: Kirby Puckett

@@ -4,7 +4,7 @@ tags: card
 title: "1989 Fleer Michael Jordan #21"
 image: /images/uploads/1989-fleer-michael-jordan.webp
 sport: Basketball
-year: "1989"
+year: 1989
 brand: Fleer
 subset: ""
 player: Michael Jordan

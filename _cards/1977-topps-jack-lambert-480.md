@@ -4,7 +4,7 @@ tags: card
 title: "1977 Topps Jack Lambert #480"
 image: /images/uploads/1977-topps-jack-lambert.webp
 sport: Football
-year: "1977"
+year: 1977
 brand: Topps
 subset: ""
 player: Jack Lambert

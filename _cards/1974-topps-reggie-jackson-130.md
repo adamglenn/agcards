@@ -4,7 +4,7 @@ tags: card
 title: "1974 Topps Reggie Jackson #130"
 image: /images/uploads/1974-topps-reggie-jackson.webp
 sport: Baseball
-year: "1974"
+year: 1974
 brand: Topps
 player: Reggie Jackson
 lastName: Jackson

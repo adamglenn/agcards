@@ -4,7 +4,7 @@ tags: card
 title: "1996 Metal Kobe Bryant #181"
 image: /images/uploads/1996-metal-kobe-bryant.webp
 sport: Basketball
-year: "1996"
+year: 1996
 brand: Metal
 subset: ""
 player: Kobe Bryant

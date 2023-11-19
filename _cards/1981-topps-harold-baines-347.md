@@ -4,7 +4,7 @@ tags: card
 title: "1981 Topps Harold Baines #347"
 image: /images/uploads/1981-topps-harold-baines.webp
 sport: Baseball
-year: "1981"
+year: 1981
 brand: Topps
 subset: ""
 player: Harold Baines

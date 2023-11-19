@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1957 Topps Frank Robinson #35"
 sport: Baseball
-year: "1957"
+year: 1957
 brand: Topps
 subset: ""
 player: Frank Robinson

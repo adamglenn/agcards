@@ -4,7 +4,7 @@ tags: card
 title: "1975 Topps George Brett #228"
 image: /images/uploads/1975-topps-george-brett.webp
 sport: Baseball
-year: "1975"
+year: 1975
 brand: Topps
 subset: ""
 player: George Brett

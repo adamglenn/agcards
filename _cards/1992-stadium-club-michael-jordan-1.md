@@ -4,7 +4,7 @@ tags: card
 title: "1992 Stadium Club Michael Jordan #1"
 image: /images/uploads/1992-stadium-club-michael-jordan.webp
 sport: Basketball
-year: "1992"
+year: 1992
 brand: Stadium Club
 subset: ""
 player: Michael Jordan

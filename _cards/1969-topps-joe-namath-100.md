@@ -4,7 +4,7 @@ tags: card
 title: "1969 Topps Joe Namath #100"
 image: /images/uploads/1969-topps-joe-namath.webp
 sport: Football
-year: "1969"
+year: 1969
 brand: Topps
 subset: ""
 player: Joe Namath

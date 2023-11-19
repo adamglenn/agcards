@@ -4,7 +4,7 @@ tags: card
 title: "1996 Topps Kobe Bryant #138"
 image: /images/uploads/1996-topps-kobe-bryant.webp
 sport: Basketball
-year: "1996"
+year: 1996
 brand: Topps
 subset: ""
 player: Kobe Bryant

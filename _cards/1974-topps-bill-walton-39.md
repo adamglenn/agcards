@@ -4,7 +4,7 @@ tags: card
 title: "1974 Topps Bill Walton #39"
 image: /images/uploads/1974-topps-bill-walton.webp
 sport: Basketball
-year: "1974"
+year: 1974
 brand: Topps
 player: Bill Walton
 lastName: Walton

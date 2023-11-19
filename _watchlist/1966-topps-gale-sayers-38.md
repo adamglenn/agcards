@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1966 Philadelphia Gale Sayers #38"
 sport: Football
-year: "1966"
+year: 1966
 brand: Philadelphia
 subset: ""
 player: Gale Sayers

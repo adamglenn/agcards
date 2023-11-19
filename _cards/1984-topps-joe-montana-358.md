@@ -4,7 +4,7 @@ tags: card
 title: "1984 Topps Joe Montana #358"
 image: /images/uploads/1984-topps-joe-montana-2.webp
 sport: Football
-year: "1984"
+year: 1984
 brand: Topps
 subset: ""
 player: Joe Montana

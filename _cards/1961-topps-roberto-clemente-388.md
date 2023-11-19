@@ -4,7 +4,7 @@ tags: card
 title: "1961 Topps Roberto Clemente #388"
 image: /images/uploads/1961-topps-roberto-clemente.webp
 sport: Baseball
-year: "1961"
+year: 1961
 brand: Topps
 subset: ""
 player: Roberto Clemente

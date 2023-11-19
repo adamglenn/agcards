@@ -4,7 +4,7 @@ tags: card
 title: "1972 Topps Wilt Chamberlain #1"
 image: /images/uploads/1972-topps-wilt-chamberlain.webp
 sport: Basketball
-year: "1972"
+year: 1972
 brand: Topps
 subset: ""
 player: Wilt Chamberlain

@@ -4,7 +4,7 @@ tags: card
 title: "1992 Fleer All-Stars Michael Jordan #6 PSA 8"
 image: /images/uploads/1992-fleer-all-stars-michael-jordan-8.webp
 sport: Basketball
-year: "1992"
+year: 1992
 brand: Fleer All-Stars
 player: Michael Jordan
 lastName: Jordan

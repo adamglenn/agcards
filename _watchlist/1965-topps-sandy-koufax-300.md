@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1965 Topps Sandy Koufax #300"
 sport: Baseball
-year: "1965"
+year: 1965
 brand: Topps
 subset: ""
 player: Sandy Koufax

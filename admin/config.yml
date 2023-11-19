@@ -46,7 +46,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Sport", name: "sport", widget: "select", options: ["Baseball", "Basketball", "Football"]}
-      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Year", name: "year", widget: "number",}
       - {label: "Brand", name: "brand", widget: "string"}
       - {label: "Subset", name: "subset", widget: "string", default: "", required: false}
       - {label: "Player", name: "player", widget: "string"}
@@ -70,7 +70,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Sport", name: "sport", widget: "select", options: ["Baseball", "Basketball", "Football"]}
-      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Year", name: "year", widget: "number",}
       - {label: "Brand", name: "brand", widget: "string"}
       - {label: "Subset", name: "subset", widget: "string", default: "", required: false}
       - {label: "Player", name: "player", widget: "string"}

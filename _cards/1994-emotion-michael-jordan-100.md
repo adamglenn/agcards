@@ -4,7 +4,7 @@ tags: card
 title: "1994 Emotion Michael Jordan #100"
 image: /images/uploads/1994-emotion-michael-jordan.webp
 sport: Basketball
-year: "1994"
+year: 1994
 brand: Emotion
 subset: ""
 player: Michael Jordan

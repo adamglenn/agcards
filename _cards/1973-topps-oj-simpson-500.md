@@ -4,7 +4,7 @@ tags: card
 title: "1973 Topps OJ Simpson #500"
 image: /images/uploads/1973-topps-oj-simpson.webp
 sport: Football
-year: "1973"
+year: 1973
 brand: Topps
 subset: ""
 player: OJ Simpson

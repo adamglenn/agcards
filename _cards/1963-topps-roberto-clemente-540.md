@@ -4,7 +4,7 @@ tags: card
 title: "1963 Topps Roberto Clemente #540"
 image: /images/uploads/1963-topps-roberto-clemente.webp
 sport: Baseball
-year: "1963"
+year: 1963
 brand: Topps
 subset: ""
 player: Roberto Clemente

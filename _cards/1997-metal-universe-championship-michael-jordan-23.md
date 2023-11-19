@@ -4,7 +4,7 @@ tags: card
 title: "1997 Metal Universe Championship Michael Jordan #23"
 image: /images/uploads/1997-metal-championship-universe-michael-jordan.webp
 sport: Basketball
-year: "1997"
+year: 1997
 brand: Metal Universe Championship
 subset: ""
 player: Michael Jordan

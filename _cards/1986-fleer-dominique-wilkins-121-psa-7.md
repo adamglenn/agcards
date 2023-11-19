@@ -4,7 +4,7 @@ tags: card
 title: "1986 Fleer Dominique Wilkins #121 PSA 7"
 image: /images/uploads/1986-fleer-dominique-wilkins-7.webp
 sport: Basketball
-year: "1986"
+year: 1986
 brand: Fleer
 subset: ""
 player: Dominique Wilkins

@@ -4,7 +4,7 @@ tags: card
 title: "1983 Topps Traded Darryl Strawberry #108T"
 image: /images/uploads/1983-topps-traded-darryl-strawberry-8.webp
 sport: Baseball
-year: "1983"
+year: 1983
 brand: Topps Traded
 subset: ""
 player: Darryl Strawberry

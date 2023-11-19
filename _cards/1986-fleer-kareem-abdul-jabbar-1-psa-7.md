@@ -4,7 +4,7 @@ tags: card
 title: "1986 Fleer Kareem Abdul-Jabbar #1 PSA 7"
 image: /images/uploads/1986-fleer-kareem-abdul-jabbar-7.webp
 sport: Basketball
-year: "1986"
+year: 1986
 brand: Fleer
 subset: ""
 player: Kareem Abdul-Jabbar

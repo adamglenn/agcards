@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1961 Topps Mickey Mantle #300"
 sport: Baseball
-year: "1961"
+year: 1961
 brand: Topps
 subset: ""
 player: Mickey Mantle

@@ -4,7 +4,7 @@ tags: card
 title: "1997 Stadium Club Michael Jordan #118"
 image: /images/uploads/1997-stadium-club-michael-jordan.webp
 sport: Basketball
-year: "1997"
+year: 1997
 brand: Stadium Club
 subset: ""
 player: Michael Jordan

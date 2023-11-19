@@ -4,7 +4,7 @@ tags: card
 title: "1983 Topps Tony Gwynn #482"
 image: /images/uploads/1983-topps-tony-gwynn-7.webp
 sport: Baseball
-year: "1983"
+year: 1983
 brand: Topps
 subset: ""
 player: Tony Gwynn

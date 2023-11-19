@@ -4,7 +4,7 @@ tags: card
 title: "1982 Fleer Cal Ripken Jr. #176"
 image: /images/uploads/1982-fleer-cal-ripken-jr.webp
 sport: Baseball
-year: "1982"
+year: 1982
 brand: Fleer
 subset: ""
 player: Cal Ripken Jr.

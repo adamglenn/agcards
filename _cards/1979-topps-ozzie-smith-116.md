@@ -4,7 +4,7 @@ tags: card
 title: "1979 Topps Ozzie Smith #116"
 image: /images/uploads/1979-topps-ozzie-smith.webp
 sport: Baseball
-year: "1979"
+year: 1979
 brand: Topps
 subset: ""
 player: Ozzie Smith

@@ -4,7 +4,7 @@ tags: card
 title: "1989 Fleer Ken Griffey Jr. #548"
 image: /images/uploads/1989-fleer-ken-griffey-jr.webp
 sport: Baseball
-year: "1989"
+year: 1989
 brand: Fleer
 player: Ken Griffey Jr.
 lastName: Griffey

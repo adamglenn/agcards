@@ -4,7 +4,7 @@ tags: card
 title: "1975 Topps Kareem Abdul-Jabbar #90"
 image: /images/uploads/1975-topps-kareem-abdul-jabbar.webp
 sport: Basketball
-year: "1975"
+year: 1975
 brand: Topps
 subset: ""
 player: Kareem Abdul-Jabbar

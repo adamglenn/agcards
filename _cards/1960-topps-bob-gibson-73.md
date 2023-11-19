@@ -4,7 +4,7 @@ tags: card
 title: "1960 Topps Bob Gibson #73"
 image: /images/uploads/1960-topps-bob-gibson.webp
 sport: Baseball
-year: "1960"
+year: 1960
 brand: Topps
 subset: ""
 player: Bob Gibson

@@ -4,7 +4,7 @@ tags: card
 title: "1992 Fleer Total D Michael Jordan #5 PSA 7"
 image: /images/uploads/1992-fleer-total-d-michael-jordan-7.webp
 sport: Basketball
-year: "1992"
+year: 1992
 brand: Fleer Total D
 player: Michael Jordan
 lastName: Jordan

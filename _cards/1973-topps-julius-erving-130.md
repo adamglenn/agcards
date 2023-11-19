@@ -4,7 +4,7 @@ tags: card
 title: "1973 Topps Julius Erving #130"
 image: /images/uploads/1973-topps-julius-erving.webp
 sport: Basketball
-year: "1973"
+year: 1973
 brand: Topps
 player: Julius Erving
 lastName: Erving

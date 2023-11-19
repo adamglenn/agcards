@@ -4,7 +4,7 @@ tags: card
 title: "1975 Topps Thurman Munson #20"
 image: /images/uploads/1975-topps-thurman-munson.webp
 sport: Baseball
-year: "1975"
+year: 1975
 brand: Topps
 subset: ""
 player: Thurman Munson

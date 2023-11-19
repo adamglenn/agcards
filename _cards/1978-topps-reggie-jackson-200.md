@@ -4,7 +4,7 @@ tags: card
 title: "1978 Topps Reggie Jackson #200"
 image: /images/uploads/1978-topps-reggie-jackson.webp
 sport: Baseball
-year: "1978"
+year: 1978
 brand: Topps
 subset: ""
 player: Reggie Jackson

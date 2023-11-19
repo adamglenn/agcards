@@ -4,7 +4,7 @@ tags: card
 title: "1996 Ultra Kobe Bryant #52"
 image: /images/uploads/1996-ultra-kobe-bryant.webp
 sport: Basketball
-year: "1996"
+year: 1996
 brand: Ultra
 subset: ""
 player: Kobe Bryant

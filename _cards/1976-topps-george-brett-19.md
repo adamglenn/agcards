@@ -4,7 +4,7 @@ tags: card
 title: "1976 Topps George Brett #19"
 image: /images/uploads/1976-topps-george-brett.webp
 sport: Baseball
-year: "1976"
+year: 1976
 brand: Topps
 subset: ""
 player: George Brett

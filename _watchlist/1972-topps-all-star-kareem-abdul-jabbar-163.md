@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1972 Topps All-Star Kareem Abdul-Jabbar #163"
 sport: Basketball
-year: "1972"
+year: 1972
 brand: Topps
 subset: All-Star
 player: Kareem Abdul-Jabbar

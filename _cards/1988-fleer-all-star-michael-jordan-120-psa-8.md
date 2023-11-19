@@ -4,7 +4,7 @@ tags: card
 title: "1988 Fleer All-Star Michael Jordan #120 PSA 8"
 image: /images/uploads/1988-fleer-all-star-michael-jordan-8.webp
 sport: Basketball
-year: "1988"
+year: 1988
 brand: Fleer
 subset: All-Star
 player: Michael Jordan

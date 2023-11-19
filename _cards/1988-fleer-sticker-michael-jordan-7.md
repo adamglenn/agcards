@@ -4,7 +4,7 @@ tags: card
 title: "1988 Fleer Sticker Michael Jordan #7"
 image: /images/uploads/1988-fleer-sticker-michael-jordan.webp
 sport: Basketball
-year: "1988"
+year: 1988
 brand: Fleer Sticker
 subset: ""
 player: Michael Jordan

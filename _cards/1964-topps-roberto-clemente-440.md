@@ -4,7 +4,7 @@ tags: card
 title: "1964 Topps Roberto Clemente #440"
 image: /images/uploads/1964-topps-roberto-clemente.webp
 sport: Baseball
-year: "1964"
+year: 1964
 brand: Topps
 subset: ""
 player: Roberto Clemente

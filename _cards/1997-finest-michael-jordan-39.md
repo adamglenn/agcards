@@ -4,7 +4,7 @@ tags: card
 title: "1997 Finest Michael Jordan #39"
 image: /images/uploads/1997-finest-michael-jordan.webp
 sport: Basketball
-year: "1997"
+year: 1997
 brand: Finest
 subset: ""
 player: Michael Jordan

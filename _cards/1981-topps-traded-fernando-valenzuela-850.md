@@ -4,7 +4,7 @@ tags: card
 title: "1981 Topps Traded Fernando Valenzuela #850"
 image: /images/uploads/1981-topps-traded-fernando-valenzuela.webp
 sport: Baseball
-year: "1981"
+year: 1981
 brand: Topps Traded
 subset: ""
 player: Fernando Valenzuela

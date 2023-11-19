@@ -4,7 +4,7 @@ tags: card
 title: "1984 Topps Walter Payton #228"
 image: /images/uploads/1984-topps-walter-payton.webp
 sport: Football
-year: "1984"
+year: 1984
 brand: Topps
 subset: ""
 player: Walter Payton

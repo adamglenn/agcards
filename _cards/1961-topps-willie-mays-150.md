@@ -4,7 +4,7 @@ tags: card
 title: "1961 Topps Willie Mays #150"
 image: /images/uploads/1961-topps-willie-mays.webp
 sport: Baseball
-year: "1961"
+year: 1961
 brand: Topps
 subset: ""
 player: Willie Mays

@@ -4,7 +4,7 @@ tags: card
 title: "1976 Topps Pete Rose #240"
 image: /images/uploads/1976-topps-pete-rose.webp
 sport: Baseball
-year: "1976"
+year: 1976
 brand: Topps
 subset: ""
 player: Pete Rose

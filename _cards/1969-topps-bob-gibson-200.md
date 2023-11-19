@@ -4,7 +4,7 @@ tags: card
 title: "1969 Topps Bob Gibson #200"
 image: /images/uploads/1969-topps-bob-gibson.webp
 sport: Baseball
-year: "1969"
+year: 1969
 brand: Topps
 subset: ""
 player: Bob Gibson

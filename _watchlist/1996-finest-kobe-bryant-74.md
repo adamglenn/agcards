@@ -4,7 +4,7 @@ tags: card
 isWatchlist: true
 title: "1996 Finest Kobe Bryant #74 PSA 8"
 sport: Basketball
-year: "1996"
+year: 1996
 brand: Finest
 subset: ""
 player: Kobe Bryant

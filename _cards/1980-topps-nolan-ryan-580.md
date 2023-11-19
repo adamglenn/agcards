@@ -4,7 +4,7 @@ tags: card
 title: "1980 Topps Nolan Ryan #580"
 image: /images/uploads/1980-topps-nolan-ryan.webp
 sport: Baseball
-year: "1980"
+year: 1980
 brand: Topps
 subset: ""
 player: Nolan Ryan

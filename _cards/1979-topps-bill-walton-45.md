@@ -4,7 +4,7 @@ tags: card
 title: "1979 Topps Bill Walton #45"
 image: /images/uploads/1979-topps-bill-walton.webp
 sport: Basketball
-year: "1979"
+year: 1979
 brand: Topps
 subset: ""
 player: Bill Walton

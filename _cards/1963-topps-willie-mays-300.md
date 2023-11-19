@@ -4,7 +4,7 @@ tags: card
 title: "1963 Topps Willie Mays #300"
 image: /images/uploads/1963-topps-willie-mays.webp
 sport: Baseball
-year: "1963"
+year: 1963
 brand: Topps
 subset: ""
 player: Willie Mays

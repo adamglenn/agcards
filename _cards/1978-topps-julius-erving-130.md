@@ -4,7 +4,7 @@ tags: card
 title: "1978 Topps Julius Erving #130"
 image: /images/uploads/1978-topps-julius-erving.webp
 sport: Basketball
-year: "1978"
+year: 1978
 brand: Topps
 player: Julius Erving
 lastName: Erving

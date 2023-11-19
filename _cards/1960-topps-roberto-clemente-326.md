@@ -4,7 +4,7 @@ tags: card
 title: "1960 Topps Roberto Clemente #326"
 image: /images/uploads/1960-topps-roberto-clemente.webp
 sport: Baseball
-year: "1960"
+year: 1960
 brand: Topps
 subset: ""
 player: Roberto Clemente

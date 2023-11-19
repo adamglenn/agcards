@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1985 Topps USFL Doug Flutie #80"
 sport: Football
-year: "1985"
+year: 1985
 brand: Topps USFL
 subset: ""
 player: Doug Flutie

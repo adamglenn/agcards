@@ -3,7 +3,7 @@ layout: card
 tags: card
 title: "1992 Upper Deck MVP Holograms Michael Jordan #4"
 sport: Basketball
-year: "1992"
+year: 1992
 brand: Upper Deck MVP Holograms
 subset: ""
 player: Michael Jordan

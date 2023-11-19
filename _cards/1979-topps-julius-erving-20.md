@@ -4,7 +4,7 @@ tags: card
 title: "1979 Topps Julius Erving #20"
 image: /images/uploads/1979-topps-julius-erving.webp
 sport: Basketball
-year: "1979"
+year: 1979
 brand: Topps
 subset: ""
 player: Julius Erving

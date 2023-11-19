@@ -4,7 +4,7 @@ tags: card
 title: "1985 Topps Dan Marino #314"
 image: /images/uploads/1985-topps-dan-marino.webp
 sport: Football
-year: "1985"
+year: 1985
 brand: Topps
 subset: ""
 player: Dan Marino

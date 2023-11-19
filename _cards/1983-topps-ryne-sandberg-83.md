@@ -4,7 +4,7 @@ tags: card
 title: "1983 Topps Ryne Sandberg #83"
 image: /images/uploads/1983-topps-ryne-sandberg.webp
 sport: Baseball
-year: "1983"
+year: 1983
 brand: Topps
 subset: ""
 player: Ryne Sandberg
