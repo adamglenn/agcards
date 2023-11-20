@@ -13,6 +13,6 @@ number: R23
 isRookie: true
 condition: NM-MT +
 value: 66
-displayCase: "6"
+displayCase: ""
 order: 10
 ---
