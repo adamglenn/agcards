@@ -13,6 +13,6 @@ number: "28"
 isRookie: false
 condition: PSA 5
 value: 322
-displayCase: "1"
+displayCase: "3"
 order: 10
 ---

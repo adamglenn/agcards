@@ -11,7 +11,7 @@ lastName: Robinson
 number: "35"
 isRookie: true
 condition: VG-VGEX
-toGrade: false
+toGrade: true
 value: 141
 displayCase: "1"
 order: 10
