@@ -32,7 +32,9 @@ heroData:
 
 <nav class="sticky-top d-flex justify-content-center shadow-sm bg-white small">
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filters</a>
+  {% comment %}
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#statsModal"><span class="fa-solid fa-chart-line"></span> Stats</a>
+  {% endcomment %}
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#watchlistModal"><span class="fa-regular fa-eye"></span> Watchlist</a>
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2"><span class="fa-regular fa-table-cells"></span> View</a>
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" href="#"><span class="fa-solid fa-arrow-up"></span> Top</a>
@@ -118,6 +120,7 @@ heroData:
       </div>
     </div>
 
+    {% comment %}
     <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -185,6 +188,7 @@ heroData:
         </div>
       </div>
     </div>
+    {% endcomment %}
 
     <div class="modal fade" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
