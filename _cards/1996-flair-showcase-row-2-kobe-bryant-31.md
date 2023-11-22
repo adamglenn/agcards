@@ -11,8 +11,8 @@ player: Kobe Bryant
 lastName: Bryant
 number: "31"
 isRookie: true
-condition: PSA 8
+condition: PSA 7
 toGrade: false
-value: 83
+value: 41
 order: 10
 ---
