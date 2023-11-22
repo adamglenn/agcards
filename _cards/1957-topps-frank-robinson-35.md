@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1957 Topps Frank Robinson #35"
+image: /images/uploads/1957-topps-frank-robinson.webp
 sport: Baseball
 year: 1957
 brand: Topps
