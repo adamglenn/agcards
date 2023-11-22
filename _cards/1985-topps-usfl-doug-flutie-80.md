@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1985 Topps USFL Doug Flutie #80"
+image: /images/uploads/1985-topps-usfl-doug-flutie-85.webp
 sport: Football
 year: 1985
 brand: Topps USFL
@@ -12,7 +13,7 @@ number: "80"
 isRookie: false
 condition: PSA 8.5
 toGrade: false
-displayCase: "3"
 value: 45
+displayCase: "3"
 order: 10
 ---
