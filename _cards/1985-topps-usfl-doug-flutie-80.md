@@ -10,7 +10,7 @@ subset: ""
 player: Doug Flutie
 lastName: Flutie
 number: "80"
-isRookie: false
+isRookie: true
 condition: PSA 8.5
 toGrade: false
 value: 45
