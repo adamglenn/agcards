@@ -7,8 +7,8 @@ sport: Basketball
 year: 1992
 brand: Hoops Draft Redemption
 subset: ""
-player: Shaquille O'Neal
-lastName: O'Neal
+player: Shaquille O’Neal
+lastName: O’Neal
 number: A
 isRookie: true
 condition: PSA 8

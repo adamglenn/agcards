@@ -7,8 +7,8 @@ sport: Basketball
 year: 1992
 brand: Hoops Magic's All-Rookie Team
 subset: ""
-player: Shaquille O'Neal
-lastName: O'Neal
+player: Shaquille O’Neal
+lastName: O’Neal
 number: "1"
 isRookie: true
 condition: PSA 8
