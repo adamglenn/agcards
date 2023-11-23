@@ -341,7 +341,7 @@ heroData:
           {%- endcapture -%}
 
           {% if cardSport == sport %}
-            <div class="col-8 col-sm-4 col-md-2 col-lg-1 mb-3 card-item {{ classes }} {{ playerClass }} clearfix" {% if card.data.isWatchlist %}{% endif %}>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-lg-1 mb-3 card-item {{ classes }} {{ playerClass }} clearfix" {% if card.data.isWatchlist %}{% endif %}>
               <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
                   {% if card.data.image != "" and card.data.image != null %}
                     <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
