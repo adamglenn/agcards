@@ -14,5 +14,6 @@ isRookie: true
 condition: PSA 8
 toGrade: false
 value: 37
+displayCase: "5"
 order: 10
 ---
