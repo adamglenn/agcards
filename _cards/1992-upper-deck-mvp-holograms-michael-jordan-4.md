@@ -2,7 +2,7 @@
 layout: card
 tags: card
 title: "1992 Upper Deck MVP Holograms Michael Jordan #4"
-image: /images/uploads/1992-upper-deck-mvp-holograms-michael-jordan.webp
+image: /images/uploads/1992-upper-deck-mvp-holograms-michael-jordan-2.webp
 sport: Basketball
 year: 1992
 brand: Upper Deck MVP Holograms
