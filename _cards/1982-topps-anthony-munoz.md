@@ -1,18 +1,18 @@
 ---
 layout: card
 tags: card
-title: "1982 Topps Ronnie Lott #486"
-image: /images/uploads/1982-topps-ronnie-lott.webp
+title: "1982 Topps Anthony Muñoz #51"
+image: ""
 sport: Football
 year: 1982
 brand: Topps
 subset: ""
-player: Ronnie Lott
-lastName: Lott
-number: "486"
+player: Anthony Muñoz
+lastName: Muñoz
+number: "51"
 isRookie: true
 condition: EX-EXMINT
-value: 9
+value: 5
 displayCase: "3"
 order: 10
 ---

@@ -13,6 +13,6 @@ number: "31"
 isRookie: false
 condition: PSA 7
 value: 40
-displayCase: ""
+displayCase: "4"
 order: 10
 ---
