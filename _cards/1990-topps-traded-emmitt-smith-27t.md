@@ -13,6 +13,6 @@ isRookie: true
 condition: NM-MT +
 toGrade: true
 value: 15
-displayCase: "3"
+displayCase: ""
 order: 10
 ---
