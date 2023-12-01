@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1969 Topps Nolan Ryan #533"
+image: /images/uploads/1969-topps-nolan-ryan.webp
 sport: Baseball
 year: 1969
 brand: Topps
