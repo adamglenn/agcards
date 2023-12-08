@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1995 Stadium Club Warp Speed Michael Jordan #WS1 PSA 8"
+title: "1995 Stadium Club Warp Speed Michael Jordan #WS1 PSA 7"
 sport: Basketball
 year: 1995
 brand: Stadium Club Warp Speed
