@@ -13,4 +13,5 @@ number: M1
 isRookie: false
 condition: PSA 8
 value: 446
+displayCase: "5"
 ---

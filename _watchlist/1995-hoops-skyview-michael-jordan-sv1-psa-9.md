@@ -13,4 +13,5 @@ number: SV1
 isRookie: false
 condition: PSA 9
 value: 600
+displayCase: "5"
 ---

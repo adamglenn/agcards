@@ -13,4 +13,5 @@ number: "3"
 isRookie: false
 condition: PSA 8
 value: 225
+displayCase: "5"
 ---

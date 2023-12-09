@@ -13,4 +13,5 @@ number: L1
 isRookie: false
 condition: PSA 8
 value: 228
+displayCase: "5"
 ---

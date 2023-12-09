@@ -13,6 +13,6 @@ number: "51"
 isRookie: true
 condition: EX-EXMINT
 value: 5
-displayCase: ""
+displayCase: "3"
 order: 10
 ---
