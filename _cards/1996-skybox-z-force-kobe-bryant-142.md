@@ -12,7 +12,7 @@ lastName: Bryant
 number: "142"
 isRookie: true
 condition: NR-MINT
-displayCase: ""
+displayCase: "6"
 value: 15
 order: 10
 ---

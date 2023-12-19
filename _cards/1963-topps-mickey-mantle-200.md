@@ -14,6 +14,6 @@ isRookie: false
 condition: LOW GRADE (CREASE)
 toGrade: true
 value: 158
-displayCase: "1"
+displayCase: ""
 order: 10
 ---

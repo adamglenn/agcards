@@ -13,5 +13,6 @@ number: "314"
 isRookie: false
 condition: NR-MINT
 value: 8
+displayCase: "3"
 order: 10
 ---

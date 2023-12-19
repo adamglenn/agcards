@@ -12,6 +12,6 @@ lastName: Jordan
 number: "3"
 isRookie: false
 condition: PSA 8
-value: 225
+value: 210
 displayCase: "5"
 ---

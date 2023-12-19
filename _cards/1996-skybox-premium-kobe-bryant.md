@@ -13,6 +13,6 @@ number: "55"
 isRookie: true
 condition: NM-MT +
 value: 20
-displayCase: ""
+displayCase: "6"
 order: 10
 ---

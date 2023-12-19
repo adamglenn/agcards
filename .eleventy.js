@@ -59,7 +59,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection('orderedCards', function(collectionApi) {
     return collectionApi
-    .getFilteredByGlob(['_cards/**/*.md','_watchlist/**/*.md'])
+    .getFilteredByGlob('_cards/**/*.md')
     // .sort((a, b) => a.data.lastName - b.data.lastName)
     .sort((a, b) => {
       if (a.data.year === b.data.year) {

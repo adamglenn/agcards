@@ -12,6 +12,6 @@ number: 98T
 isRookie: true
 condition: PSA 7
 value: 107
-displayCase: "2"
+displayCase: "1"
 order: 160
 ---

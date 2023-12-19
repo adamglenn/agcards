@@ -12,7 +12,7 @@ lastName: Taylor
 number: "434"
 isRookie: true
 condition: VG-VGEX
-displayCase: "3"
+displayCase: ""
 value: 25
 order: 10
 ---
