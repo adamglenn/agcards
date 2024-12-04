@@ -6,12 +6,13 @@ image: /images/uploads/1981-topps-kareem-abdul-jabbar-7.webp
 sport: Basketball
 year: 1981
 brand: Topps
+subset: ""
 player: Kareem Abdul-Jabbar
 lastName: Adbul-Jabbar
 number: "20"
 isRookie: false
 condition: PSA 7
 value: 13
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

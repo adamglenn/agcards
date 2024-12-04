@@ -1,0 +1,207 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1996 Stadium Club Rookies 2 Kobe Bryant #R9 PSA 8</title>
+    <link href="/stylesheets/styles.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      .btn-outline-dark:hover {
+        background-color: #f5f5f5 !important;
+        color: #212529 !important;
+      }
+      .btn-primary .jumpman {
+        filter: invert(100%) sepia(32%) saturate(0%) hue-rotate(204deg) brightness(119%) contrast(104%);
+      }
+    </style>
+  </head>
+  <body>
+    
+    
+<main class="py-5">
+  <div class="container">
+    <h1><span class="h6">1996 Stadium Club Rookies 2</span><br>Kobe Bryant #R9</h1>
+    <p>
+      <span class="badge bg-secondary">PSA 8</span>
+    </p>
+    <p>
+      <strong>Value:</strong> $40
+    </p>
+  </div>
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src='/cms.js'></script>
+    <script type="text/javascript" src='/javascripts/vendor/isotope/jquery-1.7.1.min.js'></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      
+      // Toggle Grid
+      let gridToggle = document.getElementById('size-toggle');
+      let cardSize = document.querySelector('.card-size');
+      let cellsIcon = document.querySelector('.fa-table-cells-large');
+      var cards = document.querySelectorAll('.card-item');
+
+      gridToggle.onclick = function() {
+        for (let elem of cards) {
+          elem.classList.toggle('col-lg-1');
+        }
+        if (cardSize.innerText == 'Large') {
+          cardSize.innerText = 'Small';
+          cellsIcon.classList.remove('fa-table-cells-large');
+          cellsIcon.classList.add('fa-table-cells');
+        } else {
+          cardSize.innerText = 'Large';
+          cellsIcon.classList.remove('fa-table-cells');
+          cellsIcon.classList.add('fa-table-cells-large');
+        }
+      }
+
+      // Netlify
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+
+      // Animation
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 80, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+
+      /*jshint browser:true, undef: true, unused: true, jquery: true */
+
+      // store filter per group
+      var filters = {};
+
+      Isotope.Item.prototype._create = function() {
+        // assign id, used for original-order sorting
+        this.id = this.layout.itemGUID++;
+        // transition objects
+        this._transn = {
+          ingProperties: {},
+          clean: {},
+          onEnd: {}
+        };
+        this.sortData = {};
+      };
+
+      Isotope.Item.prototype.layoutPosition = function() {
+        this.emitEvent( 'layout', [ this ] );
+      };
+
+      Isotope.prototype.arrange = function( opts ) {
+        // set any options pass
+        this.option( opts );
+        this._getIsInstant();
+        // just filter
+        this.filteredItems = this._filter( this.items );
+        // flag for initalized
+        this._isLayoutInited = true;
+      };
+      Isotope.LayoutMode.create('none');
+
+      var $filterDisplay = $('#filter-display');
+
+      // init Isotope
+      var $container = $('.grid').isotope({
+        layoutMode: 'none',
+        transitionDuration: 0
+      });
+
+      $('#options').on( 'click', '.btn', function( event ) {
+        // var checkbox = event.target;
+        var $target = $( event.currentTarget );
+        $target.toggleClass('is-checked btn-outline-dark btn-primary');
+        var isChecked = $target.hasClass('is-checked');
+
+        var group = $target.parents('.option-set').attr('data-group');
+        // create array for filter group, if not there yet
+        var filterGroup = filters[ group ];
+        if ( !filterGroup ) {
+          filterGroup = filters[ group ] = [];
+        }
+        // add/remove filter
+        if ( isChecked ) {
+          // add filter
+          filterGroup.push( $target.data("filter") );
+        } else {
+          // remove filter
+          var index = filterGroup.indexOf( $target.data("filter") );
+          filterGroup.splice( index, 1 );
+        }
+        
+        var comboFilter = getComboFilter();
+        $container.isotope({ filter: comboFilter });
+        $filterDisplay.text( comboFilter );
+      });
+
+      // $('#options').on( 'click', '.form-check-input', function( event ) {    
+      //   var $target = $( event.currentTarget );
+      //   var isChecked = $target.checked;
+      //   if ($target.is(":checked")) {
+      //     $container.isotope({ filter: '.watchlist' });
+      //     this.setAttribute("checked", "");
+      //   } else {
+      //     $container.isotope({ filter: '.owned' });
+      //     this.setAttribute("checked", "checked");
+      //   }
+      // });
+
+      function getComboFilter() {
+        var combo = [];
+        for ( var prop in filters ) {
+          var group = filters[ prop ];
+          if ( !group.length ) {
+            // no filters in group, carry on
+            continue;
+          }
+          // add first group
+          if ( !combo.length ) {
+            combo = group.slice(0);
+            continue;
+          }
+          // add additional groups
+          var nextCombo = [];
+          // split group into combo: [ A, B ] & [ 1, 2 ] => [ A1, A2, B1, B2 ]
+          for ( var i=0; i < combo.length; i++ ) {
+            for ( var j=0; j < group.length; j++ ) {
+              var item = combo[i] + group[j];
+              nextCombo.push( item );
+            }
+          }
+          combo = nextCombo;
+        }
+        var comboFilter = combo.join(', ');
+        return comboFilter;
+      }
+    </script>
+  </body>
+</html>

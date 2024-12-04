@@ -6,7 +6,7 @@ image: /images/uploads/1996-skybox-premium-kobe-bryant-8.webp
 sport: Basketball
 year: 1996
 brand: Skybox Premium
-subset: ""
+subset: "Rookie"
 player: Kobe Bryant
 lastName: Bryant
 number: "203"
@@ -14,6 +14,6 @@ isRookie: true
 condition: PSA 8
 toGrade: false
 value: 32
-displayCase: "6"
+displayCase: "7"
 order: 10
 ---

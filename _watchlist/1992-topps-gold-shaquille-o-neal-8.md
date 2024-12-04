@@ -10,8 +10,10 @@ subset: ""
 player: Shaquille O'Neal
 lastName: O'Neal
 number: "362"
-isRookie: true
+isRookie: false
 condition: PSA 8
-value: 55
-displayCase: "6"
+type: Cheap
+value: 50
+displayCase: ""
+hidden: true
 ---

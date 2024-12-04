@@ -12,6 +12,6 @@ number: 83T
 isRookie: true
 condition: PSA 9
 value: 23
-displayCase: "3"
+displayCase: "4"
 order: 10
 ---

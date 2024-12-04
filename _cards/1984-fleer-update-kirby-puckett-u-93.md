@@ -13,6 +13,6 @@ number: U-93
 isRookie: true
 condition: PSA 7
 value: 175
-displayCase: "1"
+displayCase: "2"
 order: 10
 ---

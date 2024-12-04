@@ -6,12 +6,13 @@ image: /images/uploads/1981-topps-larry-bird-7.webp
 sport: Basketball
 year: 1981
 brand: Topps
+subset: ""
 player: Larry Bird
 lastName: Bird
 number: "44"
 isRookie: false
 condition: PSA 7
 value: 71
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

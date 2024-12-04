@@ -6,13 +6,14 @@ image: /images/uploads/1996-ultra-kobe-bryant-2.webp
 sport: Basketball
 year: 1996
 brand: Ultra
-subset: ""
+subset: "Encore"
 player: Kobe Bryant
 lastName: Bryant
 number: "266"
 isRookie: true
 condition: NR-MINT
+toGrade: true
 value: 20
-displayCase: "6"
+
 order: 10
 ---

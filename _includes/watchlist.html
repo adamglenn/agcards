@@ -1,0 +1,90 @@
+<div class="modal fade" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="watchlistModalLabel"><span class="fa-regular fa-eye"></span> Watchlist</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+          {% assign sports = "baseball,basketball,football" | split: "," %}
+
+              <table class="table table-sm caption-top small mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Card</th>
+                    <th scope="col" class="text-center">Condition</th>
+                    <th scope="col" class="text-center">Price</th>
+                    <th scope="col" class="text-center">Buy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% assign totalCost = 0 %}
+                  {%- for sport in sports -%}
+                    {%- for card in collections.orderedWatchlist -%}
+
+                      {% assign maxPrice = card.data.value | times: 1.25 %}
+                      {%- capture cardTitle -%}
+                        {{ card.data.year }} {{ card.data.brand }} {{ card.data.player }}{% if card.data.number != "" %} #{{ card.data.number }}{% endif %}
+                      {%- endcapture -%}
+
+                      {%- capture searchLink -%}
+                        https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+PSA+-SGC+-BGS+-BVG+-HGS+-SCG+-CSG+-BCCG+-%28OC%29+-%28MK%29+-%28MC%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                      {%- endcapture -%}
+                        
+                      {%- capture gmLink -%}
+                        https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-%28MK%29+-%28MC%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+                      {%- endcapture -%}
+
+                      {%- capture compsLink -%}
+                        {{ searchLink }}&rt=nc&LH_Sold=1&LH_Complete=1
+                      {%- endcapture -%}
+
+                      {% assign cardSport = card.data.sport | downcase %}
+                      {% assign cardType = card.data.type %}
+                      {% if card.data.lastName == 'Jordan' %}
+                        {% assign cardType = card.data.lastName %}
+                      {% endif %}
+                      {% if card.data.lastName == 'Bryant' %}
+                        {% assign cardType = card.data.lastName %}
+                      {% endif %}
+
+                      {% if cardSport == sport and card.data.hidden != true %}
+                        {% assign totalCost = totalCost | plus: card.data.value %}
+                        <tr>
+                          <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ sport }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded" style="font-size: .6rem"><span class="fa-solid fa-star"></span> R</span>{% endif %}</div></td>
+                          <td class="text-center">{{ card.data.condition }}</td>
+                          <td class="text-center"><a href="{{ compsLink }}" class="text-decoration-none" target="_blank">${{ card.data.value }}</a></td>
+                          <td class="text-center">
+                            <div class="d-flex w-100 justify-content-center">
+                              <a class="text-decoration-none me-1 watchlist-link" target="_blank" href="{{ searchLink | strip }}"><span class="fa-brands fa-ebay"></span></a> <span class="text-light">|</span> <a class="text-decoration-none d-flex align-items-center py-0 ms-1" href="{{ gmLink | strip }}" target="_blank">GM</a>
+                            </div>
+                          </td>
+                        </tr>
+                      {% endif %}
+                    {%- endfor -%}
+                  {%- endfor -%}
+                </tbody>
+                <tfoot>
+                  <th scope="row">Total</th>
+                  <td></td>
+                  <td class="text-center">$
+                    {%- assign digits = totalCost | split: '' -%}
+                    {%- for digit in digits -%}
+                      {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
+                      {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                        {{ digit | prepend: ',' }}
+                      {%- else -%}
+                        {{ digit }}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </td>
+                  <td></td>
+                </tfoot>
+              </table>
+
+      </div>
+    </div>
+  </div>
+</div>

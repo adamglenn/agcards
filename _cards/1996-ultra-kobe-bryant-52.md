@@ -12,7 +12,8 @@ lastName: Bryant
 number: "52"
 isRookie: true
 condition: NM-MT +
+toGrade: true
 value: 40
-displayCase: "6"
+
 order: 10
 ---

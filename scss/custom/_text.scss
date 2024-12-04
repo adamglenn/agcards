@@ -70,3 +70,12 @@ blockquote {
   border-left: 1px solid $wvu-gold;
   padding-left: $spacer * .5;
 }
+
+body {
+  counter-reset: statsRank;
+}
+
+.stats-rank::before {
+  counter-increment: statsRank;
+  content: counter(statsRank);
+}

@@ -13,6 +13,6 @@ number: 108T
 isRookie: true
 condition: PSA 8
 value: 45
-displayCase: "1"
+displayCase: "2"
 order: 10
 ---

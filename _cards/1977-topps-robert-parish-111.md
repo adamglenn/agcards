@@ -12,5 +12,6 @@ number: "111"
 isRookie: true
 condition: NR-MINT
 value: 20
+displayCase: ""
 order: 10
 ---

@@ -1,8 +1,8 @@
 ---
 layout: card
 tags: card
-title: "1958 Topps Roberto Clemente #52"
-image: /images/uploads/1958-topps-roberto-clemente.webp
+title: "1958 Topps Roberto Clemente #52 PSA 3"
+image: /images/uploads/1958-topps-roberto-clemente-3.webp
 sport: Baseball
 year: 1958
 brand: Topps
@@ -11,9 +11,9 @@ player: Roberto Clemente
 lastName: Clemente
 number: "52"
 isRookie: false
-condition: VG-VGEX
+condition: PSA 3
 toGrade: true
-value: 100
-displayCase: ""
+value: 150
+displayCase: "1"
 order: 10
 ---

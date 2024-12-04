@@ -14,5 +14,6 @@ isRookie: false
 condition: NR-MINT
 toGrade: true
 value: 32
+displayCase: "1"
 order: 10
 ---

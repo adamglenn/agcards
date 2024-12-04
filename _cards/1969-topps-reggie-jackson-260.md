@@ -13,7 +13,7 @@ number: "260"
 isRookie: true
 condition: VG-VGEX
 toGrade: true
-displayCase: ""
 value: 153
+displayCase: "1"
 order: 10
 ---

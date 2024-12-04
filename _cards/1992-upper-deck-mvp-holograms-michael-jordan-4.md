@@ -5,7 +5,7 @@ title: "1992 Upper Deck MVP Holograms Michael Jordan #4"
 image: /images/uploads/1992-upper-deck-mvp-holograms-michael-jordan-2.webp
 sport: Basketball
 year: 1992
-brand: Upper Deck MVP Holograms
+brand: UD MVP Holo.
 subset: ""
 player: Michael Jordan
 lastName: Jordan
@@ -14,6 +14,6 @@ isRookie: false
 condition: PSA 8
 toGrade: false
 value: 25
-displayCase: "5"
+displayCase: ""
 order: 10
 ---

@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1990 Topps Traded Emmitt Smith #27T"
+image: /images/uploads/1990-topps-traded-emmitt-smith.webp
 sport: Football
 year: 1990
 brand: Topps Traded
@@ -11,8 +12,8 @@ lastName: Smith
 number: 27T
 isRookie: true
 condition: NM-MT +
-toGrade: true
+toGrade: false
 value: 15
-displayCase: "3"
+displayCase: ""
 order: 10
 ---

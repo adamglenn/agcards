@@ -12,5 +12,6 @@ number: "130"
 isRookie: false
 condition: EX-EXMINT
 value: 12
+displayCase: ""
 order: 10
 ---

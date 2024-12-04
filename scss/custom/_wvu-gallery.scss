@@ -342,6 +342,10 @@
 // ------------------------------------------
 // Credit to: https://css-tricks.com/the-focus-visible-trick/
 
+.parvus-zoom__indicator {
+  display: none;
+}
+
 .parvus-trigger { // TODO: Transition!
   &:hover {
     .parvus-zoom__indicator svg {
@@ -383,8 +387,8 @@ $parvus-photo-gallery-height: 200px;
 }
 
 .parvus-gallery__item {
-  max-height: $parvus-photo-gallery-height;
-  overflow: hidden;
+  // max-height: $parvus-photo-gallery-height;
+  // overflow: hidden;
 
   @media print {
     max-height: none;
@@ -392,14 +396,14 @@ $parvus-photo-gallery-height: 200px;
 
 } //.parvus-gallery__item
 
-.parvus-gallery__thumbnail {
-  height: $parvus-photo-gallery-height;
-  object-fit: cover;
-  width: 100%;
+// .parvus-gallery__thumbnail {
+//   height: $parvus-photo-gallery-height;
+//   object-fit: cover;
+//   width: 100%;
 
-  @supports (aspect-ratio: 4 / 3) {
-    aspect-ratio: 4 / 3;
-    width: auto;
-    height: auto;
-  } // @supports
-} //.parvus-gallery__thumbnail
+//   @supports (aspect-ratio: 4 / 3) {
+//     aspect-ratio: 4 / 3;
+//     width: auto;
+//     height: auto;
+//   } // @supports
+// } //.parvus-gallery__thumbnail

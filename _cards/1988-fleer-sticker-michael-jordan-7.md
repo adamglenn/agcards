@@ -13,6 +13,6 @@ number: "7"
 isRookie: false
 condition: NR-MINT
 value: 25
-displayCase: "5"
+displayCase: ""
 order: 10
 ---

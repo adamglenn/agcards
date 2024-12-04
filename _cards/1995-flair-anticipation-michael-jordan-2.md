@@ -11,7 +11,7 @@ lastName: Jordan
 number: "2"
 isRookie: false
 condition: PSA 9
-value: 350
-displayCase: "5"
+value: 370
+displayCase: "6"
 order: 10
 ---

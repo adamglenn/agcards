@@ -6,12 +6,13 @@ image: /images/uploads/1986-fleer-sticker-julius-erving-7.webp
 sport: Basketball
 year: 1986
 brand: Fleer Sticker
+subset: ""
 player: Julius Erving
 lastName: Erving
 number: "5"
 isRookie: false
 condition: PSA 7
 value: 35
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

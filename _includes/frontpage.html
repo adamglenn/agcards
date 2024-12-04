@@ -32,269 +32,28 @@ heroData:
 
 <nav class="sticky-top d-flex justify-content-center shadow-sm bg-white small">
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fa-solid fa-sliders"></span> Filters</a>
-  {% comment %}
+  <!--
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#statsModal"><span class="fa-solid fa-chart-line"></span> Stats</a>
-  {% endcomment %}
-  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" data-bs-toggle="modal" data-bs-target="#watchlistModal"><span class="fa-regular fa-eye"></span> Watchlist</a>
-  <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2"><span class="fa-regular fa-table-cells"></span> View</a>
+-->
+  <a id="size-toggle" type="button" class="d-none d-lg-inline-block text-center text-decoration-none sticky-top text-dark py-2 px-2"><span class="fa-regular fa-table-cells-large"></span> <span class="card-size">Large</span></a>
   <a type="button" class="text-center text-decoration-none sticky-top text-dark py-2 px-2" href="#"><span class="fa-solid fa-arrow-up"></span> Top</a>
 </nav>
 
 <main class="bg-light">
   <div class="container">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="exampleModalLabel"><span class="fa-solid fa-sliders"></span> Filters</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="options">
-              <div class="option-set" data-group="sport">
-                <h2 class="h6 text-uppercase mb-1">Sport</h2>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</a>
-              </div>
-              <div class="option-set" data-group="era">
-                <h2 class="h6 text-uppercase mb-1 mt-2">Era</h2>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".vintage"><span class="fa-solid fa-backward-fast"></span> Vintage</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern"><span class="fa-solid fa-forward-fast"></span> Junk Wax</a>
-              </div>
-              <div class="option-set" data-group="holder">
-                <h2 class="h6 text-uppercase mb-1 mt-2">Holder</h2>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".raw"><span class="fa-solid fa-check"></span> Raw</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".to-grade"><span class="fa-solid fa-envelope"></span> To Grade</a>
-              </div>
-              <div class="option-set" data-group="case">
-                <h2 class="h6 text-uppercase mb-1 mt-2">Case</h2>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">1</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-2">2</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-3">3</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-4">4</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-5">5</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-6">6</a>
-              </div>
-              {% comment %}
-              <div class="option-set" data-group="owned">
-                <h2 class="h6 text-uppercase mb-1 mt-2">Switch to Wishlist View</h2>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".owned"><span class="fa-solid fa-face-smile"></span> Owned</a>
-                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".watchlist"><span class="fa-solid fa-face-frown"></span> To Buy</a>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Toggle Wishlist</label>
-                </div>
-              </div>
-              {% endcomment %}
-              <div class="option-set" data-group="player">
-                <h2 class="h6 text-uppercase mb-1 mt-2">Player</h2>
-                {%- capture players -%}
-                  {%- for item in collections.orderedCards -%}
-                    {%- assign playerLastNameFirst = item.data.player | replace: ',', '' | split: ' ' -%}
-                    {{ playerLastNameFirst[1] }}
-                    {%- if playerLastNameFirst[2] -%}
-                      {{ playerLastNameFirst[2] | prepend: ' ' }}
-                    {%- endif -%}
-                    {%- if playerLastNameFirst[3] -%}
-                      {{ playerLastNameFirst[3] | prepend: ' ' }}
-                    {%- endif -%}
-                    , {{ playerLastNameFirst[0] }}&
-                  {%- endfor -%}
-                {%- endcapture -%}
-                {% assign playerArray = players | split: '&' %}
-                {% assign playerArray = playerArray | uniq | sort %}
-                {% for item in playerArray %}
-                  {% assign player = item | split: ', ' %}
-                  {%- capture playerReversed -%}{{ player[1] }} {{ player[0] }}{{ player[2] }}{%- endcapture -%}
-                  {% assign playerClass = playerReversed | replace: ' ', '-' | replace: "'", "" | replace: '.', '' | downcase | prepend: '.' %}
-                  {% if playerClass != '.larry-bird-magic-johnson' %}
-                    <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter="{{ playerClass }}">{{ player[1] }} {{ player[0] }}</a>
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    {% comment %}
-    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="statsModalLabel"><span class="fa-solid fa-chart-line"></span> Stats</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row text-center">
-              <div class="col">
-                <h3 class="h6 text-uppercase small">No. of Cards</h3>
-                <p class="h1 text-success">
-                  {{ cardCount }}
-                </p>
-              </div>
-              <div class="col">
-                <h3 class="h6 text-uppercase small">Est. Value</h3>
-                <p class="h1 text-success">$
-                  {%- assign digits = valueTotal | split: '' -%}
-                  {%- for digit in digits -%}
-                    {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
-                    {%- if threeFromEnd == 2 and forloop.index != 1 -%}
-                      {{ digit | prepend: ',' }}
-                    {%- else -%}
-                      {{ digit }}
-                    {%- endif -%}
-                  {%- endfor -%}
-                </p>
-              </div>
-            </div> 
-            <h3 class="mt-3 h6 text-uppercase small">Most Valuable Cards</h3>
-            <table class="table table-sm caption-top small mb-0">
-              <thead>
-                <tr>
-                  <th scope="col">Card</th>
-                  <th scope="col" class="text-center">Condition</th>
-                  <th scope="col" class="text-center">Value</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% assign cardCount = 0 %}
-                {% for card in collections.mostValuableCards %}
-                  {% assign cardCount = cardCount | plus: 1 %}
-                  {% if cardCount <= 15 %}
-                    {%- assign valueString = card.data.value | split: '' -%}
-                    <tr>
-                      <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ card.data.sport | downcase }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded" style="font-size: .6rem"><span class="fa-solid fa-star"></span> R</span>{% endif %}</div></td>
-                      <td class="text-center">{{ card.data.condition }}</td>
-                      <td class="text-center">$
-                        {%- for digit in valueString -%}
-                          {%- assign threeFromEnd = valueString.size | minus: forloop.index | modulo: 3 -%}
-                          {%- if threeFromEnd == 2 and forloop.index != 1 -%}
-                            {{ digit | prepend: ',' }}
-                          {%- else -%}
-                            {{ digit }}
-                          {%- endif -%}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {% endif %}
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
+    {% include filters.html %}
 
-    <div class="modal fade" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="watchlistModalLabel"><span class="fa-regular fa-eye"></span> Watchlist</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            {% assign sports = "baseball,basketball,football" | split: "," %}
-
-            <table class="table table-sm caption-top small mb-0">
-              <thead>
-                <tr>
-                  <th scope="col">Card</th>
-                  <th scope="col" class="text-center">Condition</th>
-                  <th scope="col" class="text-center">Price</th>
-                  <th scope="col" class="text-center">Buy</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% assign totalCost = 0 %}
-                {%- for sport in sports -%}
-                  {%- for card in collections.orderedWatchlist -%}
-
-                    {% assign maxPrice = card.data.value | times: 1.15 %}
-                    {%- capture cardTitle -%}
-                      {{ card.data.year }} {{ card.data.brand }} {{ card.data.player }}{% if card.data.number != "" %} #{{ card.data.number }}{% endif %}
-                    {%- endcapture -%}
-
-                    {%- capture searchLink -%}
-                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+%28PSA%2C+SGC%2C+BGS%29+-BVG+-HGS+-SCG+-CSG+-BCCG+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
-                    {%- endcapture -%}
-                      
-                    {%- capture gmLink -%}
-                      https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
-                    {%- endcapture -%}
-
-                    {%- capture compsLink -%}
-                      {{ searchLink }}&rt=nc&LH_Sold=1&LH_Complete=1
-                    {%- endcapture -%}
-
-                    {% assign cardSport = card.data.sport | downcase %}
-                    
-                    {%- capture classes -%}
-                      {% if card.data.lastName == 'Jordan' %}
-                        jordan
-                      {% endif %}
-                      {% if card.data.condition contains 'PSA' %}
-                        slabbed
-                      {% else %}
-                        raw
-                      {% endif %}
-                      {% if card.data.year < 1980 %}
-                        vintage
-                      {% else %}
-                        modern
-                      {% endif %}
-                      {{ card.data.sport | downcase }}
-                    {%- endcapture -%}
-
-                    {% if cardSport == sport %}
-                      {% assign totalCost = totalCost | plus: card.data.value %}
-                      <tr>
-                        <td class="position-relative"><div class="ps-3 ms-n1"><span class="fa-solid fa-{{ sport }} position-absolute ms-n3 ps-1" style="top: 8px;"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded" style="font-size: .6rem"><span class="fa-solid fa-star"></span> R</span>{% endif %}</div></td>
-                        <td class="text-center">{{ card.data.condition }}</td>
-                        <td class="text-center"><a href="{{ compsLink }}" class="text-decoration-none" target="_blank">${{ card.data.value }}</a></td>
-                        <td class="text-center">
-                          <div class="d-flex w-100 justify-content-center">
-                            <a class="text-decoration-none me-1" target="_blank" href="{{ searchLink | strip }}"><span class="fa-brands fa-ebay"></span></a> <span class="text-light">|</span> <a class="text-decoration-none d-flex align-items-center py-0 ms-1" href="{{ gmLink | strip }}" target="_blank">GM</a>
-                          </div>
-                        </td>
-                      </tr>
-                        
-                    {% endif %}
-                  {%- endfor -%}
-                {%- endfor -%}
-              </tbody>
-              <tfoot>
-                <th scope="row">Total</th>
-                <td></td>
-                <td class="text-center">$
-                  {%- assign digits = totalCost | split: '' -%}
-                  {%- for digit in digits -%}
-                    {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
-                    {%- if threeFromEnd == 2 and forloop.index != 1 -%}
-                      {{ digit | prepend: ',' }}
-                    {%- else -%}
-                      {{ digit }}
-                    {%- endif -%}
-                  {%- endfor -%}
-                </td>
-                <td></td>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include stats.html %}
     
-    <div class="row grid pt-4 pb-5">
+    <div class="row grid gx-1 pt-4 pb-5">
       {% assign sports = "baseball,basketball,football" | split: "," %}
+      {% assign i = 1 %}
       {%- for sport in sports -%}
         {%- for card in collections.orderedCards -%}
           {% assign cardSport = card.data.sport | downcase %}
-          {% assign playerClass = card.data.player | replace: '.', '' | replace: ',', '' | replace: ' ', '-' | downcase %}
+          {% assign playerClass = card.data.player | replace: '.', '' | replace: ',', '' | replace: ' ', '-' | replace: "'", "-" | replace: '’', '-' | downcase %}
+          {% assign maxPrice = card.data.value | times: 1.15 %}
           {% if playerClass == 'larry-bird-magic-johnson' %}
             {% assign playerClass = 'larry-bird magic-johnson' %}
           {% endif %}
@@ -319,7 +78,7 @@ heroData:
             {% if card.data.toGrade == true %}
               to-grade
             {% endif %}
-            {% if card.data.year < 1984 %}
+            {% if card.data.year < 1980 %}
               vintage
             {% else %}
               modern
@@ -333,22 +92,27 @@ heroData:
           {%- endcapture -%}
 
           {%- capture searchLink -%}
-            https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}{% if card.data.condition contains 'PSA' %}+{{ card.data.condition | replace: ' ', '%26' }}{% else %}+-PSA{% endif %}+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+            https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+PSA+%287%2C8%2C9%29+-BGS+-SGC+-BVG+-HGS+-SCG+-CSG+-BCCG+-%28OC%29+-MC+-%28MK%29+-%28MC%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed
           {%- endcapture -%}
             
           {%- capture gmLink -%}
-            https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
+            https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={{ cardTitle | replace: ' ', '+' | replace: '#', '%23' | replace: '’', '%27' }}+-PSA+GMCARDS+-BVG+-HGS+-SGC+-SCG+-CSG+-BCCG+-BGS+-%28OC%29+-MC+-%28MK%29+-%28MC%29+-%28ST%29+-reprint+-reprints+-miscut+-lot+-lot%26of+-signed&_sacat=0&rt=nc&_udhi={{ maxPrice }}
           {%- endcapture -%}
 
-          {% if cardSport == sport %}
+          {% if cardSport == sport and card.data.hidden != true %}
             <div class="col-8 col-sm-4 col-md-2 col-lg-1 mb-3 card-item {{ classes }} {{ playerClass }} clearfix" {% if card.data.isWatchlist %}{% endif %}>
-              <div class="h-100 position-relative d-flex flex-column justify-content-end px-3 px-sm-0">
+              <div class="h-100 position-relative d-sm-flex flex-column px-3 px-sm-0" style="--bs-aspect-ratio: 200%">
+                <div class="mb-1 d-sm-flex ratio" style="--bs-aspect-ratio: 168%">
                   {% if card.data.image != "" and card.data.image != null %}
-                    <img loading="lazy" decoding="async" class="mb-2 rounded mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}">
+                    <a href="#myModal-{{ i }}" data-bs-toggle="modal" class="h-100 d-sm-flex align-items-end">
+                      <img class="rounded w-100 object-fit-fill ratio {% if classes contains 'slabbed' %}h-100{% endif %}" src="{{ card.data.image }}" alt="{{ card.data.title }}" style="{% if classes contains 'slabbed' %}--bs-aspect-ratio: 168%{% else %}--bs-aspect-ratio: 133%{% endif %}">
+                    </a>
                   {% endif %}
+                </div>
                 <div class="" style="font-size: .6rem">
-                  <h2 class="h6 mb-1" style="font-size: .8rem"><span style="font-size: .6rem"><span class="fa-solid fa-{{ sport }}"></span> {{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br><span style="font-size: .6rem">{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</span></h2>
-                  <p style="font-size: .6rem"><span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
+                  <h2 class="h6 mb-1" style="font-size: .8rem"><span style="font-size: .6rem">{{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %}</span><br><span style="font-size: .6rem">{{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</span></h2>
+                  <p style="font-size: .6rem">
+                    <span class="d-inline-block px-1 border border-dark rounded">{{ card.data.condition }}</span>{% if card.data.isRookie == true %} <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-star"></span> R</span>{% endif %}
                     {% comment %}
                     {% if card.data.value != "" and card.data.value != null %}
                       <span class="d-inline-block px-1 border border-dark rounded"><span class="fa-solid fa-tag"></span> $
@@ -364,11 +128,51 @@ heroData:
                       </span>
                     {% endif %}
                     {% endcomment %}
+                    {% unless card.data.condition contains 'PSA' %}
+                      <a target="_blank" class="ms-1 text-dark" href="{{ searchLink }}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    {% endunless %}
                   </p>
+                  <div id="myModal-{{ i }}" tabindex="-1" class="modal modal-fade">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-4 text-center">
+                                <img class="mb-2 rounded-4 mw-100" src="{{ card.data.image }}" alt="{{ card.data.title }}" style="max-height: 80vh">
+                              </div>
+                              <div class="col-md-4">
+                                <h2 class="modal-title lh-1">{{ card.data.year }} {{ card.data.brand }}{% if card.data.subset != "" and card.data.subset != null %} • {{ card.data.subset }}{% endif %} {{ card.data.player }}{% if card.data.number != null %} #{{ card.data.number }}{% endif %}</h2>
+                                <p class="fs-4">{{ card.data.condition }}{% if card.data.isRookie == true %} <span class="fa-solid fa-star"></span> R{% endif %}
+                                  <!--
+                                  {% if card.data.value != "" and card.data.value != null %}
+                                    <span class="fa-solid fa-tag"></span> $
+                                    {%- assign digits = card.data.value | split: '' -%}
+                                    {%- for digit in digits -%}
+                                      {%- assign threeFromEnd = digits.size | minus: forloop.index | modulo: 3 -%}
+                                      {%- if threeFromEnd == 2 and forloop.index != 1 -%}
+                                        {{ digit | prepend: ',' }}
+                                      {%- else -%}
+                                        {{ digit }}
+                                      {%- endif -%}
+                                    {%- endfor -%}
+                                  {% endif %}
+                                -->
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
+            {% assign i = i | plus: 1 %}
           {% endif %}
         {%- endfor -%}
       {%- endfor -%}

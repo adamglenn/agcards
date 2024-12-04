@@ -12,5 +12,6 @@ number: "300"
 isRookie: false
 condition: LOW GRADE
 value: 9
+displayCase: ""
 order: 10
 ---

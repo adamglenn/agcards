@@ -13,5 +13,6 @@ number: "260"
 isRookie: false
 condition: VG-VGEX
 value: 12
+displayCase: ""
 order: 10
 ---

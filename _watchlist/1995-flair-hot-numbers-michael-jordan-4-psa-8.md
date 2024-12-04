@@ -12,6 +12,8 @@ lastName: Jordan
 number: "4"
 isRookie: false
 condition: PSA 8
+type: Grail
 value: 650
-displayCase: "5"
+displayCase: "6"
+hidden: true
 ---

@@ -13,5 +13,6 @@ number: "400"
 isRookie: false
 condition: EX-EXMINT
 value: 8
+displayCase: ""
 order: 10
 ---

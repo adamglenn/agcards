@@ -13,5 +13,6 @@ number: TM5
 isRookie: false
 condition: NR-MINT
 value: 8
+displayCase: ""
 order: 10
 ---

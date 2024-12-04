@@ -6,12 +6,13 @@ image: /images/uploads/1986-fleer-sticker-larry-bird-7.webp
 sport: Basketball
 year: 1986
 brand: Fleer Sticker
+subset: ""
 player: Larry Bird
 lastName: Bird
 number: "2"
 isRookie: false
 condition: PSA 7
 value: 90
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

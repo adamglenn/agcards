@@ -6,6 +6,7 @@ image: /images/uploads/1987-fleer-michael-jordan-9.webp
 sport: Basketball
 year: 1987
 brand: Fleer
+subset: ""
 player: Michael Jordan
 lastName: Jordan
 number: "59"

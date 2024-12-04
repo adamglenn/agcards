@@ -6,12 +6,13 @@ image: /images/uploads/1982-topps-cal-ripken-8.webp
 sport: Baseball
 year: 1982
 brand: Topps
+subset: ""
 player: Cal Ripken Jr.
 lastName: Ripken
 number: "21"
 isRookie: true
 condition: PSA 7
 value: 23
-displayCase: "1"
+displayCase: ""
 order: 130
 ---

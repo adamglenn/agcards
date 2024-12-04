@@ -1,8 +1,8 @@
 ---
 layout: card
 tags: card
-title: "1958 Topps Hank Aaron #30"
-image: /images/uploads/1958-topps-hank-aaron.webp
+title: "1958 Topps Hank Aaron #30 PSA 5"
+image: /images/uploads/1958-topps-hank-aaron-5.webp
 sport: Baseball
 year: 1958
 brand: Topps
@@ -11,9 +11,9 @@ player: Hank Aaron
 lastName: Aaron
 number: "30"
 isRookie: false
-condition: EX-EXMINT
+condition: PSA 5
 toGrade: true
-value: 225
-displayCase: ""
+value: 375
+displayCase: "1"
 order: 10
 ---

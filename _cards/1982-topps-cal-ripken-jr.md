@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: 1982 Topps Cal Ripken Jr.
+title: "1982 Topps Cal Ripken Jr. #21"
 image: /images/uploads/1982-topps-cal-ripken-jr.webp
 sport: Baseball
 year: 1982

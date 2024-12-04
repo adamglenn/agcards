@@ -12,6 +12,7 @@ lastName: Jordan
 number: "39"
 isRookie: false
 condition: NM-MT +
+toGrade: true
 value: 18
 order: 10
 ---

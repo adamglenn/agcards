@@ -13,6 +13,6 @@ number: "160"
 isRookie: false
 condition: LOW GRADE
 value: 39
-displayCase: ""
+displayCase: "1"
 order: 10
 ---

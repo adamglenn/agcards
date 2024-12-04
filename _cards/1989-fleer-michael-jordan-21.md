@@ -13,5 +13,6 @@ number: "21"
 isRookie: false
 condition: NR-MINT
 value: 15
+displayCase: ""
 order: 10
 ---

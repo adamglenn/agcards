@@ -1,8 +1,8 @@
 ---
 layout: card
 tags: card
-title: "1957 Topps Frank Robinson #35"
-image: /images/uploads/1957-topps-frank-robinson.webp
+title: "1957 Topps Frank Robinson #35 PSA 3"
+image: /images/uploads/1957-topps-frank-robinson-3.webp
 sport: Baseball
 year: 1957
 brand: Topps
@@ -11,9 +11,9 @@ player: Frank Robinson
 lastName: Robinson
 number: "35"
 isRookie: true
-condition: VG-VGEX
+condition: PSA 3
 toGrade: true
-value: 141
-displayCase: ""
+value: 150
+displayCase: "1"
 order: 10
 ---

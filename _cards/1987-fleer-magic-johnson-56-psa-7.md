@@ -6,12 +6,13 @@ image: /images/uploads/1987-fleer-magic-johnson-8.webp
 sport: Basketball
 year: 1987
 brand: Fleer
+subset: ""
 player: Magic Johnson
 lastName: Johnson
 number: "56"
 isRookie: false
 condition: PSA 8
 value: 29
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

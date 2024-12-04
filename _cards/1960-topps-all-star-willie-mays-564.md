@@ -1,8 +1,8 @@
 ---
 layout: card
 tags: card
-title: "1960 Topps All Star Willie Mays #564"
-image: /images/uploads/1960-topps-all-star-willie-mays.webp
+title: "1960 Topps All Star Willie Mays #564 PSA 3"
+image: /images/uploads/1960-topps-willie-mays-564-3.webp
 sport: Baseball
 year: 1960
 brand: Topps
@@ -11,8 +11,9 @@ player: Willie Mays
 lastName: Mays
 number: "564"
 isRookie: false
-condition: VG-VGEX
+condition: PSA 3
 toGrade: true
-value: 63
+value: 75
+displayCase: "1"
 order: 10
 ---

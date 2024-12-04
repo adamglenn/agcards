@@ -6,12 +6,13 @@ image: /images/uploads/1986-fleer-sticker-magic-johnson-8.webp
 sport: Basketball
 year: 1986
 brand: Fleer Sticker
+subset: ""
 player: Magic Johnson
 lastName: Johnson
 number: "7"
 isRookie: false
 condition: PSA 8
 value: 70
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

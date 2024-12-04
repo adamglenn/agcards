@@ -11,8 +11,8 @@ player: Ken Griffey Jr.
 lastName: Griffey
 number: "6"
 isRookie: false
-condition: NM-MT +
+condition: NR-MINT
 value: 15
-displayCase: "2"
+displayCase: ""
 order: 10
 ---

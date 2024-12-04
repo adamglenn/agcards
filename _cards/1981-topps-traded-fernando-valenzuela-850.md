@@ -13,5 +13,6 @@ number: "850"
 isRookie: true
 condition: NR-MINT
 value: 15
+displayCase: ""
 order: 10
 ---

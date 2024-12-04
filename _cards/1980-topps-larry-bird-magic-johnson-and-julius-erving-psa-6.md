@@ -11,7 +11,7 @@ player: Larry Bird, Magic Johnson
 lastName: Bird
 isRookie: true
 condition: PSA 6
-value: 775
-displayCase: "4"
+value: 760
+displayCase: "5"
 order: 10
 ---

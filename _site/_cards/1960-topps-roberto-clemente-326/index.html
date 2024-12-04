@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1960 Topps Roberto Clemente #326</title>
+    <title>1960 Topps Roberto Clemente #326 PSA 3</title>
     <link href="/stylesheets/styles.css" rel="stylesheet">
     <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -28,10 +28,10 @@
   <div class="container">
     <h1><span class="h6">1960 Topps</span><br>Roberto Clemente #326</h1>
     <p>
-      <span class="badge bg-secondary">VG-VGEX</span>
+      <span class="badge bg-secondary">PSA 3</span>
     </p>
     <p>
-      <strong>Value:</strong> $65
+      <strong>Value:</strong> $100
     </p>
   </div>
 </main>
@@ -42,6 +42,29 @@
     <script type="text/javascript" src='/javascripts/vendor/isotope/jquery-1.7.1.min.js'></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
+      
+      // Toggle Grid
+      let gridToggle = document.getElementById('size-toggle');
+      let cardSize = document.querySelector('.card-size');
+      let cellsIcon = document.querySelector('.fa-table-cells-large');
+      var cards = document.querySelectorAll('.card-item');
+
+      gridToggle.onclick = function() {
+        for (let elem of cards) {
+          elem.classList.toggle('col-lg-1');
+        }
+        if (cardSize.innerText == 'Large') {
+          cardSize.innerText = 'Small';
+          cellsIcon.classList.remove('fa-table-cells-large');
+          cellsIcon.classList.add('fa-table-cells');
+        } else {
+          cardSize.innerText = 'Large';
+          cellsIcon.classList.remove('fa-table-cells');
+          cellsIcon.classList.add('fa-table-cells-large');
+        }
+      }
+
+      // Netlify
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {
@@ -51,6 +74,8 @@
           }
         });
       }
+
+      // Animation
       AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

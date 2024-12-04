@@ -6,6 +6,7 @@ image: /images/uploads/1986-fleer-sticker-michael-jordan-5.webp
 sport: Basketball
 year: 1986
 brand: Fleer Sticker
+subset: ""
 player: Michael Jordan
 lastName: Jordan
 number: "8"

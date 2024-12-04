@@ -1,7 +1,7 @@
 ---
 layout: card
 tags: card
-title: "1992 Skybox Olympic Team #USA11"
+title: "1992 Skybox Olympic Team Michael Jordan #USA11"
 image: /images/uploads/1992-skybox-olympic-team-michael-jordan.webp
 sport: Basketball
 year: 1992

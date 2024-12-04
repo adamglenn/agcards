@@ -13,5 +13,6 @@ number: "160"
 isRookie: false
 condition: EX-EXMINT
 value: 14
+displayCase: "1"
 order: 10
 ---

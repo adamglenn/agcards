@@ -1,0 +1,10 @@
+.ratio-slab {
+  --bs-aspect-ratio: 168%;
+}
+
+.ratio-toploader {
+  --bs-aspect-ratio: 133%;
+  @include media-breakpoint-up(md) {
+    --bs-aspect-ratio: 168%;
+  }
+}

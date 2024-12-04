@@ -2,6 +2,7 @@
 layout: card
 tags: card
 title: "1990 Fleer Update Emmitt Smith #U-40"
+image: /images/uploads/1990-fleer-update-emmitt-smith.webp
 sport: Football
 year: 1990
 brand: Fleer Update
@@ -11,8 +12,8 @@ lastName: Smith
 number: U-40
 isRookie: true
 condition: NM-MT +
-toGrade: true
+toGrade: false
 value: 15
-displayCase: "3"
+displayCase: ""
 order: 10
 ---

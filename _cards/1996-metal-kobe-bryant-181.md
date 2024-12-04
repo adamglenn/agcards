@@ -12,7 +12,8 @@ lastName: Bryant
 number: "181"
 isRookie: true
 condition: NR-MINT
+toGrade: true
 value: 20
-displayCase: "6"
+
 order: 10
 ---

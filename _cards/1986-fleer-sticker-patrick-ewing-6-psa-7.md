@@ -6,12 +6,13 @@ image: /images/uploads/1986-fleer-sticker-patrick-ewing-7.webp
 sport: Basketball
 year: 1986
 brand: Fleer Sticker
+subset: ""
 player: Patrick Ewing
 lastName: Ewing
 number: "6"
 isRookie: true
 condition: PSA 7
 value: 45
-displayCase: "4"
+displayCase: "5"
 order: 10
 ---

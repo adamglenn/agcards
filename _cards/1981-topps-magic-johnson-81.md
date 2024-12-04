@@ -6,12 +6,13 @@ image: /images/uploads/1981-topps-magic-johnson-7.webp
 sport: Basketball
 year: 1981
 brand: Topps
+subset: ""
 player: Magic Johnson
 lastName: Johnson
 number: "21"
 isRookie: false
 condition: PSA 7
 value: 45
-displayCase: "4"
+displayCase: "5"
 order: 1060
 ---

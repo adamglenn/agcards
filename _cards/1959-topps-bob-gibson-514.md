@@ -1,8 +1,8 @@
 ---
 layout: card
 tags: card
-title: "1959 Topps Bob Gibson #514"
-image: /images/uploads/1959-topps-bob-gibson.webp
+title: "1959 Topps Bob Gibson #514 PSA 4"
+image: /images/uploads/1959-topps-bob-gibson-4.webp
 sport: Baseball
 year: 1959
 brand: Topps
@@ -11,9 +11,9 @@ player: Bob Gibson
 lastName: Gibson
 number: "514"
 isRookie: true
-condition: EX-EXMINT
+condition: PSA 4
 toGrade: true
-value: 510
-displayCase: ""
+value: 470
+displayCase: "1"
 order: 10
 ---

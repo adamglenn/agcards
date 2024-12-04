@@ -11,9 +11,9 @@ player: Mickey Mantle
 lastName: Mantle
 number: "200"
 isRookie: false
-condition: LOW GRADE (CREASE)
+condition: LOW GRADE
 toGrade: true
 value: 158
-displayCase: ""
+displayCase: "1"
 order: 10
 ---

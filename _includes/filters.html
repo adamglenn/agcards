@@ -1,0 +1,77 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel"><span class="fa-solid fa-sliders"></span> Filters</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="options">
+          <div class="option-set" data-group="sport">
+            <h2 class="h6 text-uppercase mb-1">Sport</h2>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".baseball"><span class="fa-solid fa-baseball"></span> Baseball</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".basketball"><span class="fa-solid fa-basketball"></span> Basketball</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".football"><span class="fa-solid fa-football"></span> Football</a>
+          </div>
+          <div class="option-set" data-group="era">
+            <h2 class="h6 text-uppercase mb-1 mt-2">Era</h2>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".vintage"><span class="fa-solid fa-backward-fast"></span> Vintage</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".modern"><span class="fa-solid fa-forward-fast"></span> Junk Wax</a>
+          </div>
+          <div class="option-set" data-group="holder">
+            <h2 class="h6 text-uppercase mb-1 mt-2">Holder</h2>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".raw"><span class="fa-solid fa-check"></span> Raw</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".slabbed"><span class="fa-solid fa-check-double"></span> Slabbed</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".to-grade"><span class="fa-solid fa-box"></span> To Grade</a>
+          </div>
+          <div class="option-set" data-group="case">
+            <h2 class="h6 text-uppercase mb-1 mt-2">Case</h2>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-1">1</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-2">2</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-3">3</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-4">4</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-5">5</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".case-6">6</a>
+          </div>
+          {% comment %}
+          <div class="option-set" data-group="owned">
+            <h2 class="h6 text-uppercase mb-1 mt-2">Switch to Wishlist View</h2>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".owned"><span class="fa-solid fa-face-smile"></span> Owned</a>
+            <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter=".watchlist"><span class="fa-solid fa-face-frown"></span> To Buy</a>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Toggle Wishlist</label>
+            </div>
+          </div>
+          {% endcomment %}
+          <div class="option-set" data-group="player">
+            <h2 class="h6 text-uppercase mb-1 mt-2">Player</h2>
+            {%- capture players -%}
+              {%- for item in collections.orderedCards -%}
+                {%- assign playerLastNameFirst = item.data.player | replace: ',', '' | split: ' ' -%}
+                {{ playerLastNameFirst[1] }}
+                {%- if playerLastNameFirst[2] -%}
+                  {{ playerLastNameFirst[2] | prepend: ' ' }}
+                {%- endif -%}
+                {%- if playerLastNameFirst[3] -%}
+                  {{ playerLastNameFirst[3] | prepend: ' ' }}
+                {%- endif -%}
+                , {{ playerLastNameFirst[0] }}&
+              {%- endfor -%}
+            {%- endcapture -%}
+            {% assign playerArray = players | split: '&' %}
+            {% assign playerArray = playerArray | uniq | sort %}
+            {% for item in playerArray %}
+              {% assign player = item | split: ', ' %}
+              {%- capture playerReversed -%}{{ player[1] }} {{ player[0] }}{{ player[2] }}{%- endcapture -%}
+              {% assign playerClass = playerReversed | replace: ' ', '-' | replace: "'", "-" | replace: '.', '' | replace: '’', '-' | downcase | prepend: '.' %}
+              {% if playerClass != '.larry-bird-magic-johnson' %}
+                <a href="#card-container" class="btn btn-outline-dark mb-1" data-filter="{{ playerClass }}">{{ player[1] }} {{ player[0] }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

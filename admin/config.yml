@@ -78,6 +78,7 @@ collections:
       - {label: "Number", name: "number", widget: "string", default: "", required: false}
       - {label: "Rookie Card", name: "isRookie", widget: "boolean", default: false}
       - {label: "Condition", name: "condition", widget: "select", options: ["Raw", "LOW GRADE", "LOW GRADE (CREASE)", "VG-VGEX", "EX-EXMINT", "NR-MINT", "NM-MT +", "PSA 3", "PSA 4", "PSA 5", "PSA 5.5", "PSA 6", "PSA 6.5", "PSA 7", "PSA 8", "PSA 8.5", "PSA 9", "PSA 9 (OC)"], required: false}
+      - {label: "Type", name: "type", widget: "select", options: ["Cheap", "Mid", "Grail"], required: false}
       - {label: "Display Case", name: "displayCase", widget: "select", options: ["1", "2", "3", "4", "5", "6"], required: false}
       - {label: "Value", name: "value", widget: "number", required: false}
   - name: "settings"
